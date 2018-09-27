@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8786c679-6487-4113-9cdb-3b4d8f809043" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/align/mtcnn-model/det1-0001.params" afterPath="$PROJECT_DIR$/src/align/mtcnn-model/det1-0001.params" />
-      <change beforePath="$PROJECT_DIR$/src/align/mtcnn-model/det1-symbol.json" afterPath="$PROJECT_DIR$/src/align/mtcnn-model/det1-symbol.json" />
-      <change beforePath="$PROJECT_DIR$/src/align/mtcnn-model/det1.caffemodel" afterPath="$PROJECT_DIR$/src/align/mtcnn-model/det1.caffemodel" />
-      <change beforePath="$PROJECT_DIR$/src/align/mtcnn-model/det1.prototxt" afterPath="$PROJECT_DIR$/src/align/mtcnn-model/det1.prototxt" />
-      <change beforePath="$PROJECT_DIR$/src/align/mtcnn-model/det2-0001.params" afterPath="$PROJECT_DIR$/src/align/mtcnn-model/det2-0001.params" />
-      <change beforePath="$PROJECT_DIR$/src/align/mtcnn-model/det2-symbol.json" afterPath="$PROJECT_DIR$/src/align/mtcnn-model/det2-symbol.json" />
-      <change beforePath="$PROJECT_DIR$/src/align/mtcnn-model/det2.caffemodel" afterPath="$PROJECT_DIR$/src/align/mtcnn-model/det2.caffemodel" />
-      <change beforePath="$PROJECT_DIR$/src/align/mtcnn-model/det2.prototxt" afterPath="$PROJECT_DIR$/src/align/mtcnn-model/det2.prototxt" />
-      <change beforePath="$PROJECT_DIR$/src/align/mtcnn-model/det3-0001.params" afterPath="$PROJECT_DIR$/src/align/mtcnn-model/det3-0001.params" />
-      <change beforePath="$PROJECT_DIR$/src/align/mtcnn-model/det3-symbol.json" afterPath="$PROJECT_DIR$/src/align/mtcnn-model/det3-symbol.json" />
-      <change beforePath="$PROJECT_DIR$/src/align/mtcnn-model/det3.caffemodel" afterPath="$PROJECT_DIR$/src/align/mtcnn-model/det3.caffemodel" />
-      <change beforePath="$PROJECT_DIR$/src/align/mtcnn-model/det3.prototxt" afterPath="$PROJECT_DIR$/src/align/mtcnn-model/det3.prototxt" />
-      <change beforePath="$PROJECT_DIR$/src/align/mtcnn-model/det4-0001.params" afterPath="$PROJECT_DIR$/src/align/mtcnn-model/det4-0001.params" />
-      <change beforePath="$PROJECT_DIR$/src/align/mtcnn-model/det4-symbol.json" afterPath="$PROJECT_DIR$/src/align/mtcnn-model/det4-symbol.json" />
-      <change beforePath="$PROJECT_DIR$/src/align/mtcnn-model/det4.caffemodel" afterPath="$PROJECT_DIR$/src/align/mtcnn-model/det4.caffemodel" />
-      <change beforePath="$PROJECT_DIR$/src/align/mtcnn-model/det4.prototxt" afterPath="$PROJECT_DIR$/src/align/mtcnn-model/det4.prototxt" />
-      <change beforePath="$PROJECT_DIR$/src/align/mtcnn_detector.py" afterPath="$PROJECT_DIR$/src/align/mtcnn_detector.py" />
-      <change beforePath="$PROJECT_DIR$/src/common/__init__.py" afterPath="$PROJECT_DIR$/src/common/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/src/common/face_preprocess.py" afterPath="$PROJECT_DIR$/src/common/face_preprocess.py" />
-      <change beforePath="$PROJECT_DIR$/src/common/noise_sgd.py" afterPath="$PROJECT_DIR$/src/common/noise_sgd.py" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="process_data.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="process_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/process_data.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
@@ -97,12 +78,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="imdbwiki_utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/imdbwiki_utils.py">
+      <file leaf-file-name="process_data_wiki_imdb.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/data/process_data_wiki_imdb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="378">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -212,6 +195,12 @@
               <item name="gender_age_estimation_mxnet" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gender_age_estimation_mxnet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gender_age_estimation_mxnet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="deploy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gender_age_estimation_mxnet" type="b2602c69:ProjectViewProjectNode" />
@@ -710,6 +699,16 @@
         <state relative-caret-position="90">
           <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/process_data_wiki_imdb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
