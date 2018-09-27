@@ -48,7 +48,7 @@ def preprocess(img, bbox=None, landmark=None, **kwargs):
     img = read_image(img, **kwargs)
   M = None
   image_size = []
-  str_image_size = kwargs.get('image_size', '')
+  str_image_size = kwargs.get('image_size', '112,112')
   if len(str_image_size)>0:
     image_size = [int(x) for x in str_image_size.split(',')]
     if len(image_size)==1:
