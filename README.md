@@ -22,7 +22,6 @@ This paper presents a novel CNN model called Soft Stagewise Regression Network (
 
 ## Platform
 + Mxnet
-+ Tensorflow
 + GTX-1080Ti
 + Ubuntu
 

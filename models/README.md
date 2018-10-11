@@ -1,2 +1,2 @@
 # gender_age_estimation_mxnet
-put model here
+I provide some pre-trained models,age model first train on imdb,then wiki,megaage-asia. gender models first train on imdb
