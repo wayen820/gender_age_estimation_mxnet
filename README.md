@@ -40,7 +40,7 @@ This repository is for IMDB, WIKI, and Megaage datasets.
 ### 1. Data pre-processing
 + You can download rec format file directly in here: https://share.weiyun.com/5rQwJtA ,or package it youself according to the following steps
 + Download IMDB-WIKI dataset (face only) from https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/.
-+ Download Megaage dataset from https://github.com/b02901145/SSR-Net_megaage-asian
++ Download Megaage dataset from http://mmlab.ie.cuhk.edu.hk/projects/MegaAge/
 + Unzip them under '~/data' or others path
 + Run the following codes for dataset pre-processing.
 ```
