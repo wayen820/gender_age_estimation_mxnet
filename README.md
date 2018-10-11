@@ -12,7 +12,7 @@ This is a mxnet version implementation of SSR-Net for age and gender Estimation,
 ## Paper
 
 ### PDF
-https://github.com/wayen820/gender_age_estimation_mxnet/raw/master/ssr.pdf
+https://github.com/wayen820/gender_age_estimation_mxnet/blob/master/ssr.pdf
 
 ### Paper authors
 **[Tsun-Yi Yang](http://shamangary.logdown.com/), [Yi-Husan Huang](https://github.com/b02901145), [Yen-Yu Lin](https://www.citi.sinica.edu.tw/pages/yylin/index_zh.html), [Pi-Cheng Hsiu](https://www.citi.sinica.edu.tw/pages/pchsiu/index_en.html), and [Yung-Yu Chuang](https://www.csie.ntu.edu.tw/~cyy/)**
