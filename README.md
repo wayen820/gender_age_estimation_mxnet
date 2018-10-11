@@ -33,10 +33,8 @@ There are three different section of this project.
 1. Data pre-processing
 2. Training
 3. Model modification and Test
+
 We will go through the details in the following sections.
-
-This repository is for IMDB, WIKI, and Megaage datasets.
-
 
 ### 1. Data pre-processing
 + You can download rec format file directly in here: https://share.weiyun.com/5rQwJtA ,or package it youself according to the following steps
