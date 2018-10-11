@@ -51,7 +51,7 @@ python3 ./process_data_mege_asia.py --rootpath ~/data/megaage/megaage_asian/test
 ```
 
 ### 2. Training
-For Age Train,first train on imdb ,then fine tune on megaage-asia
+For Age Train,first train on imdb ,then fine tune on wiki and megaage-asia
 ```
 cd ./src
 ./train_ssr_adam.sh
