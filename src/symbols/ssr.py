@@ -41,15 +41,15 @@ def get_symbol(stage_num,lambda_local,lambda_d,**kwargs):
     x=mx.sym.Convolution(data=data,num_filter=32,kernel=(3,3))
     x = mx.sym.BatchNorm(data=x, fix_gamma=False, eps=2e-5, momentum=bn_mom)
     x=mx.sym.Activation(x,act_type='relu')
-    x_layer1 = mx.sym.Pooling(data=x, kernel=(2, 2), pool_type='avg', name='pool1')
+    x_layer1 = mx.sym.Pooling(data=x, kernel=(2, 2),stride=(2,2), pool_type='avg', name='pool1')
     x=mx.sym.Convolution(data=x_layer1,num_filter=32,kernel=(3,3))
     x = mx.sym.BatchNorm(data=x, fix_gamma=False, eps=2e-5, momentum=bn_mom)
     x=mx.sym.Activation(data=x,act_type='relu')
-    x_layer2=mx.sym.Pooling(data=x, kernel=(2, 2), pool_type='avg', name='pool2')
+    x_layer2=mx.sym.Pooling(data=x, kernel=(2, 2), stride=(2,2),pool_type='avg', name='pool2')
     x=mx.sym.Convolution(data=x_layer2,num_filter=32,kernel=(3,3))
     x=mx.sym.BatchNorm(data=x, fix_gamma=False, eps=2e-5, momentum=bn_mom)
     x=mx.sym.Activation(data=x,act_type='relu')
-    x_layer3=mx.sym.Pooling(data=x, kernel=(2, 2), pool_type='avg', name='pool3')
+    x_layer3=mx.sym.Pooling(data=x, kernel=(2, 2),stride=(2,2), pool_type='avg', name='pool3')
     x=mx.sym.Convolution(data=x_layer3,num_filter=32,kernel=(3,3))
     x=mx.sym.BatchNorm(data=x, fix_gamma=False, eps=2e-5, momentum=bn_mom)
     x=mx.sym.Activation(data=x,act_type='relu')
@@ -57,15 +57,15 @@ def get_symbol(stage_num,lambda_local,lambda_d,**kwargs):
     s=mx.sym.Convolution(data=data,num_filter=16,kernel=(3,3))
     s=mx.sym.BatchNorm(data=s, fix_gamma=False, eps=2e-5, momentum=bn_mom)
     s=mx.sym.Activation(data=s,act_type='tanh')
-    s_layer1=mx.sym.Pooling(data=s, kernel=(2, 2), pool_type='max', name='pool4')
+    s_layer1=mx.sym.Pooling(data=s, kernel=(2, 2), stride=(2,2),pool_type='max', name='pool4')
     s=mx.sym.Convolution(data=s_layer1,num_filter=16,kernel=(3,3))
     s=mx.sym.BatchNorm(data=s, fix_gamma=False, eps=2e-5, momentum=bn_mom)
     s=mx.sym.Activation(data=s,act_type='tanh')
-    s_layer2=mx.sym.Pooling(data=s, kernel=(2, 2), pool_type='max', name='pool5')
+    s_layer2=mx.sym.Pooling(data=s, kernel=(2, 2), stride=(2,2),pool_type='max', name='pool5')
     s=mx.sym.Convolution(data=s_layer2,num_filter=16,kernel=(3,3))
     s=mx.sym.BatchNorm(data=s, fix_gamma=False, eps=2e-5, momentum=bn_mom)
     s=mx.sym.Activation(data=s,act_type='tanh')
-    s_layer3=mx.sym.Pooling(data=s, kernel=(2, 2), pool_type='max', name='pool6')
+    s_layer3=mx.sym.Pooling(data=s, kernel=(2, 2),stride=(2,2), pool_type='max', name='pool6')
     s=mx.sym.Convolution(data=s_layer3,num_filter=16,kernel=(3,3))
     s=mx.sym.BatchNorm(data=s, fix_gamma=False, eps=2e-5, momentum=bn_mom)
     s=mx.sym.Activation(data=s,act_type='tanh')
@@ -98,7 +98,7 @@ def get_symbol(stage_num,lambda_local,lambda_d,**kwargs):
     #-------------------------------------------------------------------------------------------------------------
     s_layer2=mx.sym.Convolution(data=s_layer2,num_filter=10,kernel=(1,1))
     s_layer2=mx.sym.Activation(data=s_layer2,act_type='relu')
-    s_layer2=mx.sym.Pooling(data=s_layer2, kernel=(4, 4), pool_type='max', name='pool7')
+    s_layer2=mx.sym.Pooling(data=s_layer2, kernel=(4, 4), stride=(4,4),pool_type='max', name='pool7')
     s_layer2=mx.sym.Flatten(data=s_layer2)
     s_layer2_mix=mx.sym.Dropout(data=s_layer2,p=0.2)
     s_layer2_mix=mx.sym.FullyConnected(data=s_layer2_mix,num_hidden=stage_num[1])
@@ -106,7 +106,7 @@ def get_symbol(stage_num,lambda_local,lambda_d,**kwargs):
 
     x_layer2=mx.sym.Convolution(data=x_layer2,num_filter=10,kernel=(1,1))
     x_layer2=mx.sym.Activation(data=x_layer2,act_type='relu')
-    x_layer2=mx.sym.Pooling(data=x_layer2, kernel=(4, 4), pool_type='avg', name='pool8')
+    x_layer2=mx.sym.Pooling(data=x_layer2, kernel=(4, 4), stride=(4,4),pool_type='avg', name='pool8')
     x_layer2=mx.sym.Flatten(data=x_layer2)
     x_layer2_mix=mx.sym.Dropout(data=x_layer2,p=0.2)
     x_layer2_mix=mx.sym.FullyConnected(data=x_layer2_mix,num_hidden=stage_num[1])
@@ -126,7 +126,7 @@ def get_symbol(stage_num,lambda_local,lambda_d,**kwargs):
     #-------------------------------------------------------------------------------------------------------------
     s_layer1=mx.sym.Convolution(data=s_layer1,num_filter=10,kernel=(1,1))
     s_layer1=mx.sym.Activation(data=s_layer1,act_type='relu')
-    s_layer1=mx.sym.Pooling(data=s_layer1, kernel=(8, 8), pool_type='max', name='pool9')
+    s_layer1=mx.sym.Pooling(data=s_layer1, kernel=(8, 8),stride=(8,8), pool_type='max', name='pool9')
     s_layer1=mx.sym.Flatten(data=s_layer1)
     s_layer1_mix=mx.sym.Dropout(data=s_layer1,p=0.2)
     s_layer1_mix=mx.sym.FullyConnected(data=s_layer1_mix,num_hidden=stage_num[2])
@@ -134,7 +134,7 @@ def get_symbol(stage_num,lambda_local,lambda_d,**kwargs):
 
     x_layer1=mx.sym.Convolution(data=x_layer1,num_filter=10,kernel=(1,1))
     x_layer1=mx.sym.Activation(data=x_layer1,act_type='relu')
-    x_layer1=mx.sym.Pooling(data=x_layer1, kernel=(8, 8), pool_type='avg', name='pool10')
+    x_layer1=mx.sym.Pooling(data=x_layer1, kernel=(8, 8), stride=(8,8),pool_type='avg', name='pool10')
     x_layer1=mx.sym.Flatten(data=x_layer1)
     x_layer1_mix=mx.sym.Dropout(data=x_layer1,p=0.2)
     x_layer1_mix=mx.sym.FullyConnected(data=x_layer1_mix,num_hidden=stage_num[2])
@@ -177,29 +177,4 @@ def get_symbol(stage_num,lambda_local,lambda_d,**kwargs):
     pred_a=101*(a+b+c)
 
     return pred_a
-
-    # a=pred_a_s1[:,0]*0
-    # b=pred_a_s1[:,0]*0
-    # c=pred_a_s1[:,0]*0
-    # A=stage_num[0]*stage_num[1]*stage_num[2]
-    # V=101
-    #
-    # for i in range(0,stage_num[0]):
-    #     a=a+(i+lambda_local*local_s1[:,i]*pred_a_s1[0][:,i])
-    # a=mx.sym.expand_dims(data=a,axis=-1)
-    # a=a/(stage_num[0]*(1+lambda_d*delta_s1))
-    #
-    # for j in range(0,stage_num[1]):
-    #     b=b+(j+lambda_local*local_s2[:,j]*pred_a_s2[:,j])
-    # b=mx.sym.expand_dims(b,-1)
-    # b=b/(stage_num[0]*(1+lambda_d*delta_s1))/(stage_num[1]*(1+lambda_d*delta_s2))
-    #
-    # for k in range(0,stage_num[2]):
-    #     c=c+(k+lambda_local*local_s3[:,k]*pred_a_s3[:,k])
-    # c=mx.sym.expand_dims(data=c,axis=-1)
-    # c=c/(stage_num[0]*(1+lambda_d*delta_s1))/(stage_num[1]*(1+lambda_d*delta_s2))/(stage_num[2]*(1+lambda_d*delta_s3))
-    #
-    # pred_a=(a+b+c)*V
-    #
-    # return pred_a
 

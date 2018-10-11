@@ -55,10 +55,10 @@ class align_tools:
         warped = cv2.resize(warped, self.image_size)
         return warped,_bbox
 
-    def get_input(self, img_file):
+    def get_input(self, img_file,clear=False):
         '''
         返回对齐的图像，格式HWC,bgr，如果图像有多张人脸，优先选择位于图像中间位置同时大小比较大的人脸
-        :param img_file: 图像路径
+        :param img_file: 图像路径,clear:clear face size smaller than imagesize
         :return: align face image，format HWC bgr
         '''
         face_img=cv2.imread(img_file)
@@ -80,6 +80,9 @@ class align_tools:
             offset_dist_squared = np.sum(np.power(offsets, 2.0), 0)
             bindex = np.argmax(bounding_box_size - offset_dist_squared * 2.0)  # some extra weight on the centering
         _bbox = bounding_boxes[bindex, 0:4]
+        _bbox_size=(_bbox[2]-_bbox[0])*(_bbox[3]-_bbox[1])
+        if clear and _bbox_size<self.image_size[0]*self.image_size[1]:
+            return None
         _landmark = points[bindex,:].reshape((2, 5)).T
         warped = face_preprocess.preprocess(face_img, bbox=_bbox, landmark=_landmark)
         warped= cv2.resize(warped,self.image_size)

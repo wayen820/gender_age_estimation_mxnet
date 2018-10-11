@@ -1,2 +1,1 @@
-# gender_age_estimation_mxnet
-put data here
+download rec format database from https://share.weiyun.com/5rQwJtA

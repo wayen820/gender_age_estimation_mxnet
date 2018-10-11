@@ -9,8 +9,8 @@ from align_tools import align_tools
 '''
 this file is used for test slim model
 '''
-model_str='../../models/ssr_megaage_1_1_2/model,0'
-model_gender_str='../../models/ssr_imdb_gender_1_1/model,0'
+model_str='../../models/ssr2_megaage_1_1/model,0'
+model_gender_str='../../models/ssr2_imdb_gender_1_1/model,0'
 gpu=0
 
 def get_model(ctx, image_size, model_str, layer):

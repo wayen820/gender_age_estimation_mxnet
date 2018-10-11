@@ -47,13 +47,13 @@ def parse_args():
   parser.add_argument('--max-steps', type=int, default=0, help='max training batches')
   parser.add_argument('--end-epoch', type=int, default=100000, help='training epoch size.')
   parser.add_argument('--network', default='ssr', help='specify network')
-  parser.add_argument('--lr', type=float, default=0.000001, help='start learning rate')
+  parser.add_argument('--lr', type=float, default=0.001, help='start learning rate')
   parser.add_argument('--lr-steps', type=str, default='', help='steps of lr changing')
   parser.add_argument('--wd', type=float, default=0.0005, help='weight decay')
   parser.add_argument('--mom', type=float, default=0.9, help='momentum')
   parser.add_argument('--per-batch-size', type=int, default=128, help='batch size in each context')
-  parser.add_argument("--netType1", type=int, default=1,required=True,help="network type 1")
-  parser.add_argument("--netType2", type=int, default=1,required=True,help="network type 2")
+  parser.add_argument("--netType1", type=int, default=4,required=True,help="network type 1")
+  parser.add_argument("--netType2", type=int, default=4,required=True,help="network type 2")
   args = parser.parse_args()
   return args
 

@@ -1,0 +1,2289 @@
+pygame 1.9.4
+Hello from the pygame community. https://www.pygame.org/contribute.html
+gpu num: 1
+image_size (64, 64)
+Called with argument: Namespace(batch_size=50, ckpt=2, ctx_num=1, data_dir='../datasets/wiki/', end_epoch=100000, image_channel=3, image_h=64, image_w=64, lr=0.001, lr_steps='20000,40000,60000', max_steps=80000, mom=0.9, netType1=4, netType2=4, network='ssr', num_classes=0, per_batch_size=50, prefix='../models/ssr2_wiki_1_1/model-ssr-imdb', pretrained='../models/ssr2_imdb_1_1/model-ssr-imdb,18', verbose=4000, wd=4e-05)
+loading ['../models/ssr2_imdb_1_1/model-ssr-imdb', '18']
+[17:39:16] src/engine/engine.cc:55: MXNet start using engine: ThreadedEnginePerDevice
+(3, 64, 64)
+INFO:root:loading recordio ../datasets/wiki/train.rec...
+INFO:root:loading recordio ../datasets/wiki/val.rec...
+[('label_age', (50,))]
+lr_steps [20000, 40000, 60000]
+WARNING:py.warnings:/usr/local/lib/python3.5/dist-packages/mxnet/module/base_module.py:466: UserWarning: Optimizer created manually outside Module but rescale_grad is not normalized to 1.0/batch_size/num_workers (1.0 vs. 0.02). Is this intended?
+  optimizer_params=optimizer_params)
+
+call reset
+INFO:root:Epoch[0] Batch [50]	Speed: 1070.65 samples/sec	mae=7.779571
+INFO:root:Epoch[0] Batch [100]	Speed: 1102.98 samples/sec	mae=7.627336
+INFO:root:Epoch[0] Batch [150]	Speed: 1098.77 samples/sec	mae=7.449124
+INFO:root:Epoch[0] Batch [200]	Speed: 1110.89 samples/sec	mae=7.769170
+INFO:root:Epoch[0] Batch [250]	Speed: 1095.76 samples/sec	mae=7.328568
+INFO:root:Epoch[0] Batch [300]	Speed: 1141.44 samples/sec	mae=7.413452
+INFO:root:Epoch[0] Batch [350]	Speed: 1139.78 samples/sec	mae=7.325009
+INFO:root:Epoch[0] Batch [400]	Speed: 1131.24 samples/sec	mae=7.469514
+INFO:root:Epoch[0] Batch [450]	Speed: 1117.16 samples/sec	mae=7.476719
+INFO:root:Epoch[0] Batch [500]	Speed: 1104.31 samples/sec	mae=7.518994
+INFO:root:Epoch[0] Batch [550]	Speed: 1107.90 samples/sec	mae=7.584171
+INFO:root:Epoch[0] Train-mae=7.473009
+INFO:root:Epoch[0] Time cost=26.890
+call reset
+call reset
+INFO:root:Epoch[0] Validation-mae=7.459662
+call reset
+INFO:root:Epoch[1] Batch [50]	Speed: 1068.89 samples/sec	mae=7.552599
+INFO:root:Epoch[1] Batch [100]	Speed: 1118.93 samples/sec	mae=7.423017
+INFO:root:Epoch[1] Batch [150]	Speed: 1131.32 samples/sec	mae=7.256805
+INFO:root:Epoch[1] Batch [200]	Speed: 1083.76 samples/sec	mae=7.368789
+INFO:root:Epoch[1] Batch [250]	Speed: 1133.36 samples/sec	mae=7.258946
+INFO:root:Epoch[1] Batch [300]	Speed: 1142.00 samples/sec	mae=7.360838
+INFO:root:Epoch[1] Batch [350]	Speed: 1151.07 samples/sec	mae=7.434303
+INFO:root:Epoch[1] Batch [400]	Speed: 1098.86 samples/sec	mae=7.235515
+lr-batch-epoch: 0.001 404 1
+INFO:root:Epoch[1] Batch [450]	Speed: 1111.92 samples/sec	mae=7.503748
+INFO:root:Epoch[1] Batch [500]	Speed: 1115.06 samples/sec	mae=7.424307
+INFO:root:Epoch[1] Batch [550]	Speed: 1091.40 samples/sec	mae=7.190667
+INFO:root:Epoch[1] Train-mae=7.471418
+INFO:root:Epoch[1] Time cost=26.764
+call reset
+INFO:root:Epoch[1] Validation-mae=7.392260
+call reset
+INFO:root:Epoch[2] Batch [50]	Speed: 1075.33 samples/sec	mae=7.115869
+INFO:root:Epoch[2] Batch [100]	Speed: 1102.06 samples/sec	mae=6.967010
+INFO:root:Epoch[2] Batch [150]	Speed: 1077.18 samples/sec	mae=7.174892
+INFO:root:Epoch[2] Batch [200]	Speed: 1090.33 samples/sec	mae=7.363155
+INFO:root:Epoch[2] Batch [250]	Speed: 1084.28 samples/sec	mae=7.175874
+INFO:root:Epoch[2] Batch [300]	Speed: 1133.33 samples/sec	mae=7.186915
+INFO:root:Epoch[2] Batch [350]	Speed: 1102.38 samples/sec	mae=7.497154
+INFO:root:Epoch[2] Batch [400]	Speed: 1109.41 samples/sec	mae=7.302391
+INFO:root:Epoch[2] Batch [450]	Speed: 1099.06 samples/sec	mae=7.144599
+INFO:root:Epoch[2] Batch [500]	Speed: 1082.20 samples/sec	mae=7.681144
+INFO:root:Epoch[2] Batch [550]	Speed: 1099.94 samples/sec	mae=7.113845
+INFO:root:Epoch[2] Train-mae=7.532999
+INFO:root:Epoch[2] Time cost=27.134
+call reset
+INFO:root:Epoch[2] Validation-mae=7.442359
+call reset
+INFO:root:Epoch[3] Batch [50]	Speed: 1048.68 samples/sec	mae=7.285414
+INFO:root:Epoch[3] Batch [100]	Speed: 1082.29 samples/sec	mae=7.255291
+INFO:root:Epoch[3] Batch [150]	Speed: 1143.18 samples/sec	mae=7.271635
+INFO:root:Epoch[3] Batch [200]	Speed: 1111.64 samples/sec	mae=7.234050
+lr-batch-epoch: 0.001 214 3
+INFO:root:Epoch[3] Batch [250]	Speed: 1120.58 samples/sec	mae=7.157083
+INFO:root:Epoch[3] Batch [300]	Speed: 1124.36 samples/sec	mae=7.046080
+INFO:root:Epoch[3] Batch [350]	Speed: 1093.00 samples/sec	mae=7.189018
+INFO:root:Epoch[3] Batch [400]	Speed: 1112.82 samples/sec	mae=7.332564
+INFO:root:Epoch[3] Batch [450]	Speed: 1109.73 samples/sec	mae=7.142488
+INFO:root:Epoch[3] Batch [500]	Speed: 1072.26 samples/sec	mae=7.129448
+INFO:root:Epoch[3] Batch [550]	Speed: 1090.64 samples/sec	mae=7.193789
+INFO:root:Epoch[3] Train-mae=7.355558
+INFO:root:Epoch[3] Time cost=27.118
+call reset
+INFO:root:Epoch[3] Validation-mae=7.243302
+call reset
+INFO:root:Epoch[4] Batch [50]	Speed: 1078.50 samples/sec	mae=7.018307
+INFO:root:Epoch[4] Batch [100]	Speed: 1124.30 samples/sec	mae=7.272638
+INFO:root:Epoch[4] Batch [150]	Speed: 1086.13 samples/sec	mae=7.130314
+INFO:root:Epoch[4] Batch [200]	Speed: 1092.47 samples/sec	mae=7.373208
+INFO:root:Epoch[4] Batch [250]	Speed: 1113.84 samples/sec	mae=7.127523
+INFO:root:Epoch[4] Batch [300]	Speed: 1121.46 samples/sec	mae=6.856465
+INFO:root:Epoch[4] Batch [350]	Speed: 1089.54 samples/sec	mae=7.226431
+INFO:root:Epoch[4] Batch [400]	Speed: 1126.99 samples/sec	mae=6.985425
+INFO:root:Epoch[4] Batch [450]	Speed: 1137.16 samples/sec	mae=7.157809
+INFO:root:Epoch[4] Batch [500]	Speed: 1131.11 samples/sec	mae=7.065616
+INFO:root:Epoch[4] Batch [550]	Speed: 1138.64 samples/sec	mae=7.133370
+INFO:root:Epoch[4] Train-mae=7.103427
+INFO:root:Epoch[4] Time cost=26.817
+call reset
+INFO:root:Epoch[4] Validation-mae=7.178059
+call reset
+lr-batch-epoch: 0.001 24 5
+INFO:root:Epoch[5] Batch [50]	Speed: 1102.70 samples/sec	mae=7.015126
+INFO:root:Epoch[5] Batch [100]	Speed: 1144.76 samples/sec	mae=7.042586
+INFO:root:Epoch[5] Batch [150]	Speed: 1134.61 samples/sec	mae=7.216175
+INFO:root:Epoch[5] Batch [200]	Speed: 1114.09 samples/sec	mae=7.382722
+INFO:root:Epoch[5] Batch [250]	Speed: 1119.29 samples/sec	mae=7.121393
+INFO:root:Epoch[5] Batch [300]	Speed: 1144.94 samples/sec	mae=6.883367
+INFO:root:Epoch[5] Batch [350]	Speed: 1111.59 samples/sec	mae=7.040390
+INFO:root:Epoch[5] Batch [400]	Speed: 1091.93 samples/sec	mae=7.009046
+INFO:root:Epoch[5] Batch [450]	Speed: 1054.91 samples/sec	mae=7.053261
+INFO:root:Epoch[5] Batch [500]	Speed: 1125.84 samples/sec	mae=7.258194
+INFO:root:Epoch[5] Batch [550]	Speed: 1088.61 samples/sec	mae=6.782695
+INFO:root:Epoch[5] Train-mae=7.406713
+INFO:root:Epoch[5] Time cost=26.763
+call reset
+INFO:root:Epoch[5] Validation-mae=7.127500
+call reset
+INFO:root:Epoch[6] Batch [50]	Speed: 1117.22 samples/sec	mae=6.923522
+INFO:root:Epoch[6] Batch [100]	Speed: 1083.07 samples/sec	mae=6.961307
+INFO:root:Epoch[6] Batch [150]	Speed: 1103.45 samples/sec	mae=7.030889
+INFO:root:Epoch[6] Batch [200]	Speed: 1097.98 samples/sec	mae=7.111783
+INFO:root:Epoch[6] Batch [250]	Speed: 1122.94 samples/sec	mae=7.138407
+INFO:root:Epoch[6] Batch [300]	Speed: 1111.09 samples/sec	mae=6.910135
+INFO:root:Epoch[6] Batch [350]	Speed: 1122.98 samples/sec	mae=7.503816
+INFO:root:Epoch[6] Batch [400]	Speed: 1093.37 samples/sec	mae=7.284876
+lr-batch-epoch: 0.001 429 6
+saving 1
+INFO:root:Saved checkpoint to "../models/ssr2_wiki_1_1/model-ssr-imdb-0001.params"
+INFO:root:Epoch[6] Batch [450]	Speed: 1080.59 samples/sec	mae=6.981099
+INFO:root:Epoch[6] Batch [500]	Speed: 1121.36 samples/sec	mae=6.980442
+INFO:root:Epoch[6] Batch [550]	Speed: 1129.53 samples/sec	mae=7.213394
+INFO:root:Epoch[6] Train-mae=7.066940
+INFO:root:Epoch[6] Time cost=26.879
+call reset
+INFO:root:Epoch[6] Validation-mae=7.179816
+call reset
+INFO:root:Epoch[7] Batch [50]	Speed: 1103.20 samples/sec	mae=6.853223
+INFO:root:Epoch[7] Batch [100]	Speed: 1103.61 samples/sec	mae=7.154150
+INFO:root:Epoch[7] Batch [150]	Speed: 1120.02 samples/sec	mae=7.127151
+INFO:root:Epoch[7] Batch [200]	Speed: 1107.12 samples/sec	mae=6.864651
+INFO:root:Epoch[7] Batch [250]	Speed: 1116.85 samples/sec	mae=7.083613
+INFO:root:Epoch[7] Batch [300]	Speed: 1108.60 samples/sec	mae=7.088272
+INFO:root:Epoch[7] Batch [350]	Speed: 1122.77 samples/sec	mae=6.900581
+INFO:root:Epoch[7] Batch [400]	Speed: 1105.87 samples/sec	mae=7.172508
+INFO:root:Epoch[7] Batch [450]	Speed: 1108.67 samples/sec	mae=7.001271
+INFO:root:Epoch[7] Batch [500]	Speed: 1129.26 samples/sec	mae=6.951511
+INFO:root:Epoch[7] Batch [550]	Speed: 1100.66 samples/sec	mae=7.057719
+INFO:root:Epoch[7] Train-mae=6.891563
+INFO:root:Epoch[7] Time cost=26.820
+call reset
+INFO:root:Epoch[7] Validation-mae=7.080373
+call reset
+INFO:root:Epoch[8] Batch [50]	Speed: 1132.72 samples/sec	mae=7.214648
+INFO:root:Epoch[8] Batch [100]	Speed: 1086.08 samples/sec	mae=6.986872
+INFO:root:Epoch[8] Batch [150]	Speed: 1107.81 samples/sec	mae=6.807973
+INFO:root:Epoch[8] Batch [200]	Speed: 1115.69 samples/sec	mae=6.891507
+lr-batch-epoch: 0.001 239 8
+INFO:root:Epoch[8] Batch [250]	Speed: 1129.75 samples/sec	mae=6.853232
+INFO:root:Epoch[8] Batch [300]	Speed: 1095.21 samples/sec	mae=7.020355
+INFO:root:Epoch[8] Batch [350]	Speed: 1073.04 samples/sec	mae=7.048044
+INFO:root:Epoch[8] Batch [400]	Speed: 1118.91 samples/sec	mae=7.045032
+INFO:root:Epoch[8] Batch [450]	Speed: 1115.17 samples/sec	mae=7.162186
+INFO:root:Epoch[8] Batch [500]	Speed: 1083.79 samples/sec	mae=7.069631
+INFO:root:Epoch[8] Batch [550]	Speed: 1128.17 samples/sec	mae=6.773998
+INFO:root:Epoch[8] Train-mae=6.872406
+INFO:root:Epoch[8] Time cost=26.831
+call reset
+INFO:root:Epoch[8] Validation-mae=7.362431
+call reset
+INFO:root:Epoch[9] Batch [50]	Speed: 1116.42 samples/sec	mae=6.800100
+INFO:root:Epoch[9] Batch [100]	Speed: 1115.53 samples/sec	mae=6.925955
+INFO:root:Epoch[9] Batch [150]	Speed: 1119.13 samples/sec	mae=7.040769
+INFO:root:Epoch[9] Batch [200]	Speed: 1139.24 samples/sec	mae=7.000411
+INFO:root:Epoch[9] Batch [250]	Speed: 1115.91 samples/sec	mae=7.019188
+INFO:root:Epoch[9] Batch [300]	Speed: 1084.86 samples/sec	mae=7.108090
+INFO:root:Epoch[9] Batch [350]	Speed: 1125.52 samples/sec	mae=6.997664
+INFO:root:Epoch[9] Batch [400]	Speed: 1090.90 samples/sec	mae=7.241321
+INFO:root:Epoch[9] Batch [450]	Speed: 1117.68 samples/sec	mae=6.938719
+INFO:root:Epoch[9] Batch [500]	Speed: 1104.30 samples/sec	mae=7.064049
+INFO:root:Epoch[9] Batch [550]	Speed: 1091.23 samples/sec	mae=6.895094
+INFO:root:Epoch[9] Train-mae=6.900146
+INFO:root:Epoch[9] Time cost=26.824
+call reset
+INFO:root:Epoch[9] Validation-mae=7.197261
+call reset
+lr-batch-epoch: 0.001 49 10
+INFO:root:Epoch[10] Batch [50]	Speed: 1116.09 samples/sec	mae=6.891593
+INFO:root:Epoch[10] Batch [100]	Speed: 1093.10 samples/sec	mae=7.072622
+INFO:root:Epoch[10] Batch [150]	Speed: 1089.75 samples/sec	mae=6.768682
+INFO:root:Epoch[10] Batch [200]	Speed: 1138.97 samples/sec	mae=7.012055
+INFO:root:Epoch[10] Batch [250]	Speed: 1129.53 samples/sec	mae=6.836832
+INFO:root:Epoch[10] Batch [300]	Speed: 1135.79 samples/sec	mae=6.902134
+INFO:root:Epoch[10] Batch [350]	Speed: 1122.04 samples/sec	mae=6.838221
+INFO:root:Epoch[10] Batch [400]	Speed: 1121.99 samples/sec	mae=7.100247
+INFO:root:Epoch[10] Batch [450]	Speed: 1112.13 samples/sec	mae=6.929157
+INFO:root:Epoch[10] Batch [500]	Speed: 1115.99 samples/sec	mae=6.800575
+INFO:root:Epoch[10] Batch [550]	Speed: 1111.60 samples/sec	mae=7.212590
+INFO:root:Epoch[10] Train-mae=7.036569
+INFO:root:Epoch[10] Time cost=26.728
+call reset
+INFO:root:Epoch[10] Validation-mae=7.084243
+call reset
+INFO:root:Epoch[11] Batch [50]	Speed: 1129.11 samples/sec	mae=6.698846
+INFO:root:Epoch[11] Batch [100]	Speed: 1071.81 samples/sec	mae=6.847523
+INFO:root:Epoch[11] Batch [150]	Speed: 1102.30 samples/sec	mae=6.947254
+INFO:root:Epoch[11] Batch [200]	Speed: 1078.78 samples/sec	mae=6.716567
+INFO:root:Epoch[11] Batch [250]	Speed: 1114.08 samples/sec	mae=7.115706
+INFO:root:Epoch[11] Batch [300]	Speed: 1134.78 samples/sec	mae=6.909779
+INFO:root:Epoch[11] Batch [350]	Speed: 1121.77 samples/sec	mae=6.953770
+INFO:root:Epoch[11] Batch [400]	Speed: 1129.79 samples/sec	mae=6.836720
+INFO:root:Epoch[11] Batch [450]	Speed: 1108.07 samples/sec	mae=6.856724
+lr-batch-epoch: 0.001 454 11
+INFO:root:Epoch[11] Batch [500]	Speed: 1078.03 samples/sec	mae=6.998918
+INFO:root:Epoch[11] Batch [550]	Speed: 1099.34 samples/sec	mae=6.968807
+INFO:root:Epoch[11] Train-mae=7.178848
+INFO:root:Epoch[11] Time cost=26.965
+call reset
+INFO:root:Epoch[11] Validation-mae=7.202700
+call reset
+INFO:root:Epoch[12] Batch [50]	Speed: 1099.65 samples/sec	mae=6.764528
+INFO:root:Epoch[12] Batch [100]	Speed: 1126.98 samples/sec	mae=6.814777
+INFO:root:Epoch[12] Batch [150]	Speed: 1099.49 samples/sec	mae=6.868469
+INFO:root:Epoch[12] Batch [200]	Speed: 1117.09 samples/sec	mae=6.945362
+INFO:root:Epoch[12] Batch [250]	Speed: 1108.17 samples/sec	mae=6.796326
+INFO:root:Epoch[12] Batch [300]	Speed: 1082.58 samples/sec	mae=6.914631
+INFO:root:Epoch[12] Batch [350]	Speed: 1104.92 samples/sec	mae=6.643810
+INFO:root:Epoch[12] Batch [400]	Speed: 1064.72 samples/sec	mae=7.023036
+INFO:root:Epoch[12] Batch [450]	Speed: 1117.69 samples/sec	mae=6.920338
+INFO:root:Epoch[12] Batch [500]	Speed: 1102.24 samples/sec	mae=6.967725
+INFO:root:Epoch[12] Batch [550]	Speed: 1107.24 samples/sec	mae=6.907646
+INFO:root:Epoch[12] Train-mae=6.747454
+INFO:root:Epoch[12] Time cost=27.002
+call reset
+INFO:root:Epoch[12] Validation-mae=7.114149
+call reset
+INFO:root:Epoch[13] Batch [50]	Speed: 1082.68 samples/sec	mae=7.017810
+INFO:root:Epoch[13] Batch [100]	Speed: 1107.65 samples/sec	mae=6.889912
+INFO:root:Epoch[13] Batch [150]	Speed: 1101.14 samples/sec	mae=7.138074
+INFO:root:Epoch[13] Batch [200]	Speed: 1093.97 samples/sec	mae=6.775104
+INFO:root:Epoch[13] Batch [250]	Speed: 1091.38 samples/sec	mae=6.933928
+lr-batch-epoch: 0.001 264 13
+saving 2
+INFO:root:Saved checkpoint to "../models/ssr2_wiki_1_1/model-ssr-imdb-0002.params"
+INFO:root:Epoch[13] Batch [300]	Speed: 1115.96 samples/sec	mae=6.735628
+INFO:root:Epoch[13] Batch [350]	Speed: 1104.77 samples/sec	mae=6.807561
+INFO:root:Epoch[13] Batch [400]	Speed: 1117.28 samples/sec	mae=7.059344
+INFO:root:Epoch[13] Batch [450]	Speed: 1119.50 samples/sec	mae=6.776890
+INFO:root:Epoch[13] Batch [500]	Speed: 1099.11 samples/sec	mae=6.751588
+INFO:root:Epoch[13] Batch [550]	Speed: 1085.59 samples/sec	mae=6.902709
+INFO:root:Epoch[13] Train-mae=6.785980
+INFO:root:Epoch[13] Time cost=27.065
+call reset
+INFO:root:Epoch[13] Validation-mae=7.068795
+call reset
+INFO:root:Epoch[14] Batch [50]	Speed: 1111.62 samples/sec	mae=6.853352
+INFO:root:Epoch[14] Batch [100]	Speed: 1123.54 samples/sec	mae=6.608368
+INFO:root:Epoch[14] Batch [150]	Speed: 1105.78 samples/sec	mae=6.774920
+INFO:root:Epoch[14] Batch [200]	Speed: 1099.57 samples/sec	mae=6.803228
+INFO:root:Epoch[14] Batch [250]	Speed: 1104.79 samples/sec	mae=6.965693
+INFO:root:Epoch[14] Batch [300]	Speed: 1108.78 samples/sec	mae=6.898876
+INFO:root:Epoch[14] Batch [350]	Speed: 1089.27 samples/sec	mae=6.868801
+INFO:root:Epoch[14] Batch [400]	Speed: 1103.22 samples/sec	mae=6.727594
+INFO:root:Epoch[14] Batch [450]	Speed: 1131.88 samples/sec	mae=6.740141
+INFO:root:Epoch[14] Batch [500]	Speed: 1091.98 samples/sec	mae=6.908991
+INFO:root:Epoch[14] Batch [550]	Speed: 1148.27 samples/sec	mae=7.051350
+INFO:root:Epoch[14] Train-mae=6.747223
+INFO:root:Epoch[14] Time cost=26.816
+call reset
+INFO:root:Epoch[14] Validation-mae=7.005856
+call reset
+INFO:root:Epoch[15] Batch [50]	Speed: 1114.17 samples/sec	mae=6.715698
+lr-batch-epoch: 0.001 74 15
+INFO:root:Epoch[15] Batch [100]	Speed: 1113.30 samples/sec	mae=6.891782
+INFO:root:Epoch[15] Batch [150]	Speed: 1093.97 samples/sec	mae=6.932394
+INFO:root:Epoch[15] Batch [200]	Speed: 1112.65 samples/sec	mae=6.684708
+INFO:root:Epoch[15] Batch [250]	Speed: 1104.63 samples/sec	mae=6.970061
+INFO:root:Epoch[15] Batch [300]	Speed: 1082.40 samples/sec	mae=6.915200
+INFO:root:Epoch[15] Batch [350]	Speed: 1113.56 samples/sec	mae=6.933768
+INFO:root:Epoch[15] Batch [400]	Speed: 1091.61 samples/sec	mae=6.680422
+INFO:root:Epoch[15] Batch [450]	Speed: 1129.31 samples/sec	mae=6.717476
+INFO:root:Epoch[15] Batch [500]	Speed: 1077.58 samples/sec	mae=6.862668
+INFO:root:Epoch[15] Batch [550]	Speed: 1091.57 samples/sec	mae=6.570946
+INFO:root:Epoch[15] Train-mae=6.869448
+INFO:root:Epoch[15] Time cost=26.966
+call reset
+INFO:root:Epoch[15] Validation-mae=7.418776
+call reset
+INFO:root:Epoch[16] Batch [50]	Speed: 1108.13 samples/sec	mae=6.841521
+INFO:root:Epoch[16] Batch [100]	Speed: 1131.82 samples/sec	mae=6.867212
+INFO:root:Epoch[16] Batch [150]	Speed: 1109.35 samples/sec	mae=6.565772
+INFO:root:Epoch[16] Batch [200]	Speed: 1081.29 samples/sec	mae=6.773069
+INFO:root:Epoch[16] Batch [250]	Speed: 1084.54 samples/sec	mae=6.863089
+INFO:root:Epoch[16] Batch [300]	Speed: 1097.13 samples/sec	mae=6.972166
+INFO:root:Epoch[16] Batch [350]	Speed: 1106.83 samples/sec	mae=6.994257
+INFO:root:Epoch[16] Batch [400]	Speed: 1089.15 samples/sec	mae=6.746747
+INFO:root:Epoch[16] Batch [450]	Speed: 1076.18 samples/sec	mae=6.901021
+lr-batch-epoch: 0.001 479 16
+INFO:root:Epoch[16] Batch [500]	Speed: 1085.00 samples/sec	mae=6.831642
+INFO:root:Epoch[16] Batch [550]	Speed: 1101.62 samples/sec	mae=6.583857
+INFO:root:Epoch[16] Train-mae=6.824154
+INFO:root:Epoch[16] Time cost=27.154
+call reset
+INFO:root:Epoch[16] Validation-mae=7.178751
+call reset
+INFO:root:Epoch[17] Batch [50]	Speed: 1098.91 samples/sec	mae=6.683330
+INFO:root:Epoch[17] Batch [100]	Speed: 1124.60 samples/sec	mae=6.590348
+INFO:root:Epoch[17] Batch [150]	Speed: 1115.91 samples/sec	mae=6.944465
+INFO:root:Epoch[17] Batch [200]	Speed: 1107.40 samples/sec	mae=6.909634
+INFO:root:Epoch[17] Batch [250]	Speed: 1119.93 samples/sec	mae=6.811152
+INFO:root:Epoch[17] Batch [300]	Speed: 1087.02 samples/sec	mae=6.769951
+INFO:root:Epoch[17] Batch [350]	Speed: 1126.98 samples/sec	mae=6.794565
+INFO:root:Epoch[17] Batch [400]	Speed: 1119.33 samples/sec	mae=6.898111
+INFO:root:Epoch[17] Batch [450]	Speed: 1110.57 samples/sec	mae=6.722309
+INFO:root:Epoch[17] Batch [500]	Speed: 1102.04 samples/sec	mae=6.913086
+INFO:root:Epoch[17] Batch [550]	Speed: 1115.05 samples/sec	mae=6.633574
+INFO:root:Epoch[17] Train-mae=6.868764
+INFO:root:Epoch[17] Time cost=26.840
+call reset
+INFO:root:Epoch[17] Validation-mae=7.061513
+call reset
+INFO:root:Epoch[18] Batch [50]	Speed: 1132.20 samples/sec	mae=6.809143
+INFO:root:Epoch[18] Batch [100]	Speed: 1116.26 samples/sec	mae=6.690020
+INFO:root:Epoch[18] Batch [150]	Speed: 1094.10 samples/sec	mae=6.766967
+INFO:root:Epoch[18] Batch [200]	Speed: 1096.38 samples/sec	mae=6.842666
+INFO:root:Epoch[18] Batch [250]	Speed: 1102.69 samples/sec	mae=6.874734
+lr-batch-epoch: 0.001 289 18
+INFO:root:Epoch[18] Batch [300]	Speed: 1124.06 samples/sec	mae=6.644237
+INFO:root:Epoch[18] Batch [350]	Speed: 1114.11 samples/sec	mae=6.789417
+INFO:root:Epoch[18] Batch [400]	Speed: 1126.54 samples/sec	mae=6.710894
+INFO:root:Epoch[18] Batch [450]	Speed: 1111.82 samples/sec	mae=6.979189
+INFO:root:Epoch[18] Batch [500]	Speed: 1111.40 samples/sec	mae=6.681829
+INFO:root:Epoch[18] Batch [550]	Speed: 1122.09 samples/sec	mae=6.900236
+INFO:root:Epoch[18] Train-mae=6.788425
+INFO:root:Epoch[18] Time cost=26.759
+call reset
+INFO:root:Epoch[18] Validation-mae=7.121771
+call reset
+INFO:root:Epoch[19] Batch [50]	Speed: 1123.71 samples/sec	mae=6.708398
+INFO:root:Epoch[19] Batch [100]	Speed: 1080.70 samples/sec	mae=6.711803
+INFO:root:Epoch[19] Batch [150]	Speed: 1117.83 samples/sec	mae=6.606513
+INFO:root:Epoch[19] Batch [200]	Speed: 1115.27 samples/sec	mae=6.670096
+INFO:root:Epoch[19] Batch [250]	Speed: 1137.46 samples/sec	mae=6.662871
+INFO:root:Epoch[19] Batch [300]	Speed: 1119.14 samples/sec	mae=6.558158
+INFO:root:Epoch[19] Batch [350]	Speed: 1123.07 samples/sec	mae=6.799580
+INFO:root:Epoch[19] Batch [400]	Speed: 1068.19 samples/sec	mae=7.005220
+INFO:root:Epoch[19] Batch [450]	Speed: 1109.10 samples/sec	mae=6.827188
+INFO:root:Epoch[19] Batch [500]	Speed: 1106.91 samples/sec	mae=7.001183
+INFO:root:Epoch[19] Batch [550]	Speed: 1088.62 samples/sec	mae=6.748424
+INFO:root:Epoch[19] Train-mae=6.822220
+INFO:root:Epoch[19] Time cost=26.950
+call reset
+INFO:root:Epoch[19] Validation-mae=7.123236
+call reset
+INFO:root:Epoch[20] Batch [50]	Speed: 1113.17 samples/sec	mae=6.605604
+lr-batch-epoch: 0.001 99 20
+saving 3
+INFO:root:Saved checkpoint to "../models/ssr2_wiki_1_1/model-ssr-imdb-0003.params"
+INFO:root:Epoch[20] Batch [100]	Speed: 1112.30 samples/sec	mae=6.636241
+INFO:root:Epoch[20] Batch [150]	Speed: 1112.96 samples/sec	mae=6.645156
+INFO:root:Epoch[20] Batch [200]	Speed: 1109.48 samples/sec	mae=6.567322
+INFO:root:Epoch[20] Batch [250]	Speed: 1078.28 samples/sec	mae=6.778391
+INFO:root:Epoch[20] Batch [300]	Speed: 1108.97 samples/sec	mae=6.741161
+INFO:root:Epoch[20] Batch [350]	Speed: 1114.86 samples/sec	mae=6.809410
+INFO:root:Epoch[20] Batch [400]	Speed: 1101.68 samples/sec	mae=6.870724
+INFO:root:Epoch[20] Batch [450]	Speed: 1125.91 samples/sec	mae=6.716052
+INFO:root:Epoch[20] Batch [500]	Speed: 1127.40 samples/sec	mae=6.869099
+INFO:root:Epoch[20] Batch [550]	Speed: 1083.36 samples/sec	mae=6.596320
+INFO:root:Epoch[20] Train-mae=6.821439
+INFO:root:Epoch[20] Time cost=26.869
+call reset
+INFO:root:Epoch[20] Validation-mae=7.498523
+call reset
+INFO:root:Epoch[21] Batch [50]	Speed: 1070.75 samples/sec	mae=6.574903
+INFO:root:Epoch[21] Batch [100]	Speed: 1118.20 samples/sec	mae=6.736317
+INFO:root:Epoch[21] Batch [150]	Speed: 1091.41 samples/sec	mae=6.754123
+INFO:root:Epoch[21] Batch [200]	Speed: 1151.00 samples/sec	mae=6.778731
+INFO:root:Epoch[21] Batch [250]	Speed: 1098.23 samples/sec	mae=6.759735
+INFO:root:Epoch[21] Batch [300]	Speed: 1106.10 samples/sec	mae=7.096771
+INFO:root:Epoch[21] Batch [350]	Speed: 1110.91 samples/sec	mae=6.980218
+INFO:root:Epoch[21] Batch [400]	Speed: 1127.05 samples/sec	mae=6.663511
+INFO:root:Epoch[21] Batch [450]	Speed: 1109.21 samples/sec	mae=6.574625
+INFO:root:Epoch[21] Batch [500]	Speed: 1106.44 samples/sec	mae=6.821761
+lr-batch-epoch: 0.001 504 21
+INFO:root:Epoch[21] Batch [550]	Speed: 1118.70 samples/sec	mae=6.659313
+INFO:root:Epoch[21] Train-mae=6.672345
+INFO:root:Epoch[21] Time cost=26.834
+call reset
+INFO:root:Epoch[21] Validation-mae=6.977643
+call reset
+INFO:root:Epoch[22] Batch [50]	Speed: 1132.49 samples/sec	mae=6.469939
+INFO:root:Epoch[22] Batch [100]	Speed: 1103.01 samples/sec	mae=6.467554
+INFO:root:Epoch[22] Batch [150]	Speed: 1137.60 samples/sec	mae=6.562493
+INFO:root:Epoch[22] Batch [200]	Speed: 1088.61 samples/sec	mae=6.640579
+INFO:root:Epoch[22] Batch [250]	Speed: 1123.93 samples/sec	mae=6.709354
+INFO:root:Epoch[22] Batch [300]	Speed: 1114.43 samples/sec	mae=6.620297
+INFO:root:Epoch[22] Batch [350]	Speed: 1099.76 samples/sec	mae=6.822246
+INFO:root:Epoch[22] Batch [400]	Speed: 1103.53 samples/sec	mae=6.716650
+INFO:root:Epoch[22] Batch [450]	Speed: 1095.35 samples/sec	mae=6.840465
+INFO:root:Epoch[22] Batch [500]	Speed: 1103.32 samples/sec	mae=6.754824
+INFO:root:Epoch[22] Batch [550]	Speed: 1116.32 samples/sec	mae=6.774950
+INFO:root:Epoch[22] Train-mae=6.700784
+INFO:root:Epoch[22] Time cost=26.816
+call reset
+INFO:root:Epoch[22] Validation-mae=7.090620
+call reset
+INFO:root:Epoch[23] Batch [50]	Speed: 1109.33 samples/sec	mae=6.451522
+INFO:root:Epoch[23] Batch [100]	Speed: 1124.00 samples/sec	mae=6.599194
+INFO:root:Epoch[23] Batch [150]	Speed: 1114.00 samples/sec	mae=6.764626
+INFO:root:Epoch[23] Batch [200]	Speed: 1088.23 samples/sec	mae=6.635137
+INFO:root:Epoch[23] Batch [250]	Speed: 1096.47 samples/sec	mae=6.887782
+INFO:root:Epoch[23] Batch [300]	Speed: 1101.53 samples/sec	mae=7.009276
+lr-batch-epoch: 0.001 314 23
+INFO:root:Epoch[23] Batch [350]	Speed: 1122.11 samples/sec	mae=6.594956
+INFO:root:Epoch[23] Batch [400]	Speed: 1092.22 samples/sec	mae=6.519692
+INFO:root:Epoch[23] Batch [450]	Speed: 1104.40 samples/sec	mae=6.929610
+INFO:root:Epoch[23] Batch [500]	Speed: 1070.31 samples/sec	mae=6.736803
+INFO:root:Epoch[23] Batch [550]	Speed: 1116.35 samples/sec	mae=7.012463
+INFO:root:Epoch[23] Train-mae=6.597532
+INFO:root:Epoch[23] Time cost=26.957
+call reset
+INFO:root:Epoch[23] Validation-mae=7.194992
+call reset
+INFO:root:Epoch[24] Batch [50]	Speed: 1116.83 samples/sec	mae=6.546809
+INFO:root:Epoch[24] Batch [100]	Speed: 1120.11 samples/sec	mae=6.768468
+INFO:root:Epoch[24] Batch [150]	Speed: 1054.94 samples/sec	mae=6.571197
+INFO:root:Epoch[24] Batch [200]	Speed: 1095.88 samples/sec	mae=6.735756
+INFO:root:Epoch[24] Batch [250]	Speed: 1102.50 samples/sec	mae=6.745502
+INFO:root:Epoch[24] Batch [300]	Speed: 1096.67 samples/sec	mae=6.700662
+INFO:root:Epoch[24] Batch [350]	Speed: 1105.11 samples/sec	mae=6.734204
+INFO:root:Epoch[24] Batch [400]	Speed: 1078.08 samples/sec	mae=6.704463
+INFO:root:Epoch[24] Batch [450]	Speed: 1125.31 samples/sec	mae=6.431466
+INFO:root:Epoch[24] Batch [500]	Speed: 1121.31 samples/sec	mae=6.646649
+INFO:root:Epoch[24] Batch [550]	Speed: 1115.91 samples/sec	mae=6.796467
+INFO:root:Epoch[24] Train-mae=6.919534
+INFO:root:Epoch[24] Time cost=27.051
+call reset
+INFO:root:Epoch[24] Validation-mae=7.013836
+call reset
+INFO:root:Epoch[25] Batch [50]	Speed: 1095.59 samples/sec	mae=6.700107
+INFO:root:Epoch[25] Batch [100]	Speed: 1105.72 samples/sec	mae=6.563384
+lr-batch-epoch: 0.001 124 25
+INFO:root:Epoch[25] Batch [150]	Speed: 1074.53 samples/sec	mae=6.725003
+INFO:root:Epoch[25] Batch [200]	Speed: 1088.12 samples/sec	mae=6.601613
+INFO:root:Epoch[25] Batch [250]	Speed: 1069.60 samples/sec	mae=6.628392
+INFO:root:Epoch[25] Batch [300]	Speed: 1053.92 samples/sec	mae=6.776538
+INFO:root:Epoch[25] Batch [350]	Speed: 1106.76 samples/sec	mae=6.818920
+INFO:root:Epoch[25] Batch [400]	Speed: 1084.06 samples/sec	mae=6.504026
+INFO:root:Epoch[25] Batch [450]	Speed: 1106.56 samples/sec	mae=6.687573
+INFO:root:Epoch[25] Batch [500]	Speed: 1080.52 samples/sec	mae=6.848396
+INFO:root:Epoch[25] Batch [550]	Speed: 1092.05 samples/sec	mae=6.744375
+INFO:root:Epoch[25] Train-mae=6.439933
+INFO:root:Epoch[25] Time cost=27.356
+call reset
+INFO:root:Epoch[25] Validation-mae=6.934553
+call reset
+INFO:root:Epoch[26] Batch [50]	Speed: 1125.26 samples/sec	mae=6.581543
+INFO:root:Epoch[26] Batch [100]	Speed: 1145.63 samples/sec	mae=6.540642
+INFO:root:Epoch[26] Batch [150]	Speed: 1095.24 samples/sec	mae=6.600778
+INFO:root:Epoch[26] Batch [200]	Speed: 1106.55 samples/sec	mae=6.499448
+INFO:root:Epoch[26] Batch [250]	Speed: 1088.17 samples/sec	mae=6.517286
+INFO:root:Epoch[26] Batch [300]	Speed: 1095.63 samples/sec	mae=6.479103
+INFO:root:Epoch[26] Batch [350]	Speed: 1095.22 samples/sec	mae=6.616848
+INFO:root:Epoch[26] Batch [400]	Speed: 1087.62 samples/sec	mae=6.708631
+INFO:root:Epoch[26] Batch [450]	Speed: 1089.73 samples/sec	mae=6.667884
+INFO:root:Epoch[26] Batch [500]	Speed: 1108.28 samples/sec	mae=6.549544
+lr-batch-epoch: 0.001 529 26
+saving 4
+INFO:root:Saved checkpoint to "../models/ssr2_wiki_1_1/model-ssr-imdb-0004.params"
+INFO:root:Epoch[26] Batch [550]	Speed: 1076.26 samples/sec	mae=6.848303
+INFO:root:Epoch[26] Train-mae=6.697453
+INFO:root:Epoch[26] Time cost=27.090
+call reset
+INFO:root:Epoch[26] Validation-mae=7.188729
+call reset
+INFO:root:Epoch[27] Batch [50]	Speed: 1109.52 samples/sec	mae=6.690204
+INFO:root:Epoch[27] Batch [100]	Speed: 1096.86 samples/sec	mae=6.413488
+INFO:root:Epoch[27] Batch [150]	Speed: 1078.29 samples/sec	mae=6.683341
+INFO:root:Epoch[27] Batch [200]	Speed: 1106.99 samples/sec	mae=6.778460
+INFO:root:Epoch[27] Batch [250]	Speed: 1094.59 samples/sec	mae=6.740866
+INFO:root:Epoch[27] Batch [300]	Speed: 1110.19 samples/sec	mae=6.866900
+INFO:root:Epoch[27] Batch [350]	Speed: 1044.51 samples/sec	mae=6.468132
+INFO:root:Epoch[27] Batch [400]	Speed: 1100.29 samples/sec	mae=6.583256
+INFO:root:Epoch[27] Batch [450]	Speed: 1067.05 samples/sec	mae=6.643360
+INFO:root:Epoch[27] Batch [500]	Speed: 1086.27 samples/sec	mae=6.792703
+INFO:root:Epoch[27] Batch [550]	Speed: 1068.66 samples/sec	mae=6.700079
+INFO:root:Epoch[27] Train-mae=6.538300
+INFO:root:Epoch[27] Time cost=27.403
+call reset
+INFO:root:Epoch[27] Validation-mae=7.136917
+call reset
+INFO:root:Epoch[28] Batch [50]	Speed: 1098.57 samples/sec	mae=6.996701
+INFO:root:Epoch[28] Batch [100]	Speed: 1094.51 samples/sec	mae=6.683168
+INFO:root:Epoch[28] Batch [150]	Speed: 1091.13 samples/sec	mae=6.475044
+INFO:root:Epoch[28] Batch [200]	Speed: 1101.85 samples/sec	mae=6.394016
+INFO:root:Epoch[28] Batch [250]	Speed: 1136.86 samples/sec	mae=6.638281
+INFO:root:Epoch[28] Batch [300]	Speed: 1097.54 samples/sec	mae=6.611754
+lr-batch-epoch: 0.001 339 28
+INFO:root:Epoch[28] Batch [350]	Speed: 1115.93 samples/sec	mae=6.453123
+INFO:root:Epoch[28] Batch [400]	Speed: 1128.39 samples/sec	mae=6.547545
+INFO:root:Epoch[28] Batch [450]	Speed: 1133.28 samples/sec	mae=6.561029
+INFO:root:Epoch[28] Batch [500]	Speed: 1115.14 samples/sec	mae=6.690460
+INFO:root:Epoch[28] Batch [550]	Speed: 1134.39 samples/sec	mae=6.488836
+INFO:root:Epoch[28] Train-mae=6.524764
+INFO:root:Epoch[28] Time cost=26.710
+call reset
+INFO:root:Epoch[28] Validation-mae=7.255740
+call reset
+INFO:root:Epoch[29] Batch [50]	Speed: 1090.00 samples/sec	mae=6.597857
+INFO:root:Epoch[29] Batch [100]	Speed: 1110.09 samples/sec	mae=6.470451
+INFO:root:Epoch[29] Batch [150]	Speed: 1119.77 samples/sec	mae=6.427625
+INFO:root:Epoch[29] Batch [200]	Speed: 1131.66 samples/sec	mae=6.598297
+INFO:root:Epoch[29] Batch [250]	Speed: 1096.35 samples/sec	mae=6.660450
+INFO:root:Epoch[29] Batch [300]	Speed: 1099.61 samples/sec	mae=6.655533
+INFO:root:Epoch[29] Batch [350]	Speed: 1118.52 samples/sec	mae=6.400347
+INFO:root:Epoch[29] Batch [400]	Speed: 1079.97 samples/sec	mae=6.602540
+INFO:root:Epoch[29] Batch [450]	Speed: 1134.22 samples/sec	mae=6.734159
+INFO:root:Epoch[29] Batch [500]	Speed: 1131.54 samples/sec	mae=6.746859
+INFO:root:Epoch[29] Batch [550]	Speed: 1091.32 samples/sec	mae=6.739225
+INFO:root:Epoch[29] Train-mae=6.711078
+INFO:root:Epoch[29] Time cost=26.806
+call reset
+INFO:root:Epoch[29] Validation-mae=6.965085
+call reset
+INFO:root:Epoch[30] Batch [50]	Speed: 1125.26 samples/sec	mae=6.563781
+INFO:root:Epoch[30] Batch [100]	Speed: 1108.42 samples/sec	mae=6.600404
+lr-batch-epoch: 0.001 149 30
+INFO:root:Epoch[30] Batch [150]	Speed: 1112.44 samples/sec	mae=6.333947
+INFO:root:Epoch[30] Batch [200]	Speed: 1089.43 samples/sec	mae=6.698922
+INFO:root:Epoch[30] Batch [250]	Speed: 1068.30 samples/sec	mae=6.764978
+INFO:root:Epoch[30] Batch [300]	Speed: 1100.22 samples/sec	mae=6.632016
+INFO:root:Epoch[30] Batch [350]	Speed: 1109.52 samples/sec	mae=6.435697
+INFO:root:Epoch[30] Batch [400]	Speed: 1112.27 samples/sec	mae=6.644942
+INFO:root:Epoch[30] Batch [450]	Speed: 1109.29 samples/sec	mae=6.508468
+INFO:root:Epoch[30] Batch [500]	Speed: 1102.23 samples/sec	mae=6.544016
+INFO:root:Epoch[30] Batch [550]	Speed: 1112.82 samples/sec	mae=6.689678
+INFO:root:Epoch[30] Train-mae=6.708384
+INFO:root:Epoch[30] Time cost=26.891
+call reset
+INFO:root:Epoch[30] Validation-mae=7.094686
+call reset
+INFO:root:Epoch[31] Batch [50]	Speed: 1107.63 samples/sec	mae=6.717422
+INFO:root:Epoch[31] Batch [100]	Speed: 1115.11 samples/sec	mae=6.515598
+INFO:root:Epoch[31] Batch [150]	Speed: 1102.85 samples/sec	mae=6.532353
+INFO:root:Epoch[31] Batch [200]	Speed: 1094.28 samples/sec	mae=6.744644
+INFO:root:Epoch[31] Batch [250]	Speed: 1085.09 samples/sec	mae=6.637647
+INFO:root:Epoch[31] Batch [300]	Speed: 1104.30 samples/sec	mae=6.672099
+INFO:root:Epoch[31] Batch [350]	Speed: 1081.96 samples/sec	mae=6.646239
+INFO:root:Epoch[31] Batch [400]	Speed: 1098.12 samples/sec	mae=6.386944
+INFO:root:Epoch[31] Batch [450]	Speed: 1087.72 samples/sec	mae=6.821810
+INFO:root:Epoch[31] Batch [500]	Speed: 1097.31 samples/sec	mae=6.424802
+INFO:root:Epoch[31] Batch [550]	Speed: 1110.77 samples/sec	mae=6.526570
+lr-batch-epoch: 0.001 554 31
+INFO:root:Epoch[31] Train-mae=6.517791
+INFO:root:Epoch[31] Time cost=27.094
+call reset
+INFO:root:Epoch[31] Validation-mae=6.990039
+call reset
+INFO:root:Epoch[32] Batch [50]	Speed: 1131.60 samples/sec	mae=6.413375
+INFO:root:Epoch[32] Batch [100]	Speed: 1093.31 samples/sec	mae=6.757570
+INFO:root:Epoch[32] Batch [150]	Speed: 1117.02 samples/sec	mae=6.623380
+INFO:root:Epoch[32] Batch [200]	Speed: 1080.14 samples/sec	mae=6.779234
+INFO:root:Epoch[32] Batch [250]	Speed: 1097.72 samples/sec	mae=6.512430
+INFO:root:Epoch[32] Batch [300]	Speed: 1123.38 samples/sec	mae=6.444338
+INFO:root:Epoch[32] Batch [350]	Speed: 1070.19 samples/sec	mae=6.598532
+INFO:root:Epoch[32] Batch [400]	Speed: 1105.72 samples/sec	mae=6.732515
+INFO:root:Epoch[32] Batch [450]	Speed: 1151.95 samples/sec	mae=6.404855
+INFO:root:Epoch[32] Batch [500]	Speed: 1117.14 samples/sec	mae=6.621730
+INFO:root:Epoch[32] Batch [550]	Speed: 1119.52 samples/sec	mae=6.494064
+INFO:root:Epoch[32] Train-mae=6.769612
+INFO:root:Epoch[32] Time cost=26.845
+call reset
+INFO:root:Epoch[32] Validation-mae=7.040673
+call reset
+INFO:root:Epoch[33] Batch [50]	Speed: 1091.68 samples/sec	mae=6.507260
+INFO:root:Epoch[33] Batch [100]	Speed: 1120.54 samples/sec	mae=6.262046
+INFO:root:Epoch[33] Batch [150]	Speed: 1101.50 samples/sec	mae=6.575601
+INFO:root:Epoch[33] Batch [200]	Speed: 1119.55 samples/sec	mae=6.701896
+INFO:root:Epoch[33] Batch [250]	Speed: 1080.78 samples/sec	mae=6.559438
+INFO:root:Epoch[33] Batch [300]	Speed: 1099.94 samples/sec	mae=6.715965
+INFO:root:Epoch[33] Batch [350]	Speed: 1104.09 samples/sec	mae=6.531762
+lr change to 0.0001
+lr-batch-epoch: 0.0001 364 33
+saving 5
+INFO:root:Saved checkpoint to "../models/ssr2_wiki_1_1/model-ssr-imdb-0005.params"
+INFO:root:Epoch[33] Batch [400]	Speed: 1122.36 samples/sec	mae=6.524639
+INFO:root:Epoch[33] Batch [450]	Speed: 1095.08 samples/sec	mae=6.553629
+INFO:root:Epoch[33] Batch [500]	Speed: 1119.77 samples/sec	mae=6.394205
+INFO:root:Epoch[33] Batch [550]	Speed: 1099.23 samples/sec	mae=6.375899
+INFO:root:Epoch[33] Train-mae=6.417804
+INFO:root:Epoch[33] Time cost=26.922
+call reset
+INFO:root:Epoch[33] Validation-mae=6.785573
+call reset
+INFO:root:Epoch[34] Batch [50]	Speed: 1098.64 samples/sec	mae=6.297126
+INFO:root:Epoch[34] Batch [100]	Speed: 1168.45 samples/sec	mae=6.055810
+INFO:root:Epoch[34] Batch [150]	Speed: 1110.34 samples/sec	mae=6.115566
+INFO:root:Epoch[34] Batch [200]	Speed: 1104.84 samples/sec	mae=6.282171
+INFO:root:Epoch[34] Batch [250]	Speed: 1110.54 samples/sec	mae=6.005732
+INFO:root:Epoch[34] Batch [300]	Speed: 1136.43 samples/sec	mae=6.425306
+INFO:root:Epoch[34] Batch [350]	Speed: 1112.03 samples/sec	mae=6.304366
+INFO:root:Epoch[34] Batch [400]	Speed: 1109.18 samples/sec	mae=6.264883
+INFO:root:Epoch[34] Batch [450]	Speed: 1088.96 samples/sec	mae=6.255607
+INFO:root:Epoch[34] Batch [500]	Speed: 1126.30 samples/sec	mae=6.318714
+INFO:root:Epoch[34] Batch [550]	Speed: 1137.66 samples/sec	mae=6.354249
+INFO:root:Epoch[34] Train-mae=6.498540
+INFO:root:Epoch[34] Time cost=26.583
+call reset
+INFO:root:Epoch[34] Validation-mae=6.851988
+call reset
+INFO:root:Epoch[35] Batch [50]	Speed: 1126.67 samples/sec	mae=6.224299
+INFO:root:Epoch[35] Batch [100]	Speed: 1146.20 samples/sec	mae=6.211380
+INFO:root:Epoch[35] Batch [150]	Speed: 1108.41 samples/sec	mae=6.220680
+lr-batch-epoch: 0.0001 174 35
+INFO:root:Epoch[35] Batch [200]	Speed: 1115.21 samples/sec	mae=6.395812
+INFO:root:Epoch[35] Batch [250]	Speed: 1116.67 samples/sec	mae=6.168263
+INFO:root:Epoch[35] Batch [300]	Speed: 1099.87 samples/sec	mae=6.292514
+INFO:root:Epoch[35] Batch [350]	Speed: 1131.51 samples/sec	mae=6.313047
+INFO:root:Epoch[35] Batch [400]	Speed: 1082.66 samples/sec	mae=6.284661
+INFO:root:Epoch[35] Batch [450]	Speed: 1129.93 samples/sec	mae=6.251734
+INFO:root:Epoch[35] Batch [500]	Speed: 1106.38 samples/sec	mae=6.153132
+INFO:root:Epoch[35] Batch [550]	Speed: 1120.86 samples/sec	mae=6.077853
+INFO:root:Epoch[35] Train-mae=6.585269
+INFO:root:Epoch[35] Time cost=26.713
+call reset
+INFO:root:Epoch[35] Validation-mae=6.776257
+call reset
+INFO:root:Epoch[36] Batch [50]	Speed: 1110.83 samples/sec	mae=6.237016
+INFO:root:Epoch[36] Batch [100]	Speed: 1102.68 samples/sec	mae=6.291996
+INFO:root:Epoch[36] Batch [150]	Speed: 1109.51 samples/sec	mae=6.272786
+INFO:root:Epoch[36] Batch [200]	Speed: 1085.12 samples/sec	mae=6.375043
+INFO:root:Epoch[36] Batch [250]	Speed: 1123.78 samples/sec	mae=6.253735
+INFO:root:Epoch[36] Batch [300]	Speed: 1124.23 samples/sec	mae=6.335239
+INFO:root:Epoch[36] Batch [350]	Speed: 1100.12 samples/sec	mae=5.950331
+INFO:root:Epoch[36] Batch [400]	Speed: 1125.79 samples/sec	mae=6.216617
+INFO:root:Epoch[36] Batch [450]	Speed: 1129.42 samples/sec	mae=6.126560
+INFO:root:Epoch[36] Batch [500]	Speed: 1127.37 samples/sec	mae=6.182609
+INFO:root:Epoch[36] Batch [550]	Speed: 1104.92 samples/sec	mae=6.310748
+lr-batch-epoch: 0.0001 579 36
+INFO:root:Epoch[36] Train-mae=6.009727
+INFO:root:Epoch[36] Time cost=26.744
+call reset
+INFO:root:Epoch[36] Validation-mae=6.813865
+call reset
+INFO:root:Epoch[37] Batch [50]	Speed: 1086.19 samples/sec	mae=6.432189
+INFO:root:Epoch[37] Batch [100]	Speed: 1084.99 samples/sec	mae=6.346096
+INFO:root:Epoch[37] Batch [150]	Speed: 1113.51 samples/sec	mae=6.359293
+INFO:root:Epoch[37] Batch [200]	Speed: 1090.58 samples/sec	mae=6.194912
+INFO:root:Epoch[37] Batch [250]	Speed: 1115.10 samples/sec	mae=6.209951
+INFO:root:Epoch[37] Batch [300]	Speed: 1117.77 samples/sec	mae=5.848082
+INFO:root:Epoch[37] Batch [350]	Speed: 1160.50 samples/sec	mae=6.054916
+INFO:root:Epoch[37] Batch [400]	Speed: 1115.69 samples/sec	mae=6.338868
+INFO:root:Epoch[37] Batch [450]	Speed: 1102.08 samples/sec	mae=6.236459
+INFO:root:Epoch[37] Batch [500]	Speed: 1077.71 samples/sec	mae=6.217126
+INFO:root:Epoch[37] Batch [550]	Speed: 1119.51 samples/sec	mae=6.323978
+INFO:root:Epoch[37] Train-mae=6.214350
+INFO:root:Epoch[37] Time cost=26.897
+call reset
+INFO:root:Epoch[37] Validation-mae=6.799226
+call reset
+INFO:root:Epoch[38] Batch [50]	Speed: 1116.35 samples/sec	mae=6.211310
+INFO:root:Epoch[38] Batch [100]	Speed: 1120.95 samples/sec	mae=6.065469
+INFO:root:Epoch[38] Batch [150]	Speed: 1108.58 samples/sec	mae=6.157903
+INFO:root:Epoch[38] Batch [200]	Speed: 1085.68 samples/sec	mae=6.264378
+INFO:root:Epoch[38] Batch [250]	Speed: 1073.38 samples/sec	mae=6.255735
+INFO:root:Epoch[38] Batch [300]	Speed: 1108.04 samples/sec	mae=6.191499
+INFO:root:Epoch[38] Batch [350]	Speed: 1098.98 samples/sec	mae=6.275556
+lr-batch-epoch: 0.0001 389 38
+INFO:root:Epoch[38] Batch [400]	Speed: 1089.06 samples/sec	mae=6.358934
+INFO:root:Epoch[38] Batch [450]	Speed: 1120.77 samples/sec	mae=6.099920
+INFO:root:Epoch[38] Batch [500]	Speed: 1104.22 samples/sec	mae=6.265432
+INFO:root:Epoch[38] Batch [550]	Speed: 1100.85 samples/sec	mae=6.320123
+INFO:root:Epoch[38] Train-mae=6.246333
+INFO:root:Epoch[38] Time cost=26.992
+call reset
+INFO:root:Epoch[38] Validation-mae=6.762388
+call reset
+INFO:root:Epoch[39] Batch [50]	Speed: 1115.79 samples/sec	mae=6.098416
+INFO:root:Epoch[39] Batch [100]	Speed: 1100.22 samples/sec	mae=6.030999
+INFO:root:Epoch[39] Batch [150]	Speed: 1107.24 samples/sec	mae=6.267899
+INFO:root:Epoch[39] Batch [200]	Speed: 1123.01 samples/sec	mae=6.260098
+INFO:root:Epoch[39] Batch [250]	Speed: 1110.34 samples/sec	mae=6.342772
+INFO:root:Epoch[39] Batch [300]	Speed: 1071.52 samples/sec	mae=6.032435
+INFO:root:Epoch[39] Batch [350]	Speed: 1091.80 samples/sec	mae=6.182286
+INFO:root:Epoch[39] Batch [400]	Speed: 1096.83 samples/sec	mae=6.285433
+INFO:root:Epoch[39] Batch [450]	Speed: 1097.02 samples/sec	mae=6.166672
+INFO:root:Epoch[39] Batch [500]	Speed: 1069.87 samples/sec	mae=6.197976
+INFO:root:Epoch[39] Batch [550]	Speed: 1131.29 samples/sec	mae=5.981801
+INFO:root:Epoch[39] Train-mae=6.188743
+INFO:root:Epoch[39] Time cost=27.057
+call reset
+INFO:root:Epoch[39] Validation-mae=6.746819
+call reset
+INFO:root:Epoch[40] Batch [50]	Speed: 1092.78 samples/sec	mae=6.092840
+INFO:root:Epoch[40] Batch [100]	Speed: 1104.17 samples/sec	mae=6.126512
+INFO:root:Epoch[40] Batch [150]	Speed: 1124.08 samples/sec	mae=6.113117
+lr-batch-epoch: 0.0001 199 40
+saving 6
+INFO:root:Saved checkpoint to "../models/ssr2_wiki_1_1/model-ssr-imdb-0006.params"
+INFO:root:Epoch[40] Batch [200]	Speed: 1092.21 samples/sec	mae=6.158016
+INFO:root:Epoch[40] Batch [250]	Speed: 1087.29 samples/sec	mae=6.261397
+INFO:root:Epoch[40] Batch [300]	Speed: 1148.71 samples/sec	mae=6.329992
+INFO:root:Epoch[40] Batch [350]	Speed: 1114.45 samples/sec	mae=6.269339
+INFO:root:Epoch[40] Batch [400]	Speed: 1080.19 samples/sec	mae=6.207529
+INFO:root:Epoch[40] Batch [450]	Speed: 1109.32 samples/sec	mae=6.155835
+INFO:root:Epoch[40] Batch [500]	Speed: 1108.34 samples/sec	mae=6.230303
+INFO:root:Epoch[40] Batch [550]	Speed: 1106.28 samples/sec	mae=6.103358
+INFO:root:Epoch[40] Train-mae=6.186215
+INFO:root:Epoch[40] Time cost=26.948
+call reset
+INFO:root:Epoch[40] Validation-mae=6.822068
+call reset
+INFO:root:Epoch[41] Batch [50]	Speed: 1087.47 samples/sec	mae=6.070511
+INFO:root:Epoch[41] Batch [100]	Speed: 1091.35 samples/sec	mae=6.075947
+INFO:root:Epoch[41] Batch [150]	Speed: 1123.27 samples/sec	mae=6.017502
+INFO:root:Epoch[41] Batch [200]	Speed: 1109.98 samples/sec	mae=6.241059
+INFO:root:Epoch[41] Batch [250]	Speed: 1082.53 samples/sec	mae=6.121861
+INFO:root:Epoch[41] Batch [300]	Speed: 1122.97 samples/sec	mae=6.145979
+INFO:root:Epoch[41] Batch [350]	Speed: 1107.01 samples/sec	mae=6.163019
+INFO:root:Epoch[41] Batch [400]	Speed: 1114.16 samples/sec	mae=6.193131
+INFO:root:Epoch[41] Batch [450]	Speed: 1102.90 samples/sec	mae=6.255153
+INFO:root:Epoch[41] Batch [500]	Speed: 1106.80 samples/sec	mae=6.269115
+INFO:root:Epoch[41] Batch [550]	Speed: 1114.14 samples/sec	mae=6.190548
+INFO:root:Epoch[41] Train-mae=6.114626
+INFO:root:Epoch[41] Time cost=26.895
+call reset
+INFO:root:Epoch[41] Validation-mae=6.708494
+call reset
+lr-batch-epoch: 0.0001 9 42
+INFO:root:Epoch[42] Batch [50]	Speed: 1116.49 samples/sec	mae=6.106425
+INFO:root:Epoch[42] Batch [100]	Speed: 1087.75 samples/sec	mae=5.956033
+INFO:root:Epoch[42] Batch [150]	Speed: 1062.41 samples/sec	mae=6.189820
+INFO:root:Epoch[42] Batch [200]	Speed: 1070.26 samples/sec	mae=6.422473
+INFO:root:Epoch[42] Batch [250]	Speed: 1098.68 samples/sec	mae=6.241943
+INFO:root:Epoch[42] Batch [300]	Speed: 1107.64 samples/sec	mae=6.295873
+INFO:root:Epoch[42] Batch [350]	Speed: 1100.69 samples/sec	mae=6.224719
+INFO:root:Epoch[42] Batch [400]	Speed: 1080.45 samples/sec	mae=5.918006
+INFO:root:Epoch[42] Batch [450]	Speed: 1108.90 samples/sec	mae=6.118932
+INFO:root:Epoch[42] Batch [500]	Speed: 1119.52 samples/sec	mae=5.991098
+INFO:root:Epoch[42] Batch [550]	Speed: 1132.68 samples/sec	mae=6.166368
+INFO:root:Epoch[42] Train-mae=6.098931
+INFO:root:Epoch[42] Time cost=27.071
+call reset
+INFO:root:Epoch[42] Validation-mae=6.764367
+call reset
+INFO:root:Epoch[43] Batch [50]	Speed: 1151.24 samples/sec	mae=6.076676
+INFO:root:Epoch[43] Batch [100]	Speed: 1122.47 samples/sec	mae=6.220972
+INFO:root:Epoch[43] Batch [150]	Speed: 1105.93 samples/sec	mae=6.258532
+INFO:root:Epoch[43] Batch [200]	Speed: 1135.73 samples/sec	mae=5.937369
+INFO:root:Epoch[43] Batch [250]	Speed: 1099.11 samples/sec	mae=6.172986
+INFO:root:Epoch[43] Batch [300]	Speed: 1096.26 samples/sec	mae=6.191903
+INFO:root:Epoch[43] Batch [350]	Speed: 1135.07 samples/sec	mae=6.146738
+INFO:root:Epoch[43] Batch [400]	Speed: 1101.86 samples/sec	mae=6.112460
+lr-batch-epoch: 0.0001 414 43
+INFO:root:Epoch[43] Batch [450]	Speed: 1115.16 samples/sec	mae=6.282405
+INFO:root:Epoch[43] Batch [500]	Speed: 1110.79 samples/sec	mae=6.235762
+INFO:root:Epoch[43] Batch [550]	Speed: 1097.92 samples/sec	mae=6.206089
+INFO:root:Epoch[43] Train-mae=6.385314
+INFO:root:Epoch[43] Time cost=26.704
+call reset
+INFO:root:Epoch[43] Validation-mae=6.763514
+call reset
+INFO:root:Epoch[44] Batch [50]	Speed: 1098.56 samples/sec	mae=6.265863
+INFO:root:Epoch[44] Batch [100]	Speed: 1089.83 samples/sec	mae=6.349660
+INFO:root:Epoch[44] Batch [150]	Speed: 1121.88 samples/sec	mae=6.014297
+INFO:root:Epoch[44] Batch [200]	Speed: 1112.58 samples/sec	mae=6.126044
+INFO:root:Epoch[44] Batch [250]	Speed: 1082.08 samples/sec	mae=6.121080
+INFO:root:Epoch[44] Batch [300]	Speed: 1081.58 samples/sec	mae=6.162594
+INFO:root:Epoch[44] Batch [350]	Speed: 1157.88 samples/sec	mae=6.243321
+INFO:root:Epoch[44] Batch [400]	Speed: 1072.32 samples/sec	mae=6.062158
+INFO:root:Epoch[44] Batch [450]	Speed: 1056.87 samples/sec	mae=6.150608
+INFO:root:Epoch[44] Batch [500]	Speed: 1077.67 samples/sec	mae=6.033212
+INFO:root:Epoch[44] Batch [550]	Speed: 1055.91 samples/sec	mae=5.944588
+INFO:root:Epoch[44] Train-mae=6.298239
+INFO:root:Epoch[44] Time cost=27.338
+call reset
+INFO:root:Epoch[44] Validation-mae=6.739949
+call reset
+INFO:root:Epoch[45] Batch [50]	Speed: 1082.75 samples/sec	mae=6.237598
+INFO:root:Epoch[45] Batch [100]	Speed: 1055.07 samples/sec	mae=6.103207
+INFO:root:Epoch[45] Batch [150]	Speed: 1100.53 samples/sec	mae=6.163557
+INFO:root:Epoch[45] Batch [200]	Speed: 1113.70 samples/sec	mae=6.182990
+lr-batch-epoch: 0.0001 224 45
+INFO:root:Epoch[45] Batch [250]	Speed: 1085.30 samples/sec	mae=6.143445
+INFO:root:Epoch[45] Batch [300]	Speed: 1083.06 samples/sec	mae=6.280349
+INFO:root:Epoch[45] Batch [350]	Speed: 1111.62 samples/sec	mae=5.954713
+INFO:root:Epoch[45] Batch [400]	Speed: 1086.62 samples/sec	mae=6.051787
+INFO:root:Epoch[45] Batch [450]	Speed: 1088.57 samples/sec	mae=6.265852
+INFO:root:Epoch[45] Batch [500]	Speed: 1109.73 samples/sec	mae=5.996542
+INFO:root:Epoch[45] Batch [550]	Speed: 1093.48 samples/sec	mae=6.175501
+INFO:root:Epoch[45] Train-mae=6.110999
+INFO:root:Epoch[45] Time cost=27.305
+call reset
+INFO:root:Epoch[45] Validation-mae=6.732724
+call reset
+INFO:root:Epoch[46] Batch [50]	Speed: 1074.68 samples/sec	mae=6.211266
+INFO:root:Epoch[46] Batch [100]	Speed: 1084.50 samples/sec	mae=6.132751
+INFO:root:Epoch[46] Batch [150]	Speed: 1096.82 samples/sec	mae=6.249262
+INFO:root:Epoch[46] Batch [200]	Speed: 1089.22 samples/sec	mae=6.259895
+INFO:root:Epoch[46] Batch [250]	Speed: 1109.94 samples/sec	mae=6.020971
+INFO:root:Epoch[46] Batch [300]	Speed: 1062.65 samples/sec	mae=6.258442
+INFO:root:Epoch[46] Batch [350]	Speed: 1072.89 samples/sec	mae=6.239885
+INFO:root:Epoch[46] Batch [400]	Speed: 1081.91 samples/sec	mae=6.040985
+INFO:root:Epoch[46] Batch [450]	Speed: 1042.24 samples/sec	mae=6.061913
+INFO:root:Epoch[46] Batch [500]	Speed: 1062.02 samples/sec	mae=6.108019
+INFO:root:Epoch[46] Batch [550]	Speed: 1092.28 samples/sec	mae=6.016440
+INFO:root:Epoch[46] Train-mae=6.193452
+INFO:root:Epoch[46] Time cost=27.581
+call reset
+INFO:root:Epoch[46] Validation-mae=6.773316
+call reset
+lr-batch-epoch: 0.0001 34 47
+saving 7
+INFO:root:Saved checkpoint to "../models/ssr2_wiki_1_1/model-ssr-imdb-0007.params"
+INFO:root:Epoch[47] Batch [50]	Speed: 1067.00 samples/sec	mae=6.028875
+INFO:root:Epoch[47] Batch [100]	Speed: 1053.34 samples/sec	mae=6.022463
+INFO:root:Epoch[47] Batch [150]	Speed: 1100.71 samples/sec	mae=6.310794
+INFO:root:Epoch[47] Batch [200]	Speed: 1077.35 samples/sec	mae=6.130319
+INFO:root:Epoch[47] Batch [250]	Speed: 1093.73 samples/sec	mae=6.089494
+INFO:root:Epoch[47] Batch [300]	Speed: 1101.42 samples/sec	mae=6.212491
+INFO:root:Epoch[47] Batch [350]	Speed: 1121.77 samples/sec	mae=6.248063
+INFO:root:Epoch[47] Batch [400]	Speed: 1067.85 samples/sec	mae=6.369248
+INFO:root:Epoch[47] Batch [450]	Speed: 1054.17 samples/sec	mae=6.203969
+INFO:root:Epoch[47] Batch [500]	Speed: 1109.45 samples/sec	mae=5.960051
+INFO:root:Epoch[47] Batch [550]	Speed: 1088.08 samples/sec	mae=6.085185
+INFO:root:Epoch[47] Train-mae=5.908405
+INFO:root:Epoch[47] Time cost=27.437
+call reset
+INFO:root:Epoch[47] Validation-mae=6.748030
+call reset
+INFO:root:Epoch[48] Batch [50]	Speed: 1079.11 samples/sec	mae=6.079820
+INFO:root:Epoch[48] Batch [100]	Speed: 1107.21 samples/sec	mae=6.016621
+INFO:root:Epoch[48] Batch [150]	Speed: 1087.40 samples/sec	mae=6.071568
+INFO:root:Epoch[48] Batch [200]	Speed: 1079.71 samples/sec	mae=6.129024
+INFO:root:Epoch[48] Batch [250]	Speed: 1107.98 samples/sec	mae=6.078308
+INFO:root:Epoch[48] Batch [300]	Speed: 1082.64 samples/sec	mae=6.042954
+INFO:root:Epoch[48] Batch [350]	Speed: 1123.80 samples/sec	mae=6.355367
+INFO:root:Epoch[48] Batch [400]	Speed: 1080.80 samples/sec	mae=6.223116
+lr-batch-epoch: 0.0001 439 48
+INFO:root:Epoch[48] Batch [450]	Speed: 1104.17 samples/sec	mae=6.273933
+INFO:root:Epoch[48] Batch [500]	Speed: 1078.95 samples/sec	mae=6.083310
+INFO:root:Epoch[48] Batch [550]	Speed: 1089.35 samples/sec	mae=6.111239
+INFO:root:Epoch[48] Train-mae=6.012948
+INFO:root:Epoch[48] Time cost=27.235
+call reset
+INFO:root:Epoch[48] Validation-mae=6.674439
+call reset
+INFO:root:Epoch[49] Batch [50]	Speed: 1089.97 samples/sec	mae=6.191931
+INFO:root:Epoch[49] Batch [100]	Speed: 1078.00 samples/sec	mae=6.127719
+INFO:root:Epoch[49] Batch [150]	Speed: 1095.82 samples/sec	mae=6.235882
+INFO:root:Epoch[49] Batch [200]	Speed: 1074.61 samples/sec	mae=6.163374
+INFO:root:Epoch[49] Batch [250]	Speed: 1114.76 samples/sec	mae=6.036352
+INFO:root:Epoch[49] Batch [300]	Speed: 1107.40 samples/sec	mae=6.057895
+INFO:root:Epoch[49] Batch [350]	Speed: 1089.29 samples/sec	mae=6.257778
+INFO:root:Epoch[49] Batch [400]	Speed: 1062.38 samples/sec	mae=6.015538
+INFO:root:Epoch[49] Batch [450]	Speed: 1109.88 samples/sec	mae=6.025579
+INFO:root:Epoch[49] Batch [500]	Speed: 1132.44 samples/sec	mae=6.254510
+INFO:root:Epoch[49] Batch [550]	Speed: 1145.27 samples/sec	mae=5.992522
+INFO:root:Epoch[49] Train-mae=5.919934
+INFO:root:Epoch[49] Time cost=27.084
+call reset
+INFO:root:Epoch[49] Validation-mae=6.812300
+call reset
+INFO:root:Epoch[50] Batch [50]	Speed: 1086.50 samples/sec	mae=6.084611
+INFO:root:Epoch[50] Batch [100]	Speed: 1124.54 samples/sec	mae=5.982108
+INFO:root:Epoch[50] Batch [150]	Speed: 1129.95 samples/sec	mae=6.113093
+INFO:root:Epoch[50] Batch [200]	Speed: 1099.79 samples/sec	mae=6.240650
+lr-batch-epoch: 0.0001 249 50
+INFO:root:Epoch[50] Batch [250]	Speed: 1106.67 samples/sec	mae=6.095390
+INFO:root:Epoch[50] Batch [300]	Speed: 1130.68 samples/sec	mae=6.061220
+INFO:root:Epoch[50] Batch [350]	Speed: 1111.90 samples/sec	mae=5.966702
+INFO:root:Epoch[50] Batch [400]	Speed: 1108.17 samples/sec	mae=6.205491
+INFO:root:Epoch[50] Batch [450]	Speed: 1083.97 samples/sec	mae=6.264338
+INFO:root:Epoch[50] Batch [500]	Speed: 1098.73 samples/sec	mae=6.240965
+INFO:root:Epoch[50] Batch [550]	Speed: 1109.50 samples/sec	mae=6.037356
+INFO:root:Epoch[50] Train-mae=6.162921
+INFO:root:Epoch[50] Time cost=26.844
+call reset
+INFO:root:Epoch[50] Validation-mae=6.711274
+call reset
+INFO:root:Epoch[51] Batch [50]	Speed: 1124.20 samples/sec	mae=6.237239
+INFO:root:Epoch[51] Batch [100]	Speed: 1107.05 samples/sec	mae=6.121296
+INFO:root:Epoch[51] Batch [150]	Speed: 1096.29 samples/sec	mae=6.148222
+INFO:root:Epoch[51] Batch [200]	Speed: 1097.92 samples/sec	mae=6.056126
+INFO:root:Epoch[51] Batch [250]	Speed: 1093.98 samples/sec	mae=6.150489
+INFO:root:Epoch[51] Batch [300]	Speed: 1106.47 samples/sec	mae=5.953248
+INFO:root:Epoch[51] Batch [350]	Speed: 1127.98 samples/sec	mae=6.053651
+INFO:root:Epoch[51] Batch [400]	Speed: 1117.25 samples/sec	mae=6.157178
+INFO:root:Epoch[51] Batch [450]	Speed: 1089.81 samples/sec	mae=6.132962
+INFO:root:Epoch[51] Batch [500]	Speed: 1091.64 samples/sec	mae=6.108273
+INFO:root:Epoch[51] Batch [550]	Speed: 1083.56 samples/sec	mae=6.070062
+INFO:root:Epoch[51] Train-mae=6.328755
+INFO:root:Epoch[51] Time cost=26.985
+call reset
+INFO:root:Epoch[51] Validation-mae=6.732611
+call reset
+INFO:root:Epoch[52] Batch [50]	Speed: 1118.97 samples/sec	mae=6.159272
+lr-batch-epoch: 0.0001 59 52
+INFO:root:Epoch[52] Batch [100]	Speed: 1068.00 samples/sec	mae=6.228791
+INFO:root:Epoch[52] Batch [150]	Speed: 1129.90 samples/sec	mae=6.260800
+INFO:root:Epoch[52] Batch [200]	Speed: 1115.51 samples/sec	mae=6.076172
+INFO:root:Epoch[52] Batch [250]	Speed: 1131.19 samples/sec	mae=6.136557
+INFO:root:Epoch[52] Batch [300]	Speed: 1058.15 samples/sec	mae=6.016861
+INFO:root:Epoch[52] Batch [350]	Speed: 1095.02 samples/sec	mae=5.922692
+INFO:root:Epoch[52] Batch [400]	Speed: 1068.11 samples/sec	mae=6.102394
+INFO:root:Epoch[52] Batch [450]	Speed: 1072.97 samples/sec	mae=6.028955
+INFO:root:Epoch[52] Batch [500]	Speed: 1087.49 samples/sec	mae=6.199228
+INFO:root:Epoch[52] Batch [550]	Speed: 1104.26 samples/sec	mae=6.136589
+INFO:root:Epoch[52] Train-mae=6.194805
+INFO:root:Epoch[52] Time cost=27.213
+call reset
+INFO:root:Epoch[52] Validation-mae=6.736328
+call reset
+INFO:root:Epoch[53] Batch [50]	Speed: 1088.75 samples/sec	mae=5.988212
+INFO:root:Epoch[53] Batch [100]	Speed: 1110.62 samples/sec	mae=6.048408
+INFO:root:Epoch[53] Batch [150]	Speed: 1107.00 samples/sec	mae=6.114810
+INFO:root:Epoch[53] Batch [200]	Speed: 1119.26 samples/sec	mae=5.953641
+INFO:root:Epoch[53] Batch [250]	Speed: 1103.11 samples/sec	mae=5.916708
+INFO:root:Epoch[53] Batch [300]	Speed: 1109.26 samples/sec	mae=6.214230
+INFO:root:Epoch[53] Batch [350]	Speed: 1128.56 samples/sec	mae=6.228548
+INFO:root:Epoch[53] Batch [400]	Speed: 1138.25 samples/sec	mae=5.955444
+INFO:root:Epoch[53] Batch [450]	Speed: 1128.88 samples/sec	mae=6.337415
+lr-batch-epoch: 0.0001 464 53
+saving 8
+INFO:root:Saved checkpoint to "../models/ssr2_wiki_1_1/model-ssr-imdb-0008.params"
+INFO:root:Epoch[53] Batch [500]	Speed: 1083.66 samples/sec	mae=5.984434
+INFO:root:Epoch[53] Batch [550]	Speed: 1102.67 samples/sec	mae=6.059367
+INFO:root:Epoch[53] Train-mae=6.215981
+INFO:root:Epoch[53] Time cost=26.789
+call reset
+INFO:root:Epoch[53] Validation-mae=6.723345
+call reset
+INFO:root:Epoch[54] Batch [50]	Speed: 1094.83 samples/sec	mae=6.057971
+INFO:root:Epoch[54] Batch [100]	Speed: 1112.29 samples/sec	mae=6.395404
+INFO:root:Epoch[54] Batch [150]	Speed: 1097.63 samples/sec	mae=6.143285
+INFO:root:Epoch[54] Batch [200]	Speed: 1107.60 samples/sec	mae=6.079696
+INFO:root:Epoch[54] Batch [250]	Speed: 1091.91 samples/sec	mae=6.213429
+INFO:root:Epoch[54] Batch [300]	Speed: 1121.06 samples/sec	mae=5.940181
+INFO:root:Epoch[54] Batch [350]	Speed: 1081.36 samples/sec	mae=6.307421
+INFO:root:Epoch[54] Batch [400]	Speed: 1112.12 samples/sec	mae=6.161597
+INFO:root:Epoch[54] Batch [450]	Speed: 1148.34 samples/sec	mae=6.188311
+INFO:root:Epoch[54] Batch [500]	Speed: 1105.65 samples/sec	mae=6.036286
+INFO:root:Epoch[54] Batch [550]	Speed: 1110.03 samples/sec	mae=6.141644
+INFO:root:Epoch[54] Train-mae=5.831083
+INFO:root:Epoch[54] Time cost=26.862
+call reset
+INFO:root:Epoch[54] Validation-mae=6.712960
+call reset
+INFO:root:Epoch[55] Batch [50]	Speed: 1117.40 samples/sec	mae=6.360917
+INFO:root:Epoch[55] Batch [100]	Speed: 1116.76 samples/sec	mae=6.249042
+INFO:root:Epoch[55] Batch [150]	Speed: 1116.57 samples/sec	mae=6.090920
+INFO:root:Epoch[55] Batch [200]	Speed: 1103.86 samples/sec	mae=6.167457
+INFO:root:Epoch[55] Batch [250]	Speed: 1136.12 samples/sec	mae=6.210957
+lr-batch-epoch: 0.0001 274 55
+INFO:root:Epoch[55] Batch [300]	Speed: 1120.94 samples/sec	mae=6.054330
+INFO:root:Epoch[55] Batch [350]	Speed: 1147.76 samples/sec	mae=6.096919
+INFO:root:Epoch[55] Batch [400]	Speed: 1093.85 samples/sec	mae=5.940750
+INFO:root:Epoch[55] Batch [450]	Speed: 1126.84 samples/sec	mae=6.106580
+INFO:root:Epoch[55] Batch [500]	Speed: 1138.13 samples/sec	mae=5.890463
+INFO:root:Epoch[55] Batch [550]	Speed: 1142.68 samples/sec	mae=6.104542
+INFO:root:Epoch[55] Train-mae=6.176656
+INFO:root:Epoch[55] Time cost=26.524
+call reset
+INFO:root:Epoch[55] Validation-mae=6.834871
+call reset
+INFO:root:Epoch[56] Batch [50]	Speed: 1106.37 samples/sec	mae=6.120961
+INFO:root:Epoch[56] Batch [100]	Speed: 1092.60 samples/sec	mae=5.965241
+INFO:root:Epoch[56] Batch [150]	Speed: 1101.62 samples/sec	mae=6.033220
+INFO:root:Epoch[56] Batch [200]	Speed: 1112.37 samples/sec	mae=6.029014
+INFO:root:Epoch[56] Batch [250]	Speed: 1112.55 samples/sec	mae=5.951196
+INFO:root:Epoch[56] Batch [300]	Speed: 1085.93 samples/sec	mae=6.193075
+INFO:root:Epoch[56] Batch [350]	Speed: 1110.25 samples/sec	mae=6.236570
+INFO:root:Epoch[56] Batch [400]	Speed: 1095.41 samples/sec	mae=5.954206
+INFO:root:Epoch[56] Batch [450]	Speed: 1121.51 samples/sec	mae=6.275835
+INFO:root:Epoch[56] Batch [500]	Speed: 1088.29 samples/sec	mae=6.069269
+INFO:root:Epoch[56] Batch [550]	Speed: 1093.51 samples/sec	mae=6.245721
+INFO:root:Epoch[56] Train-mae=6.244061
+INFO:root:Epoch[56] Time cost=26.982
+call reset
+INFO:root:Epoch[56] Validation-mae=6.732623
+call reset
+INFO:root:Epoch[57] Batch [50]	Speed: 1093.80 samples/sec	mae=5.944271
+lr-batch-epoch: 0.0001 84 57
+INFO:root:Epoch[57] Batch [100]	Speed: 1091.98 samples/sec	mae=6.086195
+INFO:root:Epoch[57] Batch [150]	Speed: 1124.51 samples/sec	mae=6.244458
+INFO:root:Epoch[57] Batch [200]	Speed: 1080.47 samples/sec	mae=6.002309
+INFO:root:Epoch[57] Batch [250]	Speed: 1075.29 samples/sec	mae=5.919510
+INFO:root:Epoch[57] Batch [300]	Speed: 1100.55 samples/sec	mae=6.101404
+INFO:root:Epoch[57] Batch [350]	Speed: 1096.00 samples/sec	mae=6.043007
+INFO:root:Epoch[57] Batch [400]	Speed: 1105.83 samples/sec	mae=6.238511
+INFO:root:Epoch[57] Batch [450]	Speed: 1117.85 samples/sec	mae=5.900266
+INFO:root:Epoch[57] Batch [500]	Speed: 1118.28 samples/sec	mae=6.161979
+INFO:root:Epoch[57] Batch [550]	Speed: 1095.40 samples/sec	mae=6.327945
+INFO:root:Epoch[57] Train-mae=6.186647
+INFO:root:Epoch[57] Time cost=27.070
+call reset
+INFO:root:Epoch[57] Validation-mae=6.724320
+call reset
+INFO:root:Epoch[58] Batch [50]	Speed: 1113.33 samples/sec	mae=5.991862
+INFO:root:Epoch[58] Batch [100]	Speed: 1107.27 samples/sec	mae=6.121635
+INFO:root:Epoch[58] Batch [150]	Speed: 1120.98 samples/sec	mae=6.038398
+INFO:root:Epoch[58] Batch [200]	Speed: 1134.93 samples/sec	mae=6.042141
+INFO:root:Epoch[58] Batch [250]	Speed: 1105.82 samples/sec	mae=6.067299
+INFO:root:Epoch[58] Batch [300]	Speed: 1097.76 samples/sec	mae=6.111442
+INFO:root:Epoch[58] Batch [350]	Speed: 1103.19 samples/sec	mae=6.099194
+INFO:root:Epoch[58] Batch [400]	Speed: 1098.70 samples/sec	mae=5.916393
+INFO:root:Epoch[58] Batch [450]	Speed: 1118.34 samples/sec	mae=6.292583
+lr-batch-epoch: 0.0001 489 58
+INFO:root:Epoch[58] Batch [500]	Speed: 1073.88 samples/sec	mae=6.095381
+INFO:root:Epoch[58] Batch [550]	Speed: 1066.80 samples/sec	mae=6.085464
+INFO:root:Epoch[58] Train-mae=6.140813
+INFO:root:Epoch[58] Time cost=26.952
+call reset
+INFO:root:Epoch[58] Validation-mae=6.691114
+call reset
+INFO:root:Epoch[59] Batch [50]	Speed: 1115.09 samples/sec	mae=5.996025
+INFO:root:Epoch[59] Batch [100]	Speed: 1125.83 samples/sec	mae=6.082870
+INFO:root:Epoch[59] Batch [150]	Speed: 1107.94 samples/sec	mae=6.188197
+INFO:root:Epoch[59] Batch [200]	Speed: 1101.54 samples/sec	mae=5.990825
+INFO:root:Epoch[59] Batch [250]	Speed: 1129.22 samples/sec	mae=5.904364
+INFO:root:Epoch[59] Batch [300]	Speed: 1118.82 samples/sec	mae=6.056633
+INFO:root:Epoch[59] Batch [350]	Speed: 1116.03 samples/sec	mae=6.180863
+INFO:root:Epoch[59] Batch [400]	Speed: 1108.40 samples/sec	mae=6.125067
+INFO:root:Epoch[59] Batch [450]	Speed: 1112.96 samples/sec	mae=5.991985
+INFO:root:Epoch[59] Batch [500]	Speed: 1096.43 samples/sec	mae=6.133244
+INFO:root:Epoch[59] Batch [550]	Speed: 1125.01 samples/sec	mae=6.032941
+INFO:root:Epoch[59] Train-mae=5.912660
+INFO:root:Epoch[59] Time cost=26.760
+call reset
+INFO:root:Epoch[59] Validation-mae=6.745986
+call reset
+INFO:root:Epoch[60] Batch [50]	Speed: 1085.63 samples/sec	mae=6.378809
+INFO:root:Epoch[60] Batch [100]	Speed: 1122.72 samples/sec	mae=5.971565
+INFO:root:Epoch[60] Batch [150]	Speed: 1153.94 samples/sec	mae=5.972787
+INFO:root:Epoch[60] Batch [200]	Speed: 1121.79 samples/sec	mae=6.225212
+INFO:root:Epoch[60] Batch [250]	Speed: 1120.83 samples/sec	mae=6.025932
+lr-batch-epoch: 0.0001 299 60
+saving 9
+INFO:root:Saved checkpoint to "../models/ssr2_wiki_1_1/model-ssr-imdb-0009.params"
+INFO:root:Epoch[60] Batch [300]	Speed: 1083.67 samples/sec	mae=5.928151
+INFO:root:Epoch[60] Batch [350]	Speed: 1106.27 samples/sec	mae=5.963808
+INFO:root:Epoch[60] Batch [400]	Speed: 1082.93 samples/sec	mae=6.249577
+INFO:root:Epoch[60] Batch [450]	Speed: 1114.29 samples/sec	mae=6.046473
+INFO:root:Epoch[60] Batch [500]	Speed: 1122.50 samples/sec	mae=5.984998
+INFO:root:Epoch[60] Batch [550]	Speed: 1109.56 samples/sec	mae=6.072154
+INFO:root:Epoch[60] Train-mae=5.950229
+INFO:root:Epoch[60] Time cost=26.794
+call reset
+INFO:root:Epoch[60] Validation-mae=6.683925
+call reset
+INFO:root:Epoch[61] Batch [50]	Speed: 1083.77 samples/sec	mae=6.051112
+INFO:root:Epoch[61] Batch [100]	Speed: 1123.92 samples/sec	mae=6.079567
+INFO:root:Epoch[61] Batch [150]	Speed: 1118.03 samples/sec	mae=6.180934
+INFO:root:Epoch[61] Batch [200]	Speed: 1154.36 samples/sec	mae=6.215324
+INFO:root:Epoch[61] Batch [250]	Speed: 1109.87 samples/sec	mae=5.913463
+INFO:root:Epoch[61] Batch [300]	Speed: 1095.54 samples/sec	mae=6.047553
+INFO:root:Epoch[61] Batch [350]	Speed: 1122.41 samples/sec	mae=6.002885
+INFO:root:Epoch[61] Batch [400]	Speed: 1104.87 samples/sec	mae=6.197158
+INFO:root:Epoch[61] Batch [450]	Speed: 1106.51 samples/sec	mae=5.923794
+INFO:root:Epoch[61] Batch [500]	Speed: 1105.77 samples/sec	mae=5.941136
+INFO:root:Epoch[61] Batch [550]	Speed: 1134.15 samples/sec	mae=6.135179
+INFO:root:Epoch[61] Train-mae=6.053650
+INFO:root:Epoch[61] Time cost=26.709
+call reset
+INFO:root:Epoch[61] Validation-mae=6.696319
+call reset
+INFO:root:Epoch[62] Batch [50]	Speed: 1097.01 samples/sec	mae=6.037139
+INFO:root:Epoch[62] Batch [100]	Speed: 1109.00 samples/sec	mae=6.239753
+lr-batch-epoch: 0.0001 109 62
+INFO:root:Epoch[62] Batch [150]	Speed: 1108.86 samples/sec	mae=6.139534
+INFO:root:Epoch[62] Batch [200]	Speed: 1109.06 samples/sec	mae=6.182007
+INFO:root:Epoch[62] Batch [250]	Speed: 1081.79 samples/sec	mae=6.273861
+INFO:root:Epoch[62] Batch [300]	Speed: 1127.83 samples/sec	mae=6.054162
+INFO:root:Epoch[62] Batch [350]	Speed: 1119.39 samples/sec	mae=6.012073
+INFO:root:Epoch[62] Batch [400]	Speed: 1104.09 samples/sec	mae=6.019487
+INFO:root:Epoch[62] Batch [450]	Speed: 1094.43 samples/sec	mae=6.090413
+INFO:root:Epoch[62] Batch [500]	Speed: 1090.76 samples/sec	mae=5.904226
+INFO:root:Epoch[62] Batch [550]	Speed: 1141.72 samples/sec	mae=6.127266
+INFO:root:Epoch[62] Train-mae=5.951345
+INFO:root:Epoch[62] Time cost=26.855
+call reset
+INFO:root:Epoch[62] Validation-mae=6.722039
+call reset
+INFO:root:Epoch[63] Batch [50]	Speed: 1098.76 samples/sec	mae=6.053698
+INFO:root:Epoch[63] Batch [100]	Speed: 1109.84 samples/sec	mae=6.171975
+INFO:root:Epoch[63] Batch [150]	Speed: 1117.48 samples/sec	mae=6.003683
+INFO:root:Epoch[63] Batch [200]	Speed: 1153.84 samples/sec	mae=5.983196
+INFO:root:Epoch[63] Batch [250]	Speed: 1113.58 samples/sec	mae=6.045131
+INFO:root:Epoch[63] Batch [300]	Speed: 1114.85 samples/sec	mae=6.014943
+INFO:root:Epoch[63] Batch [350]	Speed: 1095.88 samples/sec	mae=6.015335
+INFO:root:Epoch[63] Batch [400]	Speed: 1095.07 samples/sec	mae=6.185169
+INFO:root:Epoch[63] Batch [450]	Speed: 1105.16 samples/sec	mae=6.154607
+INFO:root:Epoch[63] Batch [500]	Speed: 1111.13 samples/sec	mae=6.123893
+lr-batch-epoch: 0.0001 514 63
+INFO:root:Epoch[63] Batch [550]	Speed: 1124.37 samples/sec	mae=6.135545
+INFO:root:Epoch[63] Train-mae=5.968278
+INFO:root:Epoch[63] Time cost=26.746
+call reset
+INFO:root:Epoch[63] Validation-mae=6.771561
+call reset
+INFO:root:Epoch[64] Batch [50]	Speed: 1108.22 samples/sec	mae=6.200534
+INFO:root:Epoch[64] Batch [100]	Speed: 1094.41 samples/sec	mae=5.773076
+INFO:root:Epoch[64] Batch [150]	Speed: 1139.20 samples/sec	mae=6.063512
+INFO:root:Epoch[64] Batch [200]	Speed: 1109.90 samples/sec	mae=5.913041
+INFO:root:Epoch[64] Batch [250]	Speed: 1097.23 samples/sec	mae=6.056240
+INFO:root:Epoch[64] Batch [300]	Speed: 1107.02 samples/sec	mae=6.099684
+INFO:root:Epoch[64] Batch [350]	Speed: 1076.91 samples/sec	mae=6.211483
+INFO:root:Epoch[64] Batch [400]	Speed: 1152.75 samples/sec	mae=6.071624
+INFO:root:Epoch[64] Batch [450]	Speed: 1112.33 samples/sec	mae=6.252178
+INFO:root:Epoch[64] Batch [500]	Speed: 1100.10 samples/sec	mae=6.143143
+INFO:root:Epoch[64] Batch [550]	Speed: 1113.49 samples/sec	mae=5.931723
+INFO:root:Epoch[64] Train-mae=6.174777
+INFO:root:Epoch[64] Time cost=26.814
+call reset
+INFO:root:Epoch[64] Validation-mae=6.826645
+call reset
+INFO:root:Epoch[65] Batch [50]	Speed: 1107.05 samples/sec	mae=6.249439
+INFO:root:Epoch[65] Batch [100]	Speed: 1130.11 samples/sec	mae=5.994398
+INFO:root:Epoch[65] Batch [150]	Speed: 1135.67 samples/sec	mae=6.080344
+INFO:root:Epoch[65] Batch [200]	Speed: 1103.60 samples/sec	mae=6.212578
+INFO:root:Epoch[65] Batch [250]	Speed: 1129.54 samples/sec	mae=5.999844
+INFO:root:Epoch[65] Batch [300]	Speed: 1137.97 samples/sec	mae=6.132575
+lr-batch-epoch: 0.0001 324 65
+INFO:root:Epoch[65] Batch [350]	Speed: 1109.28 samples/sec	mae=6.139735
+INFO:root:Epoch[65] Batch [400]	Speed: 1119.67 samples/sec	mae=5.887721
+INFO:root:Epoch[65] Batch [450]	Speed: 1115.36 samples/sec	mae=5.918555
+INFO:root:Epoch[65] Batch [500]	Speed: 1080.28 samples/sec	mae=5.986819
+INFO:root:Epoch[65] Batch [550]	Speed: 1070.72 samples/sec	mae=6.142835
+INFO:root:Epoch[65] Train-mae=6.012789
+INFO:root:Epoch[65] Time cost=26.822
+call reset
+INFO:root:Epoch[65] Validation-mae=6.758336
+call reset
+INFO:root:Epoch[66] Batch [50]	Speed: 1131.64 samples/sec	mae=5.778897
+INFO:root:Epoch[66] Batch [100]	Speed: 1100.71 samples/sec	mae=6.161108
+INFO:root:Epoch[66] Batch [150]	Speed: 1109.32 samples/sec	mae=6.065066
+INFO:root:Epoch[66] Batch [200]	Speed: 1102.37 samples/sec	mae=6.038954
+INFO:root:Epoch[66] Batch [250]	Speed: 1151.89 samples/sec	mae=6.077738
+INFO:root:Epoch[66] Batch [300]	Speed: 1121.45 samples/sec	mae=6.195122
+INFO:root:Epoch[66] Batch [350]	Speed: 1075.06 samples/sec	mae=6.261701
+INFO:root:Epoch[66] Batch [400]	Speed: 1101.54 samples/sec	mae=6.082121
+INFO:root:Epoch[66] Batch [450]	Speed: 1088.27 samples/sec	mae=6.176305
+INFO:root:Epoch[66] Batch [500]	Speed: 1100.25 samples/sec	mae=6.164596
+INFO:root:Epoch[66] Batch [550]	Speed: 1101.34 samples/sec	mae=6.033821
+INFO:root:Epoch[66] Train-mae=6.034490
+INFO:root:Epoch[66] Time cost=26.882
+call reset
+INFO:root:Epoch[66] Validation-mae=6.796336
+call reset
+INFO:root:Epoch[67] Batch [50]	Speed: 1135.49 samples/sec	mae=5.911110
+INFO:root:Epoch[67] Batch [100]	Speed: 1125.97 samples/sec	mae=6.147547
+lr change to 1e-05
+lr-batch-epoch: 1e-05 134 67
+saving 10
+INFO:root:Saved checkpoint to "../models/ssr2_wiki_1_1/model-ssr-imdb-0010.params"
+INFO:root:Epoch[67] Batch [150]	Speed: 1102.08 samples/sec	mae=5.923294
+INFO:root:Epoch[67] Batch [200]	Speed: 1088.03 samples/sec	mae=6.203232
+INFO:root:Epoch[67] Batch [250]	Speed: 1106.50 samples/sec	mae=5.963842
+INFO:root:Epoch[67] Batch [300]	Speed: 1109.41 samples/sec	mae=6.022360
+INFO:root:Epoch[67] Batch [350]	Speed: 1139.45 samples/sec	mae=6.097911
+INFO:root:Epoch[67] Batch [400]	Speed: 1120.34 samples/sec	mae=6.032570
+INFO:root:Epoch[67] Batch [450]	Speed: 1104.66 samples/sec	mae=6.007255
+INFO:root:Epoch[67] Batch [500]	Speed: 1110.68 samples/sec	mae=6.028696
+INFO:root:Epoch[67] Batch [550]	Speed: 1090.62 samples/sec	mae=6.013398
+INFO:root:Epoch[67] Train-mae=6.175924
+INFO:root:Epoch[67] Time cost=26.793
+call reset
+INFO:root:Epoch[67] Validation-mae=6.664143
+call reset
+INFO:root:Epoch[68] Batch [50]	Speed: 1132.50 samples/sec	mae=5.926884
+INFO:root:Epoch[68] Batch [100]	Speed: 1120.19 samples/sec	mae=6.185933
+INFO:root:Epoch[68] Batch [150]	Speed: 1112.32 samples/sec	mae=5.975386
+INFO:root:Epoch[68] Batch [200]	Speed: 1124.06 samples/sec	mae=5.960614
+INFO:root:Epoch[68] Batch [250]	Speed: 1090.86 samples/sec	mae=6.109801
+INFO:root:Epoch[68] Batch [300]	Speed: 1110.24 samples/sec	mae=6.102347
+INFO:root:Epoch[68] Batch [350]	Speed: 1107.36 samples/sec	mae=6.051926
+INFO:root:Epoch[68] Batch [400]	Speed: 1127.60 samples/sec	mae=6.101696
+INFO:root:Epoch[68] Batch [450]	Speed: 1114.49 samples/sec	mae=6.012476
+INFO:root:Epoch[68] Batch [500]	Speed: 1086.39 samples/sec	mae=6.100927
+lr-batch-epoch: 1e-05 539 68
+INFO:root:Epoch[68] Batch [550]	Speed: 1124.71 samples/sec	mae=5.975747
+INFO:root:Epoch[68] Train-mae=5.926305
+INFO:root:Epoch[68] Time cost=26.733
+call reset
+INFO:root:Epoch[68] Validation-mae=6.686471
+call reset
+INFO:root:Epoch[69] Batch [50]	Speed: 1093.58 samples/sec	mae=5.844944
+INFO:root:Epoch[69] Batch [100]	Speed: 1114.66 samples/sec	mae=6.031938
+INFO:root:Epoch[69] Batch [150]	Speed: 1126.26 samples/sec	mae=6.137250
+INFO:root:Epoch[69] Batch [200]	Speed: 1116.99 samples/sec	mae=6.140489
+INFO:root:Epoch[69] Batch [250]	Speed: 1129.82 samples/sec	mae=6.314990
+INFO:root:Epoch[69] Batch [300]	Speed: 1129.67 samples/sec	mae=6.171715
+INFO:root:Epoch[69] Batch [350]	Speed: 1113.77 samples/sec	mae=5.918851
+INFO:root:Epoch[69] Batch [400]	Speed: 1087.49 samples/sec	mae=6.024949
+INFO:root:Epoch[69] Batch [450]	Speed: 1090.87 samples/sec	mae=6.038997
+INFO:root:Epoch[69] Batch [500]	Speed: 1122.65 samples/sec	mae=5.936926
+INFO:root:Epoch[69] Batch [550]	Speed: 1099.04 samples/sec	mae=6.068703
+INFO:root:Epoch[69] Train-mae=5.984754
+INFO:root:Epoch[69] Time cost=26.804
+call reset
+INFO:root:Epoch[69] Validation-mae=6.709551
+call reset
+INFO:root:Epoch[70] Batch [50]	Speed: 1123.58 samples/sec	mae=5.934241
+INFO:root:Epoch[70] Batch [100]	Speed: 1114.25 samples/sec	mae=5.852326
+INFO:root:Epoch[70] Batch [150]	Speed: 1083.51 samples/sec	mae=6.227837
+INFO:root:Epoch[70] Batch [200]	Speed: 1141.26 samples/sec	mae=6.023099
+INFO:root:Epoch[70] Batch [250]	Speed: 1074.47 samples/sec	mae=5.964669
+INFO:root:Epoch[70] Batch [300]	Speed: 1098.01 samples/sec	mae=6.080144
+lr-batch-epoch: 1e-05 349 70
+INFO:root:Epoch[70] Batch [350]	Speed: 1104.90 samples/sec	mae=5.968624
+INFO:root:Epoch[70] Batch [400]	Speed: 1127.58 samples/sec	mae=6.122010
+INFO:root:Epoch[70] Batch [450]	Speed: 1115.21 samples/sec	mae=6.238973
+INFO:root:Epoch[70] Batch [500]	Speed: 1086.07 samples/sec	mae=6.039255
+INFO:root:Epoch[70] Batch [550]	Speed: 1129.88 samples/sec	mae=5.955650
+INFO:root:Epoch[70] Train-mae=6.129005
+INFO:root:Epoch[70] Time cost=26.823
+call reset
+INFO:root:Epoch[70] Validation-mae=6.690040
+call reset
+INFO:root:Epoch[71] Batch [50]	Speed: 1097.00 samples/sec	mae=6.074488
+INFO:root:Epoch[71] Batch [100]	Speed: 1141.14 samples/sec	mae=6.061628
+INFO:root:Epoch[71] Batch [150]	Speed: 1106.67 samples/sec	mae=5.921987
+INFO:root:Epoch[71] Batch [200]	Speed: 1132.99 samples/sec	mae=6.284353
+INFO:root:Epoch[71] Batch [250]	Speed: 1145.12 samples/sec	mae=5.964222
+INFO:root:Epoch[71] Batch [300]	Speed: 1101.65 samples/sec	mae=5.842140
+INFO:root:Epoch[71] Batch [350]	Speed: 1123.60 samples/sec	mae=5.870550
+INFO:root:Epoch[71] Batch [400]	Speed: 1098.62 samples/sec	mae=6.247669
+INFO:root:Epoch[71] Batch [450]	Speed: 1099.37 samples/sec	mae=6.081849
+INFO:root:Epoch[71] Batch [500]	Speed: 1126.81 samples/sec	mae=5.901742
+INFO:root:Epoch[71] Batch [550]	Speed: 1112.29 samples/sec	mae=6.014382
+INFO:root:Epoch[71] Train-mae=6.087005
+INFO:root:Epoch[71] Time cost=26.669
+call reset
+INFO:root:Epoch[71] Validation-mae=6.694853
+call reset
+INFO:root:Epoch[72] Batch [50]	Speed: 1116.33 samples/sec	mae=5.861143
+INFO:root:Epoch[72] Batch [100]	Speed: 1136.90 samples/sec	mae=5.934927
+INFO:root:Epoch[72] Batch [150]	Speed: 1133.97 samples/sec	mae=6.110010
+lr-batch-epoch: 1e-05 159 72
+INFO:root:Epoch[72] Batch [200]	Speed: 1101.00 samples/sec	mae=5.976091
+INFO:root:Epoch[72] Batch [250]	Speed: 1096.17 samples/sec	mae=6.140133
+INFO:root:Epoch[72] Batch [300]	Speed: 1103.58 samples/sec	mae=5.937170
+INFO:root:Epoch[72] Batch [350]	Speed: 1117.90 samples/sec	mae=6.077708
+INFO:root:Epoch[72] Batch [400]	Speed: 1134.09 samples/sec	mae=5.821312
+INFO:root:Epoch[72] Batch [450]	Speed: 1131.27 samples/sec	mae=6.006006
+INFO:root:Epoch[72] Batch [500]	Speed: 1105.70 samples/sec	mae=5.972979
+INFO:root:Epoch[72] Batch [550]	Speed: 1098.36 samples/sec	mae=6.111041
+INFO:root:Epoch[72] Train-mae=6.228687
+INFO:root:Epoch[72] Time cost=26.675
+call reset
+INFO:root:Epoch[72] Validation-mae=6.717087
+call reset
+INFO:root:Epoch[73] Batch [50]	Speed: 1105.67 samples/sec	mae=5.981047
+INFO:root:Epoch[73] Batch [100]	Speed: 1101.00 samples/sec	mae=5.992931
+INFO:root:Epoch[73] Batch [150]	Speed: 1098.96 samples/sec	mae=6.028856
+INFO:root:Epoch[73] Batch [200]	Speed: 1113.86 samples/sec	mae=5.910869
+INFO:root:Epoch[73] Batch [250]	Speed: 1115.00 samples/sec	mae=6.075803
+INFO:root:Epoch[73] Batch [300]	Speed: 1110.11 samples/sec	mae=6.184411
+INFO:root:Epoch[73] Batch [350]	Speed: 1101.63 samples/sec	mae=5.977885
+INFO:root:Epoch[73] Batch [400]	Speed: 1093.29 samples/sec	mae=6.049222
+INFO:root:Epoch[73] Batch [450]	Speed: 1102.14 samples/sec	mae=5.869052
+INFO:root:Epoch[73] Batch [500]	Speed: 1130.64 samples/sec	mae=6.028022
+INFO:root:Epoch[73] Batch [550]	Speed: 1109.83 samples/sec	mae=5.816168
+lr-batch-epoch: 1e-05 564 73
+saving 11
+INFO:root:Saved checkpoint to "../models/ssr2_wiki_1_1/model-ssr-imdb-0011.params"
+INFO:root:Epoch[73] Train-mae=6.048643
+INFO:root:Epoch[73] Time cost=26.914
+call reset
+INFO:root:Epoch[73] Validation-mae=6.672152
+call reset
+INFO:root:Epoch[74] Batch [50]	Speed: 1095.84 samples/sec	mae=6.007679
+INFO:root:Epoch[74] Batch [100]	Speed: 1080.15 samples/sec	mae=6.011025
+INFO:root:Epoch[74] Batch [150]	Speed: 1132.78 samples/sec	mae=5.982076
+INFO:root:Epoch[74] Batch [200]	Speed: 1103.73 samples/sec	mae=6.044503
+INFO:root:Epoch[74] Batch [250]	Speed: 1089.76 samples/sec	mae=6.075294
+INFO:root:Epoch[74] Batch [300]	Speed: 1069.80 samples/sec	mae=6.011852
+INFO:root:Epoch[74] Batch [350]	Speed: 1114.55 samples/sec	mae=6.213328
+INFO:root:Epoch[74] Batch [400]	Speed: 1124.22 samples/sec	mae=5.982794
+INFO:root:Epoch[74] Batch [450]	Speed: 1116.73 samples/sec	mae=6.218356
+INFO:root:Epoch[74] Batch [500]	Speed: 1115.56 samples/sec	mae=5.924235
+INFO:root:Epoch[74] Batch [550]	Speed: 1114.83 samples/sec	mae=6.062508
+INFO:root:Epoch[74] Train-mae=5.956667
+INFO:root:Epoch[74] Time cost=26.935
+call reset
+INFO:root:Epoch[74] Validation-mae=6.733241
+call reset
+INFO:root:Epoch[75] Batch [50]	Speed: 1093.43 samples/sec	mae=6.066889
+INFO:root:Epoch[75] Batch [100]	Speed: 1085.16 samples/sec	mae=6.028813
+INFO:root:Epoch[75] Batch [150]	Speed: 1111.99 samples/sec	mae=6.102763
+INFO:root:Epoch[75] Batch [200]	Speed: 1086.95 samples/sec	mae=5.965819
+INFO:root:Epoch[75] Batch [250]	Speed: 1125.26 samples/sec	mae=5.946805
+INFO:root:Epoch[75] Batch [300]	Speed: 1099.04 samples/sec	mae=6.117678
+INFO:root:Epoch[75] Batch [350]	Speed: 1119.39 samples/sec	mae=6.069318
+lr-batch-epoch: 1e-05 374 75
+INFO:root:Epoch[75] Batch [400]	Speed: 1146.48 samples/sec	mae=5.988759
+INFO:root:Epoch[75] Batch [450]	Speed: 1148.74 samples/sec	mae=6.071799
+INFO:root:Epoch[75] Batch [500]	Speed: 1127.24 samples/sec	mae=5.806881
+INFO:root:Epoch[75] Batch [550]	Speed: 1107.37 samples/sec	mae=5.800377
+INFO:root:Epoch[75] Train-mae=6.135680
+INFO:root:Epoch[75] Time cost=26.763
+call reset
+INFO:root:Epoch[75] Validation-mae=6.746404
+call reset
+INFO:root:Epoch[76] Batch [50]	Speed: 1104.33 samples/sec	mae=5.772612
+INFO:root:Epoch[76] Batch [100]	Speed: 1079.50 samples/sec	mae=6.066065
+INFO:root:Epoch[76] Batch [150]	Speed: 1107.77 samples/sec	mae=5.998916
+INFO:root:Epoch[76] Batch [200]	Speed: 1091.07 samples/sec	mae=6.069432
+INFO:root:Epoch[76] Batch [250]	Speed: 1091.03 samples/sec	mae=5.884479
+INFO:root:Epoch[76] Batch [300]	Speed: 1073.29 samples/sec	mae=6.146143
+INFO:root:Epoch[76] Batch [350]	Speed: 1081.99 samples/sec	mae=6.162896
+INFO:root:Epoch[76] Batch [400]	Speed: 1112.12 samples/sec	mae=6.061201
+INFO:root:Epoch[76] Batch [450]	Speed: 1111.58 samples/sec	mae=6.051617
+INFO:root:Epoch[76] Batch [500]	Speed: 1104.54 samples/sec	mae=5.828078
+INFO:root:Epoch[76] Batch [550]	Speed: 1112.98 samples/sec	mae=5.977530
+INFO:root:Epoch[76] Train-mae=6.150765
+INFO:root:Epoch[76] Time cost=27.196
+call reset
+INFO:root:Epoch[76] Validation-mae=6.702308
+call reset
+INFO:root:Epoch[77] Batch [50]	Speed: 1112.24 samples/sec	mae=6.025305
+INFO:root:Epoch[77] Batch [100]	Speed: 1090.70 samples/sec	mae=6.008939
+INFO:root:Epoch[77] Batch [150]	Speed: 1084.39 samples/sec	mae=6.039880
+lr-batch-epoch: 1e-05 184 77
+INFO:root:Epoch[77] Batch [200]	Speed: 1099.95 samples/sec	mae=6.023423
+INFO:root:Epoch[77] Batch [250]	Speed: 1087.95 samples/sec	mae=6.045553
+INFO:root:Epoch[77] Batch [300]	Speed: 1134.94 samples/sec	mae=5.848980
+INFO:root:Epoch[77] Batch [350]	Speed: 1125.09 samples/sec	mae=5.978776
+INFO:root:Epoch[77] Batch [400]	Speed: 1102.86 samples/sec	mae=6.070657
+INFO:root:Epoch[77] Batch [450]	Speed: 1113.18 samples/sec	mae=6.177496
+INFO:root:Epoch[77] Batch [500]	Speed: 1113.72 samples/sec	mae=6.293850
+INFO:root:Epoch[77] Batch [550]	Speed: 1113.70 samples/sec	mae=6.069538
+INFO:root:Epoch[77] Train-mae=5.934195
+INFO:root:Epoch[77] Time cost=26.926
+call reset
+INFO:root:Epoch[77] Validation-mae=6.708637
+call reset
+INFO:root:Epoch[78] Batch [50]	Speed: 1112.82 samples/sec	mae=5.935407
+INFO:root:Epoch[78] Batch [100]	Speed: 1108.87 samples/sec	mae=6.008404
+INFO:root:Epoch[78] Batch [150]	Speed: 1103.00 samples/sec	mae=6.099232
+INFO:root:Epoch[78] Batch [200]	Speed: 1088.02 samples/sec	mae=5.917851
+INFO:root:Epoch[78] Batch [250]	Speed: 1109.76 samples/sec	mae=6.239251
+INFO:root:Epoch[78] Batch [300]	Speed: 1093.18 samples/sec	mae=6.097036
+INFO:root:Epoch[78] Batch [350]	Speed: 1134.85 samples/sec	mae=5.987997
+INFO:root:Epoch[78] Batch [400]	Speed: 1117.63 samples/sec	mae=6.051094
+INFO:root:Epoch[78] Batch [450]	Speed: 1078.49 samples/sec	mae=5.750183
+INFO:root:Epoch[78] Batch [500]	Speed: 1082.55 samples/sec	mae=6.039242
+INFO:root:Epoch[78] Batch [550]	Speed: 1095.85 samples/sec	mae=5.967802
+lr-batch-epoch: 1e-05 589 78
+INFO:root:Epoch[78] Train-mae=6.221959
+INFO:root:Epoch[78] Time cost=26.989
+call reset
+INFO:root:Epoch[78] Validation-mae=6.725553
+call reset
+INFO:root:Epoch[79] Batch [50]	Speed: 1084.66 samples/sec	mae=6.167983
+INFO:root:Epoch[79] Batch [100]	Speed: 1120.03 samples/sec	mae=6.015074
+INFO:root:Epoch[79] Batch [150]	Speed: 1112.37 samples/sec	mae=5.981205
+INFO:root:Epoch[79] Batch [200]	Speed: 1116.62 samples/sec	mae=5.787865
+INFO:root:Epoch[79] Batch [250]	Speed: 1112.15 samples/sec	mae=6.184364
+INFO:root:Epoch[79] Batch [300]	Speed: 1101.80 samples/sec	mae=5.947243
+INFO:root:Epoch[79] Batch [350]	Speed: 1117.07 samples/sec	mae=6.020142
+INFO:root:Epoch[79] Batch [400]	Speed: 1119.42 samples/sec	mae=6.203562
+INFO:root:Epoch[79] Batch [450]	Speed: 1120.44 samples/sec	mae=5.912108
+INFO:root:Epoch[79] Batch [500]	Speed: 1113.58 samples/sec	mae=5.930816
+INFO:root:Epoch[79] Batch [550]	Speed: 1100.30 samples/sec	mae=5.881136
+INFO:root:Epoch[79] Train-mae=6.055265
+INFO:root:Epoch[79] Time cost=26.798
+call reset
+INFO:root:Epoch[79] Validation-mae=6.718114
+call reset
+INFO:root:Epoch[80] Batch [50]	Speed: 1101.11 samples/sec	mae=5.967154
+INFO:root:Epoch[80] Batch [100]	Speed: 1129.64 samples/sec	mae=6.149197
+INFO:root:Epoch[80] Batch [150]	Speed: 1107.51 samples/sec	mae=5.952851
+INFO:root:Epoch[80] Batch [200]	Speed: 1114.76 samples/sec	mae=6.028734
+INFO:root:Epoch[80] Batch [250]	Speed: 1091.86 samples/sec	mae=6.021239
+INFO:root:Epoch[80] Batch [300]	Speed: 1126.93 samples/sec	mae=5.899261
+INFO:root:Epoch[80] Batch [350]	Speed: 1118.04 samples/sec	mae=6.206582
+lr-batch-epoch: 1e-05 399 80
+saving 12
+INFO:root:Saved checkpoint to "../models/ssr2_wiki_1_1/model-ssr-imdb-0012.params"
+INFO:root:Epoch[80] Batch [400]	Speed: 1132.16 samples/sec	mae=5.857760
+INFO:root:Epoch[80] Batch [450]	Speed: 1146.46 samples/sec	mae=5.855233
+INFO:root:Epoch[80] Batch [500]	Speed: 1080.81 samples/sec	mae=6.051754
+INFO:root:Epoch[80] Batch [550]	Speed: 1089.75 samples/sec	mae=6.102068
+INFO:root:Epoch[80] Train-mae=6.039236
+INFO:root:Epoch[80] Time cost=26.779
+call reset
+INFO:root:Epoch[80] Validation-mae=6.750699
+call reset
+INFO:root:Epoch[81] Batch [50]	Speed: 1113.15 samples/sec	mae=5.943248
+INFO:root:Epoch[81] Batch [100]	Speed: 1145.78 samples/sec	mae=5.984833
+INFO:root:Epoch[81] Batch [150]	Speed: 1085.62 samples/sec	mae=6.068181
+INFO:root:Epoch[81] Batch [200]	Speed: 1125.28 samples/sec	mae=5.939202
+INFO:root:Epoch[81] Batch [250]	Speed: 1107.56 samples/sec	mae=6.127101
+INFO:root:Epoch[81] Batch [300]	Speed: 1096.52 samples/sec	mae=6.047570
+INFO:root:Epoch[81] Batch [350]	Speed: 1112.27 samples/sec	mae=5.897723
+INFO:root:Epoch[81] Batch [400]	Speed: 1101.10 samples/sec	mae=5.968651
+INFO:root:Epoch[81] Batch [450]	Speed: 1098.47 samples/sec	mae=6.214750
+INFO:root:Epoch[81] Batch [500]	Speed: 1100.00 samples/sec	mae=5.990223
+INFO:root:Epoch[81] Batch [550]	Speed: 1087.29 samples/sec	mae=5.950513
+INFO:root:Epoch[81] Train-mae=6.076478
+INFO:root:Epoch[81] Time cost=26.899
+call reset
+INFO:root:Epoch[81] Validation-mae=6.734804
+call reset
+INFO:root:Epoch[82] Batch [50]	Speed: 1115.65 samples/sec	mae=6.057678
+INFO:root:Epoch[82] Batch [100]	Speed: 1107.19 samples/sec	mae=6.088592
+INFO:root:Epoch[82] Batch [150]	Speed: 1116.37 samples/sec	mae=5.849073
+INFO:root:Epoch[82] Batch [200]	Speed: 1123.64 samples/sec	mae=6.049765
+lr-batch-epoch: 1e-05 209 82
+INFO:root:Epoch[82] Batch [250]	Speed: 1125.89 samples/sec	mae=5.948998
+INFO:root:Epoch[82] Batch [300]	Speed: 1106.23 samples/sec	mae=6.146339
+INFO:root:Epoch[82] Batch [350]	Speed: 1112.79 samples/sec	mae=6.084314
+INFO:root:Epoch[82] Batch [400]	Speed: 1101.18 samples/sec	mae=5.813819
+INFO:root:Epoch[82] Batch [450]	Speed: 1094.23 samples/sec	mae=6.113817
+INFO:root:Epoch[82] Batch [500]	Speed: 1126.60 samples/sec	mae=5.881380
+INFO:root:Epoch[82] Batch [550]	Speed: 1113.41 samples/sec	mae=6.195445
+INFO:root:Epoch[82] Train-mae=6.252781
+INFO:root:Epoch[82] Time cost=26.787
+call reset
+INFO:root:Epoch[82] Validation-mae=6.724162
+call reset
+INFO:root:Epoch[83] Batch [50]	Speed: 1145.42 samples/sec	mae=5.747203
+INFO:root:Epoch[83] Batch [100]	Speed: 1090.51 samples/sec	mae=5.997649
+INFO:root:Epoch[83] Batch [150]	Speed: 1129.42 samples/sec	mae=6.088005
+INFO:root:Epoch[83] Batch [200]	Speed: 1099.61 samples/sec	mae=5.892969
+INFO:root:Epoch[83] Batch [250]	Speed: 1115.89 samples/sec	mae=5.815177
+INFO:root:Epoch[83] Batch [300]	Speed: 1092.51 samples/sec	mae=6.031810
+INFO:root:Epoch[83] Batch [350]	Speed: 1075.99 samples/sec	mae=6.096512
+INFO:root:Epoch[83] Batch [400]	Speed: 1126.83 samples/sec	mae=5.904089
+INFO:root:Epoch[83] Batch [450]	Speed: 1128.12 samples/sec	mae=6.198274
+INFO:root:Epoch[83] Batch [500]	Speed: 1104.77 samples/sec	mae=6.164471
+INFO:root:Epoch[83] Batch [550]	Speed: 1093.41 samples/sec	mae=5.915974
+INFO:root:Epoch[83] Train-mae=6.287578
+INFO:root:Epoch[83] Time cost=26.872
+call reset
+INFO:root:Epoch[83] Validation-mae=6.711821
+call reset
+lr-batch-epoch: 1e-05 19 84
+INFO:root:Epoch[84] Batch [50]	Speed: 1141.21 samples/sec	mae=6.148047
+INFO:root:Epoch[84] Batch [100]	Speed: 1098.80 samples/sec	mae=5.971847
+INFO:root:Epoch[84] Batch [150]	Speed: 1151.49 samples/sec	mae=5.875937
+INFO:root:Epoch[84] Batch [200]	Speed: 1097.33 samples/sec	mae=6.203097
+INFO:root:Epoch[84] Batch [250]	Speed: 1152.34 samples/sec	mae=5.904259
+INFO:root:Epoch[84] Batch [300]	Speed: 1101.85 samples/sec	mae=5.955608
+INFO:root:Epoch[84] Batch [350]	Speed: 1099.85 samples/sec	mae=6.068889
+INFO:root:Epoch[84] Batch [400]	Speed: 1120.21 samples/sec	mae=5.980151
+INFO:root:Epoch[84] Batch [450]	Speed: 1126.19 samples/sec	mae=5.963326
+INFO:root:Epoch[84] Batch [500]	Speed: 1115.99 samples/sec	mae=6.088162
+INFO:root:Epoch[84] Batch [550]	Speed: 1098.03 samples/sec	mae=6.134125
+INFO:root:Epoch[84] Train-mae=5.934641
+INFO:root:Epoch[84] Time cost=26.617
+call reset
+INFO:root:Epoch[84] Validation-mae=6.744677
+call reset
+INFO:root:Epoch[85] Batch [50]	Speed: 1104.31 samples/sec	mae=6.141020
+INFO:root:Epoch[85] Batch [100]	Speed: 1136.15 samples/sec	mae=6.128176
+INFO:root:Epoch[85] Batch [150]	Speed: 1087.06 samples/sec	mae=5.929872
+INFO:root:Epoch[85] Batch [200]	Speed: 1104.47 samples/sec	mae=6.353639
+INFO:root:Epoch[85] Batch [250]	Speed: 1080.03 samples/sec	mae=6.120624
+INFO:root:Epoch[85] Batch [300]	Speed: 1091.59 samples/sec	mae=6.038225
+INFO:root:Epoch[85] Batch [350]	Speed: 1107.71 samples/sec	mae=5.856475
+INFO:root:Epoch[85] Batch [400]	Speed: 1102.60 samples/sec	mae=6.094854
+lr-batch-epoch: 1e-05 424 85
+INFO:root:Epoch[85] Batch [450]	Speed: 1113.67 samples/sec	mae=5.982946
+INFO:root:Epoch[85] Batch [500]	Speed: 1102.67 samples/sec	mae=6.034745
+INFO:root:Epoch[85] Batch [550]	Speed: 1110.25 samples/sec	mae=5.933426
+INFO:root:Epoch[85] Train-mae=6.100360
+INFO:root:Epoch[85] Time cost=26.923
+call reset
+INFO:root:Epoch[85] Validation-mae=6.670253
+call reset
+INFO:root:Epoch[86] Batch [50]	Speed: 1094.39 samples/sec	mae=6.206645
+INFO:root:Epoch[86] Batch [100]	Speed: 1095.04 samples/sec	mae=6.012458
+INFO:root:Epoch[86] Batch [150]	Speed: 1088.49 samples/sec	mae=5.906427
+INFO:root:Epoch[86] Batch [200]	Speed: 1102.04 samples/sec	mae=6.008752
+INFO:root:Epoch[86] Batch [250]	Speed: 1097.64 samples/sec	mae=5.947147
+INFO:root:Epoch[86] Batch [300]	Speed: 1110.48 samples/sec	mae=6.026672
+INFO:root:Epoch[86] Batch [350]	Speed: 1104.81 samples/sec	mae=6.142072
+INFO:root:Epoch[86] Batch [400]	Speed: 1119.61 samples/sec	mae=6.036930
+INFO:root:Epoch[86] Batch [450]	Speed: 1103.05 samples/sec	mae=5.826403
+INFO:root:Epoch[86] Batch [500]	Speed: 1109.48 samples/sec	mae=6.049894
+INFO:root:Epoch[86] Batch [550]	Speed: 1102.42 samples/sec	mae=6.015202
+INFO:root:Epoch[86] Train-mae=5.831461
+INFO:root:Epoch[86] Time cost=26.969
+call reset
+INFO:root:Epoch[86] Validation-mae=6.681568
+call reset
+INFO:root:Epoch[87] Batch [50]	Speed: 1089.62 samples/sec	mae=6.128117
+INFO:root:Epoch[87] Batch [100]	Speed: 1116.04 samples/sec	mae=5.973540
+INFO:root:Epoch[87] Batch [150]	Speed: 1122.43 samples/sec	mae=6.025240
+INFO:root:Epoch[87] Batch [200]	Speed: 1078.38 samples/sec	mae=6.147472
+lr-batch-epoch: 1e-05 234 87
+saving 13
+INFO:root:Saved checkpoint to "../models/ssr2_wiki_1_1/model-ssr-imdb-0013.params"
+INFO:root:Epoch[87] Batch [250]	Speed: 1108.86 samples/sec	mae=6.206189
+INFO:root:Epoch[87] Batch [300]	Speed: 1096.74 samples/sec	mae=6.002533
+INFO:root:Epoch[87] Batch [350]	Speed: 1109.17 samples/sec	mae=5.850482
+INFO:root:Epoch[87] Batch [400]	Speed: 1122.67 samples/sec	mae=5.939111
+INFO:root:Epoch[87] Batch [450]	Speed: 1124.33 samples/sec	mae=6.107492
+INFO:root:Epoch[87] Batch [500]	Speed: 1108.41 samples/sec	mae=6.190531
+INFO:root:Epoch[87] Batch [550]	Speed: 1106.32 samples/sec	mae=5.976006
+INFO:root:Epoch[87] Train-mae=5.868778
+INFO:root:Epoch[87] Time cost=26.897
+call reset
+INFO:root:Epoch[87] Validation-mae=6.780816
+call reset
+INFO:root:Epoch[88] Batch [50]	Speed: 1116.69 samples/sec	mae=6.212746
+INFO:root:Epoch[88] Batch [100]	Speed: 1145.98 samples/sec	mae=5.912799
+INFO:root:Epoch[88] Batch [150]	Speed: 1116.54 samples/sec	mae=6.248878
+INFO:root:Epoch[88] Batch [200]	Speed: 1134.10 samples/sec	mae=5.992341
+INFO:root:Epoch[88] Batch [250]	Speed: 1112.98 samples/sec	mae=5.959036
+INFO:root:Epoch[88] Batch [300]	Speed: 1103.32 samples/sec	mae=6.034471
+INFO:root:Epoch[88] Batch [350]	Speed: 1074.62 samples/sec	mae=5.842975
+INFO:root:Epoch[88] Batch [400]	Speed: 1098.46 samples/sec	mae=6.118001
+INFO:root:Epoch[88] Batch [450]	Speed: 1124.97 samples/sec	mae=6.019273
+INFO:root:Epoch[88] Batch [500]	Speed: 1110.37 samples/sec	mae=5.890120
+INFO:root:Epoch[88] Batch [550]	Speed: 1086.89 samples/sec	mae=5.989103
+INFO:root:Epoch[88] Train-mae=5.919583
+INFO:root:Epoch[88] Time cost=26.846
+call reset
+INFO:root:Epoch[88] Validation-mae=6.749370
+call reset
+lr-batch-epoch: 1e-05 44 89
+INFO:root:Epoch[89] Batch [50]	Speed: 1102.52 samples/sec	mae=6.056831
+INFO:root:Epoch[89] Batch [100]	Speed: 1112.34 samples/sec	mae=6.106410
+INFO:root:Epoch[89] Batch [150]	Speed: 1120.35 samples/sec	mae=5.751216
+INFO:root:Epoch[89] Batch [200]	Speed: 1122.67 samples/sec	mae=6.024942
+INFO:root:Epoch[89] Batch [250]	Speed: 1103.65 samples/sec	mae=5.926457
+INFO:root:Epoch[89] Batch [300]	Speed: 1109.52 samples/sec	mae=5.874101
+INFO:root:Epoch[89] Batch [350]	Speed: 1118.58 samples/sec	mae=6.026235
+INFO:root:Epoch[89] Batch [400]	Speed: 1080.00 samples/sec	mae=6.056902
+INFO:root:Epoch[89] Batch [450]	Speed: 1113.63 samples/sec	mae=6.027988
+INFO:root:Epoch[89] Batch [500]	Speed: 1121.19 samples/sec	mae=6.215267
+INFO:root:Epoch[89] Batch [550]	Speed: 1111.06 samples/sec	mae=6.060664
+INFO:root:Epoch[89] Train-mae=6.339838
+INFO:root:Epoch[89] Time cost=26.811
+call reset
+INFO:root:Epoch[89] Validation-mae=6.710994
+call reset
+INFO:root:Epoch[90] Batch [50]	Speed: 1106.19 samples/sec	mae=5.718569
+INFO:root:Epoch[90] Batch [100]	Speed: 1086.16 samples/sec	mae=6.039751
+INFO:root:Epoch[90] Batch [150]	Speed: 1105.90 samples/sec	mae=6.023461
+INFO:root:Epoch[90] Batch [200]	Speed: 1100.98 samples/sec	mae=5.977358
+INFO:root:Epoch[90] Batch [250]	Speed: 1128.93 samples/sec	mae=6.082967
+INFO:root:Epoch[90] Batch [300]	Speed: 1125.16 samples/sec	mae=6.145384
+INFO:root:Epoch[90] Batch [350]	Speed: 1127.54 samples/sec	mae=6.152908
+INFO:root:Epoch[90] Batch [400]	Speed: 1139.12 samples/sec	mae=5.929105
+lr-batch-epoch: 1e-05 449 90
+INFO:root:Epoch[90] Batch [450]	Speed: 1090.09 samples/sec	mae=6.207831
+INFO:root:Epoch[90] Batch [500]	Speed: 1133.95 samples/sec	mae=5.869752
+INFO:root:Epoch[90] Batch [550]	Speed: 1118.69 samples/sec	mae=6.095897
+INFO:root:Epoch[90] Train-mae=5.948710
+INFO:root:Epoch[90] Time cost=26.691
+call reset
+INFO:root:Epoch[90] Validation-mae=6.737685
+call reset
+INFO:root:Epoch[91] Batch [50]	Speed: 1113.09 samples/sec	mae=6.026916
+INFO:root:Epoch[91] Batch [100]	Speed: 1118.68 samples/sec	mae=6.077237
+INFO:root:Epoch[91] Batch [150]	Speed: 1125.42 samples/sec	mae=6.036544
+INFO:root:Epoch[91] Batch [200]	Speed: 1120.40 samples/sec	mae=5.799826
+INFO:root:Epoch[91] Batch [250]	Speed: 1100.52 samples/sec	mae=6.030996
+INFO:root:Epoch[91] Batch [300]	Speed: 1073.64 samples/sec	mae=6.113003
+INFO:root:Epoch[91] Batch [350]	Speed: 1114.17 samples/sec	mae=6.009971
+INFO:root:Epoch[91] Batch [400]	Speed: 1112.68 samples/sec	mae=5.968696
+INFO:root:Epoch[91] Batch [450]	Speed: 1088.43 samples/sec	mae=5.940600
+INFO:root:Epoch[91] Batch [500]	Speed: 1123.78 samples/sec	mae=6.133294
+INFO:root:Epoch[91] Batch [550]	Speed: 1090.24 samples/sec	mae=5.888115
+INFO:root:Epoch[91] Train-mae=5.999417
+INFO:root:Epoch[91] Time cost=26.822
+call reset
+INFO:root:Epoch[91] Validation-mae=6.679013
+call reset
+INFO:root:Epoch[92] Batch [50]	Speed: 1129.37 samples/sec	mae=5.932892
+INFO:root:Epoch[92] Batch [100]	Speed: 1087.26 samples/sec	mae=6.040118
+INFO:root:Epoch[92] Batch [150]	Speed: 1121.14 samples/sec	mae=6.051960
+INFO:root:Epoch[92] Batch [200]	Speed: 1114.72 samples/sec	mae=5.736479
+INFO:root:Epoch[92] Batch [250]	Speed: 1109.70 samples/sec	mae=6.177270
+lr-batch-epoch: 1e-05 259 92
+INFO:root:Epoch[92] Batch [300]	Speed: 1102.03 samples/sec	mae=6.147746
+INFO:root:Epoch[92] Batch [350]	Speed: 1131.91 samples/sec	mae=6.281050
+INFO:root:Epoch[92] Batch [400]	Speed: 1102.46 samples/sec	mae=6.044023
+INFO:root:Epoch[92] Batch [450]	Speed: 1129.74 samples/sec	mae=5.990915
+INFO:root:Epoch[92] Batch [500]	Speed: 1138.44 samples/sec	mae=5.923060
+INFO:root:Epoch[92] Batch [550]	Speed: 1112.63 samples/sec	mae=6.031801
+INFO:root:Epoch[92] Train-mae=5.863723
+INFO:root:Epoch[92] Time cost=26.722
+call reset
+INFO:root:Epoch[92] Validation-mae=6.703434
+call reset
+INFO:root:Epoch[93] Batch [50]	Speed: 1096.72 samples/sec	mae=6.058550
+INFO:root:Epoch[93] Batch [100]	Speed: 1138.21 samples/sec	mae=5.984371
+INFO:root:Epoch[93] Batch [150]	Speed: 1133.83 samples/sec	mae=5.959719
+INFO:root:Epoch[93] Batch [200]	Speed: 1100.91 samples/sec	mae=6.075694
+INFO:root:Epoch[93] Batch [250]	Speed: 1108.16 samples/sec	mae=6.057464
+INFO:root:Epoch[93] Batch [300]	Speed: 1086.03 samples/sec	mae=6.075160
+INFO:root:Epoch[93] Batch [350]	Speed: 1114.33 samples/sec	mae=5.982011
+INFO:root:Epoch[93] Batch [400]	Speed: 1087.81 samples/sec	mae=5.838353
+INFO:root:Epoch[93] Batch [450]	Speed: 1127.75 samples/sec	mae=5.940148
+INFO:root:Epoch[93] Batch [500]	Speed: 1117.07 samples/sec	mae=5.885194
+INFO:root:Epoch[93] Batch [550]	Speed: 1094.01 samples/sec	mae=5.929947
+INFO:root:Epoch[93] Train-mae=5.922458
+INFO:root:Epoch[93] Time cost=26.845
+call reset
+INFO:root:Epoch[93] Validation-mae=6.659174
+call reset
+INFO:root:Epoch[94] Batch [50]	Speed: 1099.25 samples/sec	mae=6.039199
+lr-batch-epoch: 1e-05 69 94
+saving 14
+INFO:root:Saved checkpoint to "../models/ssr2_wiki_1_1/model-ssr-imdb-0014.params"
+INFO:root:Epoch[94] Batch [100]	Speed: 1120.20 samples/sec	mae=5.829687
+INFO:root:Epoch[94] Batch [150]	Speed: 1138.05 samples/sec	mae=6.049414
+INFO:root:Epoch[94] Batch [200]	Speed: 1105.95 samples/sec	mae=6.035301
+INFO:root:Epoch[94] Batch [250]	Speed: 1130.36 samples/sec	mae=5.884046
+INFO:root:Epoch[94] Batch [300]	Speed: 1100.66 samples/sec	mae=6.266182
+INFO:root:Epoch[94] Batch [350]	Speed: 1100.31 samples/sec	mae=5.989078
+INFO:root:Epoch[94] Batch [400]	Speed: 1126.28 samples/sec	mae=5.834376
+INFO:root:Epoch[94] Batch [450]	Speed: 1089.05 samples/sec	mae=5.947592
+INFO:root:Epoch[94] Batch [500]	Speed: 1079.68 samples/sec	mae=6.104769
+INFO:root:Epoch[94] Batch [550]	Speed: 1128.11 samples/sec	mae=6.075631
+INFO:root:Epoch[94] Train-mae=6.017356
+INFO:root:Epoch[94] Time cost=26.810
+call reset
+INFO:root:Epoch[94] Validation-mae=6.728093
+call reset
+INFO:root:Epoch[95] Batch [50]	Speed: 1092.06 samples/sec	mae=6.010484
+INFO:root:Epoch[95] Batch [100]	Speed: 1071.47 samples/sec	mae=6.026501
+INFO:root:Epoch[95] Batch [150]	Speed: 1083.48 samples/sec	mae=6.024374
+INFO:root:Epoch[95] Batch [200]	Speed: 1102.71 samples/sec	mae=5.981364
+INFO:root:Epoch[95] Batch [250]	Speed: 1121.04 samples/sec	mae=6.033785
+INFO:root:Epoch[95] Batch [300]	Speed: 1137.15 samples/sec	mae=6.167315
+INFO:root:Epoch[95] Batch [350]	Speed: 1088.73 samples/sec	mae=6.049664
+INFO:root:Epoch[95] Batch [400]	Speed: 1112.22 samples/sec	mae=6.003544
+INFO:root:Epoch[95] Batch [450]	Speed: 1075.31 samples/sec	mae=6.065909
+lr-batch-epoch: 1e-05 474 95
+INFO:root:Epoch[95] Batch [500]	Speed: 1108.91 samples/sec	mae=6.143212
+INFO:root:Epoch[95] Batch [550]	Speed: 1133.66 samples/sec	mae=6.013412
+INFO:root:Epoch[95] Train-mae=5.949095
+INFO:root:Epoch[95] Time cost=26.994
+call reset
+INFO:root:Epoch[95] Validation-mae=6.662317
+call reset
+INFO:root:Epoch[96] Batch [50]	Speed: 1120.45 samples/sec	mae=6.160221
+INFO:root:Epoch[96] Batch [100]	Speed: 1071.91 samples/sec	mae=5.816436
+INFO:root:Epoch[96] Batch [150]	Speed: 1109.63 samples/sec	mae=5.923558
+INFO:root:Epoch[96] Batch [200]	Speed: 1113.86 samples/sec	mae=6.055695
+INFO:root:Epoch[96] Batch [250]	Speed: 1125.89 samples/sec	mae=6.156267
+INFO:root:Epoch[96] Batch [300]	Speed: 1101.01 samples/sec	mae=5.899435
+INFO:root:Epoch[96] Batch [350]	Speed: 1114.26 samples/sec	mae=5.838060
+INFO:root:Epoch[96] Batch [400]	Speed: 1119.00 samples/sec	mae=5.978232
+INFO:root:Epoch[96] Batch [450]	Speed: 1118.96 samples/sec	mae=6.072585
+INFO:root:Epoch[96] Batch [500]	Speed: 1107.55 samples/sec	mae=6.140266
+INFO:root:Epoch[96] Batch [550]	Speed: 1103.85 samples/sec	mae=6.132943
+INFO:root:Epoch[96] Train-mae=5.900924
+INFO:root:Epoch[96] Time cost=26.867
+call reset
+INFO:root:Epoch[96] Validation-mae=6.694685
+call reset
+INFO:root:Epoch[97] Batch [50]	Speed: 1113.83 samples/sec	mae=5.966023
+INFO:root:Epoch[97] Batch [100]	Speed: 1090.65 samples/sec	mae=6.013407
+INFO:root:Epoch[97] Batch [150]	Speed: 1140.42 samples/sec	mae=6.165637
+INFO:root:Epoch[97] Batch [200]	Speed: 1097.81 samples/sec	mae=5.911961
+INFO:root:Epoch[97] Batch [250]	Speed: 1088.64 samples/sec	mae=6.101137
+lr-batch-epoch: 1e-05 284 97
+INFO:root:Epoch[97] Batch [300]	Speed: 1142.30 samples/sec	mae=6.231478
+INFO:root:Epoch[97] Batch [350]	Speed: 1116.39 samples/sec	mae=5.688955
+INFO:root:Epoch[97] Batch [400]	Speed: 1147.08 samples/sec	mae=5.866015
+INFO:root:Epoch[97] Batch [450]	Speed: 1115.91 samples/sec	mae=6.023173
+INFO:root:Epoch[97] Batch [500]	Speed: 1101.42 samples/sec	mae=6.085788
+INFO:root:Epoch[97] Batch [550]	Speed: 1100.53 samples/sec	mae=5.982809
+INFO:root:Epoch[97] Train-mae=5.973096
+INFO:root:Epoch[97] Time cost=26.705
+call reset
+INFO:root:Epoch[97] Validation-mae=6.702877
+call reset
+INFO:root:Epoch[98] Batch [50]	Speed: 1118.27 samples/sec	mae=5.915485
+INFO:root:Epoch[98] Batch [100]	Speed: 1106.82 samples/sec	mae=6.207573
+INFO:root:Epoch[98] Batch [150]	Speed: 1143.63 samples/sec	mae=6.039859
+INFO:root:Epoch[98] Batch [200]	Speed: 1101.10 samples/sec	mae=5.934624
+INFO:root:Epoch[98] Batch [250]	Speed: 1131.75 samples/sec	mae=6.017831
+INFO:root:Epoch[98] Batch [300]	Speed: 1127.71 samples/sec	mae=6.139015
+INFO:root:Epoch[98] Batch [350]	Speed: 1102.69 samples/sec	mae=5.727866
+INFO:root:Epoch[98] Batch [400]	Speed: 1115.61 samples/sec	mae=6.001702
+INFO:root:Epoch[98] Batch [450]	Speed: 1142.33 samples/sec	mae=5.887215
+INFO:root:Epoch[98] Batch [500]	Speed: 1122.16 samples/sec	mae=6.022287
+INFO:root:Epoch[98] Batch [550]	Speed: 1127.09 samples/sec	mae=6.091426
+INFO:root:Epoch[98] Train-mae=6.116474
+INFO:root:Epoch[98] Time cost=26.584
+call reset
+INFO:root:Epoch[98] Validation-mae=6.724644
+call reset
+INFO:root:Epoch[99] Batch [50]	Speed: 1100.93 samples/sec	mae=6.101581
+lr-batch-epoch: 1e-05 94 99
+INFO:root:Epoch[99] Batch [100]	Speed: 1135.59 samples/sec	mae=5.863223
+INFO:root:Epoch[99] Batch [150]	Speed: 1113.48 samples/sec	mae=6.019596
+INFO:root:Epoch[99] Batch [200]	Speed: 1145.03 samples/sec	mae=6.060602
+INFO:root:Epoch[99] Batch [250]	Speed: 1119.00 samples/sec	mae=5.983905
+INFO:root:Epoch[99] Batch [300]	Speed: 1087.46 samples/sec	mae=5.687204
+INFO:root:Epoch[99] Batch [350]	Speed: 1100.10 samples/sec	mae=6.102841
+INFO:root:Epoch[99] Batch [400]	Speed: 1114.82 samples/sec	mae=6.060084
+INFO:root:Epoch[99] Batch [450]	Speed: 1106.72 samples/sec	mae=5.964700
+INFO:root:Epoch[99] Batch [500]	Speed: 1100.62 samples/sec	mae=6.039662
+INFO:root:Epoch[99] Batch [550]	Speed: 1111.67 samples/sec	mae=6.074526
+INFO:root:Epoch[99] Train-mae=6.149563
+INFO:root:Epoch[99] Time cost=26.824
+call reset
+INFO:root:Epoch[99] Validation-mae=6.648353
+call reset
+INFO:root:Epoch[100] Batch [50]	Speed: 1121.93 samples/sec	mae=6.053016
+INFO:root:Epoch[100] Batch [100]	Speed: 1116.38 samples/sec	mae=6.010322
+INFO:root:Epoch[100] Batch [150]	Speed: 1115.13 samples/sec	mae=5.963073
+INFO:root:Epoch[100] Batch [200]	Speed: 1106.00 samples/sec	mae=5.985758
+INFO:root:Epoch[100] Batch [250]	Speed: 1111.12 samples/sec	mae=6.104820
+INFO:root:Epoch[100] Batch [300]	Speed: 1107.98 samples/sec	mae=6.087438
+INFO:root:Epoch[100] Batch [350]	Speed: 1082.50 samples/sec	mae=5.880578
+INFO:root:Epoch[100] Batch [400]	Speed: 1101.62 samples/sec	mae=5.897562
+INFO:root:Epoch[100] Batch [450]	Speed: 1119.76 samples/sec	mae=6.000356
+lr change to 1.0000000000000002e-06
+lr-batch-epoch: 1.0000000000000002e-06 499 100
+saving 15
+INFO:root:Saved checkpoint to "../models/ssr2_wiki_1_1/model-ssr-imdb-0015.params"
+INFO:root:Epoch[100] Batch [500]	Speed: 1118.18 samples/sec	mae=6.000248
+INFO:root:Epoch[100] Batch [550]	Speed: 1118.09 samples/sec	mae=5.834309
+INFO:root:Epoch[100] Train-mae=6.073940
+INFO:root:Epoch[100] Time cost=26.775
+call reset
+INFO:root:Epoch[100] Validation-mae=6.663908
+call reset
+INFO:root:Epoch[101] Batch [50]	Speed: 1085.89 samples/sec	mae=5.990626
+INFO:root:Epoch[101] Batch [100]	Speed: 1104.22 samples/sec	mae=5.890372
+INFO:root:Epoch[101] Batch [150]	Speed: 1107.96 samples/sec	mae=6.206218
+INFO:root:Epoch[101] Batch [200]	Speed: 1118.82 samples/sec	mae=5.991290
+INFO:root:Epoch[101] Batch [250]	Speed: 1121.76 samples/sec	mae=5.960308
+INFO:root:Epoch[101] Batch [300]	Speed: 1108.58 samples/sec	mae=6.012133
+INFO:root:Epoch[101] Batch [350]	Speed: 1115.74 samples/sec	mae=6.032361
+INFO:root:Epoch[101] Batch [400]	Speed: 1122.07 samples/sec	mae=5.988410
+INFO:root:Epoch[101] Batch [450]	Speed: 1125.54 samples/sec	mae=5.890305
+INFO:root:Epoch[101] Batch [500]	Speed: 1140.20 samples/sec	mae=5.785639
+INFO:root:Epoch[101] Batch [550]	Speed: 1128.89 samples/sec	mae=6.173092
+INFO:root:Epoch[101] Train-mae=6.031351
+INFO:root:Epoch[101] Time cost=26.633
+call reset
+INFO:root:Epoch[101] Validation-mae=6.767735
+call reset
+INFO:root:Epoch[102] Batch [50]	Speed: 1126.74 samples/sec	mae=6.067424
+INFO:root:Epoch[102] Batch [100]	Speed: 1077.59 samples/sec	mae=6.059893
+INFO:root:Epoch[102] Batch [150]	Speed: 1106.48 samples/sec	mae=6.158648
+INFO:root:Epoch[102] Batch [200]	Speed: 1087.77 samples/sec	mae=6.053176
+INFO:root:Epoch[102] Batch [250]	Speed: 1111.03 samples/sec	mae=5.960497
+INFO:root:Epoch[102] Batch [300]	Speed: 1108.51 samples/sec	mae=5.963639
+lr-batch-epoch: 1.0000000000000002e-06 309 102
+INFO:root:Epoch[102] Batch [350]	Speed: 1085.75 samples/sec	mae=5.987105
+INFO:root:Epoch[102] Batch [400]	Speed: 1093.42 samples/sec	mae=6.150497
+INFO:root:Epoch[102] Batch [450]	Speed: 1089.51 samples/sec	mae=6.115626
+INFO:root:Epoch[102] Batch [500]	Speed: 1111.07 samples/sec	mae=5.902698
+INFO:root:Epoch[102] Batch [550]	Speed: 1097.34 samples/sec	mae=6.067483
+INFO:root:Epoch[102] Train-mae=6.035789
+INFO:root:Epoch[102] Time cost=27.062
+call reset
+INFO:root:Epoch[102] Validation-mae=6.685592
+call reset
+INFO:root:Epoch[103] Batch [50]	Speed: 1122.04 samples/sec	mae=6.031519
+INFO:root:Epoch[103] Batch [100]	Speed: 1099.41 samples/sec	mae=6.047655
+INFO:root:Epoch[103] Batch [150]	Speed: 1126.28 samples/sec	mae=6.145958
+INFO:root:Epoch[103] Batch [200]	Speed: 1137.26 samples/sec	mae=6.074270
+INFO:root:Epoch[103] Batch [250]	Speed: 1120.37 samples/sec	mae=6.074456
+INFO:root:Epoch[103] Batch [300]	Speed: 1093.81 samples/sec	mae=6.042283
+INFO:root:Epoch[103] Batch [350]	Speed: 1142.27 samples/sec	mae=5.911379
+INFO:root:Epoch[103] Batch [400]	Speed: 1102.77 samples/sec	mae=6.113857
+INFO:root:Epoch[103] Batch [450]	Speed: 1093.91 samples/sec	mae=6.045108
+INFO:root:Epoch[103] Batch [500]	Speed: 1068.25 samples/sec	mae=6.004297
+INFO:root:Epoch[103] Batch [550]	Speed: 1112.57 samples/sec	mae=5.667782
+INFO:root:Epoch[103] Train-mae=5.816733
+INFO:root:Epoch[103] Time cost=26.790
+call reset
+INFO:root:Epoch[103] Validation-mae=6.790830
+call reset
+INFO:root:Epoch[104] Batch [50]	Speed: 1077.86 samples/sec	mae=5.992399
+INFO:root:Epoch[104] Batch [100]	Speed: 1111.60 samples/sec	mae=6.111831
+lr-batch-epoch: 1.0000000000000002e-06 119 104
+INFO:root:Epoch[104] Batch [150]	Speed: 1112.60 samples/sec	mae=5.938654
+INFO:root:Epoch[104] Batch [200]	Speed: 1122.50 samples/sec	mae=5.795460
+INFO:root:Epoch[104] Batch [250]	Speed: 1129.52 samples/sec	mae=6.011481
+INFO:root:Epoch[104] Batch [300]	Speed: 1108.75 samples/sec	mae=5.932931
+INFO:root:Epoch[104] Batch [350]	Speed: 1078.33 samples/sec	mae=5.969608
+INFO:root:Epoch[104] Batch [400]	Speed: 1115.62 samples/sec	mae=5.887713
+INFO:root:Epoch[104] Batch [450]	Speed: 1076.38 samples/sec	mae=5.945942
+INFO:root:Epoch[104] Batch [500]	Speed: 1103.95 samples/sec	mae=6.173254
+INFO:root:Epoch[104] Batch [550]	Speed: 1100.85 samples/sec	mae=6.097722
+INFO:root:Epoch[104] Train-mae=6.072667
+INFO:root:Epoch[104] Time cost=27.002
+call reset
+INFO:root:Epoch[104] Validation-mae=6.738860
+call reset
+INFO:root:Epoch[105] Batch [50]	Speed: 1098.38 samples/sec	mae=6.167759
+INFO:root:Epoch[105] Batch [100]	Speed: 1122.46 samples/sec	mae=5.954950
+INFO:root:Epoch[105] Batch [150]	Speed: 1113.72 samples/sec	mae=6.085508
+INFO:root:Epoch[105] Batch [200]	Speed: 1093.76 samples/sec	mae=6.116785
+INFO:root:Epoch[105] Batch [250]	Speed: 1092.03 samples/sec	mae=6.051969
+INFO:root:Epoch[105] Batch [300]	Speed: 1086.23 samples/sec	mae=5.996833
+INFO:root:Epoch[105] Batch [350]	Speed: 1111.41 samples/sec	mae=6.076178
+INFO:root:Epoch[105] Batch [400]	Speed: 1101.91 samples/sec	mae=5.901543
+INFO:root:Epoch[105] Batch [450]	Speed: 1124.95 samples/sec	mae=6.020067
+INFO:root:Epoch[105] Batch [500]	Speed: 1114.97 samples/sec	mae=5.950415
+lr-batch-epoch: 1.0000000000000002e-06 524 105
+INFO:root:Epoch[105] Batch [550]	Speed: 1121.87 samples/sec	mae=5.912824
+INFO:root:Epoch[105] Train-mae=5.988146
+INFO:root:Epoch[105] Time cost=26.846
+call reset
+INFO:root:Epoch[105] Validation-mae=6.745403
+call reset
+INFO:root:Epoch[106] Batch [50]	Speed: 1089.57 samples/sec	mae=5.925244
+INFO:root:Epoch[106] Batch [100]	Speed: 1083.75 samples/sec	mae=5.958280
+INFO:root:Epoch[106] Batch [150]	Speed: 1081.95 samples/sec	mae=6.227180
+INFO:root:Epoch[106] Batch [200]	Speed: 1105.57 samples/sec	mae=6.103223
+INFO:root:Epoch[106] Batch [250]	Speed: 1109.97 samples/sec	mae=5.806123
+INFO:root:Epoch[106] Batch [300]	Speed: 1144.18 samples/sec	mae=6.004112
+INFO:root:Epoch[106] Batch [350]	Speed: 1094.55 samples/sec	mae=5.902621
+INFO:root:Epoch[106] Batch [400]	Speed: 1116.35 samples/sec	mae=6.023976
+INFO:root:Epoch[106] Batch [450]	Speed: 1086.48 samples/sec	mae=6.015154
+INFO:root:Epoch[106] Batch [500]	Speed: 1083.94 samples/sec	mae=6.127234
+INFO:root:Epoch[106] Batch [550]	Speed: 1097.61 samples/sec	mae=6.135243
+INFO:root:Epoch[106] Train-mae=5.956623
+INFO:root:Epoch[106] Time cost=27.001
+call reset
+INFO:root:Epoch[106] Validation-mae=6.699932
+call reset
+INFO:root:Epoch[107] Batch [50]	Speed: 1115.76 samples/sec	mae=6.012386
+INFO:root:Epoch[107] Batch [100]	Speed: 1146.64 samples/sec	mae=5.831072
+INFO:root:Epoch[107] Batch [150]	Speed: 1133.63 samples/sec	mae=6.181387
+INFO:root:Epoch[107] Batch [200]	Speed: 1107.25 samples/sec	mae=5.954624
+INFO:root:Epoch[107] Batch [250]	Speed: 1080.96 samples/sec	mae=6.048202
+INFO:root:Epoch[107] Batch [300]	Speed: 1099.78 samples/sec	mae=6.060198
+lr-batch-epoch: 1.0000000000000002e-06 334 107
+saving 16
+INFO:root:Saved checkpoint to "../models/ssr2_wiki_1_1/model-ssr-imdb-0016.params"
+INFO:root:Epoch[107] Batch [350]	Speed: 1118.01 samples/sec	mae=6.011314
+INFO:root:Epoch[107] Batch [400]	Speed: 1120.45 samples/sec	mae=5.882415
+INFO:root:Epoch[107] Batch [450]	Speed: 1099.71 samples/sec	mae=6.046966
+INFO:root:Epoch[107] Batch [500]	Speed: 1105.04 samples/sec	mae=6.004805
+INFO:root:Epoch[107] Batch [550]	Speed: 1120.76 samples/sec	mae=6.027072
+INFO:root:Epoch[107] Train-mae=6.038619
+INFO:root:Epoch[107] Time cost=26.756
+call reset
+INFO:root:Epoch[107] Validation-mae=6.683096
+call reset
+INFO:root:Epoch[108] Batch [50]	Speed: 1115.01 samples/sec	mae=6.177710
+INFO:root:Epoch[108] Batch [100]	Speed: 1083.77 samples/sec	mae=6.096864
+INFO:root:Epoch[108] Batch [150]	Speed: 1122.55 samples/sec	mae=5.964384
+INFO:root:Epoch[108] Batch [200]	Speed: 1117.59 samples/sec	mae=5.892731
+INFO:root:Epoch[108] Batch [250]	Speed: 1137.84 samples/sec	mae=6.034334
+INFO:root:Epoch[108] Batch [300]	Speed: 1115.44 samples/sec	mae=5.970431
+INFO:root:Epoch[108] Batch [350]	Speed: 1099.48 samples/sec	mae=5.985522
+INFO:root:Epoch[108] Batch [400]	Speed: 1102.56 samples/sec	mae=5.929792
+INFO:root:Epoch[108] Batch [450]	Speed: 1085.11 samples/sec	mae=6.030536
+INFO:root:Epoch[108] Batch [500]	Speed: 1103.04 samples/sec	mae=6.072324
+INFO:root:Epoch[108] Batch [550]	Speed: 1111.56 samples/sec	mae=6.043802
+INFO:root:Epoch[108] Train-mae=5.938293
+INFO:root:Epoch[108] Time cost=26.866
+call reset
+INFO:root:Epoch[108] Validation-mae=6.728349
+call reset
+INFO:root:Epoch[109] Batch [50]	Speed: 1131.60 samples/sec	mae=6.148981
+INFO:root:Epoch[109] Batch [100]	Speed: 1132.52 samples/sec	mae=5.993496
+lr-batch-epoch: 1.0000000000000002e-06 144 109
+INFO:root:Epoch[109] Batch [150]	Speed: 1135.70 samples/sec	mae=6.009619
+INFO:root:Epoch[109] Batch [200]	Speed: 1131.10 samples/sec	mae=6.004128
+INFO:root:Epoch[109] Batch [250]	Speed: 1129.76 samples/sec	mae=6.108676
+INFO:root:Epoch[109] Batch [300]	Speed: 1119.32 samples/sec	mae=5.985799
+INFO:root:Epoch[109] Batch [350]	Speed: 1097.12 samples/sec	mae=6.099694
+INFO:root:Epoch[109] Batch [400]	Speed: 1089.49 samples/sec	mae=5.752028
+INFO:root:Epoch[109] Batch [450]	Speed: 1099.62 samples/sec	mae=5.933197
+INFO:root:Epoch[109] Batch [500]	Speed: 1095.04 samples/sec	mae=5.964517
+INFO:root:Epoch[109] Batch [550]	Speed: 1097.02 samples/sec	mae=6.075649
+INFO:root:Epoch[109] Train-mae=6.020129
+INFO:root:Epoch[109] Time cost=26.731
+call reset
+INFO:root:Epoch[109] Validation-mae=6.696990
+call reset
+INFO:root:Epoch[110] Batch [50]	Speed: 1115.08 samples/sec	mae=5.952437
+INFO:root:Epoch[110] Batch [100]	Speed: 1095.48 samples/sec	mae=5.920268
+INFO:root:Epoch[110] Batch [150]	Speed: 1069.59 samples/sec	mae=6.055939
+INFO:root:Epoch[110] Batch [200]	Speed: 1101.31 samples/sec	mae=6.041996
+INFO:root:Epoch[110] Batch [250]	Speed: 1125.40 samples/sec	mae=5.923063
+INFO:root:Epoch[110] Batch [300]	Speed: 1116.39 samples/sec	mae=6.209665
+INFO:root:Epoch[110] Batch [350]	Speed: 1097.45 samples/sec	mae=6.044987
+INFO:root:Epoch[110] Batch [400]	Speed: 1132.34 samples/sec	mae=5.907213
+INFO:root:Epoch[110] Batch [450]	Speed: 1100.95 samples/sec	mae=6.055830
+INFO:root:Epoch[110] Batch [500]	Speed: 1098.44 samples/sec	mae=5.759363
+lr-batch-epoch: 1.0000000000000002e-06 549 110
+INFO:root:Epoch[110] Batch [550]	Speed: 1129.73 samples/sec	mae=5.950578
+INFO:root:Epoch[110] Train-mae=6.009239
+INFO:root:Epoch[110] Time cost=26.902
+call reset
+INFO:root:Epoch[110] Validation-mae=6.691556
+call reset
+INFO:root:Epoch[111] Batch [50]	Speed: 1101.09 samples/sec	mae=6.165756
+INFO:root:Epoch[111] Batch [100]	Speed: 1093.78 samples/sec	mae=6.176778
+INFO:root:Epoch[111] Batch [150]	Speed: 1138.67 samples/sec	mae=6.108173
+INFO:root:Epoch[111] Batch [200]	Speed: 1084.47 samples/sec	mae=5.961728
+INFO:root:Epoch[111] Batch [250]	Speed: 1132.50 samples/sec	mae=5.941354
+INFO:root:Epoch[111] Batch [300]	Speed: 1074.36 samples/sec	mae=5.911327
+INFO:root:Epoch[111] Batch [350]	Speed: 1113.03 samples/sec	mae=5.877453
+INFO:root:Epoch[111] Batch [400]	Speed: 1116.04 samples/sec	mae=5.865918
+INFO:root:Epoch[111] Batch [450]	Speed: 1102.32 samples/sec	mae=5.924288
+INFO:root:Epoch[111] Batch [500]	Speed: 1089.07 samples/sec	mae=6.048864
+INFO:root:Epoch[111] Batch [550]	Speed: 1097.84 samples/sec	mae=5.857958
+INFO:root:Epoch[111] Train-mae=6.053919
+INFO:root:Epoch[111] Time cost=26.955
+call reset
+INFO:root:Epoch[111] Validation-mae=6.787454
+call reset
+INFO:root:Epoch[112] Batch [50]	Speed: 1087.33 samples/sec	mae=6.018935
+INFO:root:Epoch[112] Batch [100]	Speed: 1091.29 samples/sec	mae=5.936006
+INFO:root:Epoch[112] Batch [150]	Speed: 1105.40 samples/sec	mae=5.894050
+INFO:root:Epoch[112] Batch [200]	Speed: 1136.71 samples/sec	mae=5.891531
+INFO:root:Epoch[112] Batch [250]	Speed: 1137.19 samples/sec	mae=5.853741
+INFO:root:Epoch[112] Batch [300]	Speed: 1104.02 samples/sec	mae=6.007256
+INFO:root:Epoch[112] Batch [350]	Speed: 1085.21 samples/sec	mae=6.006001
+lr-batch-epoch: 1.0000000000000002e-06 359 112
+INFO:root:Epoch[112] Batch [400]	Speed: 1090.10 samples/sec	mae=6.017838
+INFO:root:Epoch[112] Batch [450]	Speed: 1084.91 samples/sec	mae=6.239576
+INFO:root:Epoch[112] Batch [500]	Speed: 1121.15 samples/sec	mae=6.134130
+INFO:root:Epoch[112] Batch [550]	Speed: 1123.82 samples/sec	mae=6.041416
+INFO:root:Epoch[112] Train-mae=5.997867
+INFO:root:Epoch[112] Time cost=26.942
+call reset
+INFO:root:Epoch[112] Validation-mae=6.771052
+call reset
+INFO:root:Epoch[113] Batch [50]	Speed: 1109.59 samples/sec	mae=5.943375
+INFO:root:Epoch[113] Batch [100]	Speed: 1082.67 samples/sec	mae=6.097161
+INFO:root:Epoch[113] Batch [150]	Speed: 1108.16 samples/sec	mae=6.203838
+INFO:root:Epoch[113] Batch [200]	Speed: 1115.48 samples/sec	mae=6.118964
+INFO:root:Epoch[113] Batch [250]	Speed: 1108.95 samples/sec	mae=5.945501
+INFO:root:Epoch[113] Batch [300]	Speed: 1114.80 samples/sec	mae=5.936762
+INFO:root:Epoch[113] Batch [350]	Speed: 1105.74 samples/sec	mae=5.780351
+INFO:root:Epoch[113] Batch [400]	Speed: 1095.93 samples/sec	mae=6.062174
+INFO:root:Epoch[113] Batch [450]	Speed: 1113.57 samples/sec	mae=5.917114
+INFO:root:Epoch[113] Batch [500]	Speed: 1122.10 samples/sec	mae=6.004806
+INFO:root:Epoch[113] Batch [550]	Speed: 1116.62 samples/sec	mae=6.121085
+INFO:root:Epoch[113] Train-mae=5.968111
+INFO:root:Epoch[113] Time cost=26.889
+call reset
+INFO:root:Epoch[113] Validation-mae=6.674737
+call reset
+INFO:root:Epoch[114] Batch [50]	Speed: 1111.44 samples/sec	mae=6.147906
+INFO:root:Epoch[114] Batch [100]	Speed: 1121.61 samples/sec	mae=6.207701
+INFO:root:Epoch[114] Batch [150]	Speed: 1100.01 samples/sec	mae=6.016726
+lr-batch-epoch: 1.0000000000000002e-06 169 114
+saving 17
+INFO:root:Saved checkpoint to "../models/ssr2_wiki_1_1/model-ssr-imdb-0017.params"
+INFO:root:Epoch[114] Batch [200]	Speed: 1093.40 samples/sec	mae=6.204163
+INFO:root:Epoch[114] Batch [250]	Speed: 1124.82 samples/sec	mae=5.921101
+INFO:root:Epoch[114] Batch [300]	Speed: 1138.97 samples/sec	mae=5.950356
+INFO:root:Epoch[114] Batch [350]	Speed: 1098.84 samples/sec	mae=5.877813
+INFO:root:Epoch[114] Batch [400]	Speed: 1096.14 samples/sec	mae=5.870833
+INFO:root:Epoch[114] Batch [450]	Speed: 1135.48 samples/sec	mae=5.923584
+INFO:root:Epoch[114] Batch [500]	Speed: 1120.42 samples/sec	mae=5.983763
+INFO:root:Epoch[114] Batch [550]	Speed: 1099.96 samples/sec	mae=6.003863
+INFO:root:Epoch[114] Train-mae=6.080414
+INFO:root:Epoch[114] Time cost=26.734
+call reset
+INFO:root:Epoch[114] Validation-mae=6.694792
+call reset
+INFO:root:Epoch[115] Batch [50]	Speed: 1106.06 samples/sec	mae=6.210214
+INFO:root:Epoch[115] Batch [100]	Speed: 1126.10 samples/sec	mae=5.999116
+INFO:root:Epoch[115] Batch [150]	Speed: 1087.03 samples/sec	mae=6.062120
+INFO:root:Epoch[115] Batch [200]	Speed: 1107.11 samples/sec	mae=5.981376
+INFO:root:Epoch[115] Batch [250]	Speed: 1119.33 samples/sec	mae=5.908145
+INFO:root:Epoch[115] Batch [300]	Speed: 1110.64 samples/sec	mae=5.966832
+INFO:root:Epoch[115] Batch [350]	Speed: 1126.52 samples/sec	mae=5.861947
+INFO:root:Epoch[115] Batch [400]	Speed: 1111.42 samples/sec	mae=6.007763
+INFO:root:Epoch[115] Batch [450]	Speed: 1108.51 samples/sec	mae=6.114398
+INFO:root:Epoch[115] Batch [500]	Speed: 1080.53 samples/sec	mae=5.964399
+INFO:root:Epoch[115] Batch [550]	Speed: 1115.23 samples/sec	mae=6.064336
+lr-batch-epoch: 1.0000000000000002e-06 574 115
+INFO:root:Epoch[115] Train-mae=6.061293
+INFO:root:Epoch[115] Time cost=26.775
+call reset
+INFO:root:Epoch[115] Validation-mae=6.697795
+call reset
+INFO:root:Epoch[116] Batch [50]	Speed: 1056.41 samples/sec	mae=6.006767
+INFO:root:Epoch[116] Batch [100]	Speed: 1092.36 samples/sec	mae=5.941309
+INFO:root:Epoch[116] Batch [150]	Speed: 1100.15 samples/sec	mae=5.893037
+INFO:root:Epoch[116] Batch [200]	Speed: 1120.92 samples/sec	mae=6.034034
+INFO:root:Epoch[116] Batch [250]	Speed: 1096.65 samples/sec	mae=5.945132
+INFO:root:Epoch[116] Batch [300]	Speed: 1093.63 samples/sec	mae=6.036800
+INFO:root:Epoch[116] Batch [350]	Speed: 1099.01 samples/sec	mae=6.056198
+INFO:root:Epoch[116] Batch [400]	Speed: 1073.59 samples/sec	mae=6.092534
+INFO:root:Epoch[116] Batch [450]	Speed: 1128.74 samples/sec	mae=6.065709
+INFO:root:Epoch[116] Batch [500]	Speed: 1122.05 samples/sec	mae=6.049464
+INFO:root:Epoch[116] Batch [550]	Speed: 1103.63 samples/sec	mae=6.175512
+INFO:root:Epoch[116] Train-mae=6.062698
+INFO:root:Epoch[116] Time cost=27.108
+call reset
+INFO:root:Epoch[116] Validation-mae=6.721991
+call reset
+INFO:root:Epoch[117] Batch [50]	Speed: 1111.68 samples/sec	mae=6.050636
+INFO:root:Epoch[117] Batch [100]	Speed: 1122.05 samples/sec	mae=5.790412
+INFO:root:Epoch[117] Batch [150]	Speed: 1081.88 samples/sec	mae=5.842156
+INFO:root:Epoch[117] Batch [200]	Speed: 1083.28 samples/sec	mae=6.012347
+INFO:root:Epoch[117] Batch [250]	Speed: 1104.88 samples/sec	mae=5.978482
+INFO:root:Epoch[117] Batch [300]	Speed: 1138.73 samples/sec	mae=5.983631
+INFO:root:Epoch[117] Batch [350]	Speed: 1113.33 samples/sec	mae=6.133378
+lr-batch-epoch: 1.0000000000000002e-06 384 117
+INFO:root:Epoch[117] Batch [400]	Speed: 1118.32 samples/sec	mae=6.088040
+INFO:root:Epoch[117] Batch [450]	Speed: 1104.49 samples/sec	mae=5.995365
+INFO:root:Epoch[117] Batch [500]	Speed: 1111.53 samples/sec	mae=6.278899
+INFO:root:Epoch[117] Batch [550]	Speed: 1115.95 samples/sec	mae=5.781039
+INFO:root:Epoch[117] Train-mae=6.121186
+INFO:root:Epoch[117] Time cost=26.835
+call reset
+INFO:root:Epoch[117] Validation-mae=6.771468
+call reset
+INFO:root:Epoch[118] Batch [50]	Speed: 1108.29 samples/sec	mae=6.044584
+INFO:root:Epoch[118] Batch [100]	Speed: 1078.68 samples/sec	mae=6.019659
+INFO:root:Epoch[118] Batch [150]	Speed: 1111.62 samples/sec	mae=6.055420
+INFO:root:Epoch[118] Batch [200]	Speed: 1089.32 samples/sec	mae=5.995332
+INFO:root:Epoch[118] Batch [250]	Speed: 1114.41 samples/sec	mae=6.085409
+INFO:root:Epoch[118] Batch [300]	Speed: 1118.61 samples/sec	mae=6.025963
+INFO:root:Epoch[118] Batch [350]	Speed: 1098.48 samples/sec	mae=6.158650
+INFO:root:Epoch[118] Batch [400]	Speed: 1120.17 samples/sec	mae=5.862452
+INFO:root:Epoch[118] Batch [450]	Speed: 1124.59 samples/sec	mae=5.883001
+INFO:root:Epoch[118] Batch [500]	Speed: 1121.11 samples/sec	mae=5.807517
+INFO:root:Epoch[118] Batch [550]	Speed: 1111.29 samples/sec	mae=6.002651
+INFO:root:Epoch[118] Train-mae=5.988542
+INFO:root:Epoch[118] Time cost=26.876
+call reset
+INFO:root:Epoch[118] Validation-mae=6.742931
+call reset
+INFO:root:Epoch[119] Batch [50]	Speed: 1104.01 samples/sec	mae=5.745385
+INFO:root:Epoch[119] Batch [100]	Speed: 1104.74 samples/sec	mae=6.004345
+INFO:root:Epoch[119] Batch [150]	Speed: 1100.34 samples/sec	mae=6.117671
+lr-batch-epoch: 1.0000000000000002e-06 194 119
+INFO:root:Epoch[119] Batch [200]	Speed: 1112.21 samples/sec	mae=6.003806
+INFO:root:Epoch[119] Batch [250]	Speed: 1088.88 samples/sec	mae=6.015294
+INFO:root:Epoch[119] Batch [300]	Speed: 1117.90 samples/sec	mae=6.062141
+INFO:root:Epoch[119] Batch [350]	Speed: 1123.99 samples/sec	mae=5.907790
+INFO:root:Epoch[119] Batch [400]	Speed: 1058.38 samples/sec	mae=6.213441
+INFO:root:Epoch[119] Batch [450]	Speed: 1119.07 samples/sec	mae=5.947174
+INFO:root:Epoch[119] Batch [500]	Speed: 1112.88 samples/sec	mae=6.035187
+INFO:root:Epoch[119] Batch [550]	Speed: 1100.22 samples/sec	mae=6.049473
+INFO:root:Epoch[119] Train-mae=5.890512
+INFO:root:Epoch[119] Time cost=27.025
+call reset
+INFO:root:Epoch[119] Validation-mae=6.728631
+call reset
+INFO:root:Epoch[120] Batch [50]	Speed: 1101.38 samples/sec	mae=5.952139
+INFO:root:Epoch[120] Batch [100]	Speed: 1104.23 samples/sec	mae=6.015331
+INFO:root:Epoch[120] Batch [150]	Speed: 1110.96 samples/sec	mae=5.891712
+INFO:root:Epoch[120] Batch [200]	Speed: 1102.51 samples/sec	mae=5.813283
+INFO:root:Epoch[120] Batch [250]	Speed: 1090.61 samples/sec	mae=6.162248
+INFO:root:Epoch[120] Batch [300]	Speed: 1089.41 samples/sec	mae=5.925315
+INFO:root:Epoch[120] Batch [350]	Speed: 1081.10 samples/sec	mae=6.167870
+INFO:root:Epoch[120] Batch [400]	Speed: 1105.94 samples/sec	mae=5.904169
+INFO:root:Epoch[120] Batch [450]	Speed: 1101.95 samples/sec	mae=6.015845
+INFO:root:Epoch[120] Batch [500]	Speed: 1071.72 samples/sec	mae=6.074698
+INFO:root:Epoch[120] Batch [550]	Speed: 1115.84 samples/sec	mae=6.077546
+INFO:root:Epoch[120] Train-mae=6.022509
+INFO:root:Epoch[120] Time cost=27.133
+call reset
+INFO:root:Epoch[120] Validation-mae=6.684757
+call reset
+lr-batch-epoch: 1.0000000000000002e-06 4 121
+saving 18
+INFO:root:Saved checkpoint to "../models/ssr2_wiki_1_1/model-ssr-imdb-0018.params"
+INFO:root:Epoch[121] Batch [50]	Speed: 1080.47 samples/sec	mae=5.970225
+INFO:root:Epoch[121] Batch [100]	Speed: 1118.30 samples/sec	mae=6.063999
+INFO:root:Epoch[121] Batch [150]	Speed: 1126.92 samples/sec	mae=6.080949
+INFO:root:Epoch[121] Batch [200]	Speed: 1095.52 samples/sec	mae=6.035306
+INFO:root:Epoch[121] Batch [250]	Speed: 1126.83 samples/sec	mae=6.052004
+INFO:root:Epoch[121] Batch [300]	Speed: 1130.35 samples/sec	mae=6.053778
+INFO:root:Epoch[121] Batch [350]	Speed: 1116.14 samples/sec	mae=5.912146
+INFO:root:Epoch[121] Batch [400]	Speed: 1066.03 samples/sec	mae=5.931334
+INFO:root:Epoch[121] Batch [450]	Speed: 1106.79 samples/sec	mae=6.027633
+INFO:root:Epoch[121] Batch [500]	Speed: 1105.03 samples/sec	mae=6.000578
+INFO:root:Epoch[121] Batch [550]	Speed: 1127.00 samples/sec	mae=6.171087
+INFO:root:Epoch[121] Train-mae=5.922505
+INFO:root:Epoch[121] Time cost=26.909
+call reset
+INFO:root:Epoch[121] Validation-mae=6.646686
+call reset
+INFO:root:Epoch[122] Batch [50]	Speed: 1059.15 samples/sec	mae=5.993364
+INFO:root:Epoch[122] Batch [100]	Speed: 1138.72 samples/sec	mae=5.817921
+INFO:root:Epoch[122] Batch [150]	Speed: 1106.54 samples/sec	mae=6.059496
+INFO:root:Epoch[122] Batch [200]	Speed: 1109.58 samples/sec	mae=6.001079
+INFO:root:Epoch[122] Batch [250]	Speed: 1138.87 samples/sec	mae=5.840409
+INFO:root:Epoch[122] Batch [300]	Speed: 1134.54 samples/sec	mae=6.110555
+INFO:root:Epoch[122] Batch [350]	Speed: 1121.12 samples/sec	mae=5.986863
+INFO:root:Epoch[122] Batch [400]	Speed: 1108.32 samples/sec	mae=6.024093
+lr-batch-epoch: 1.0000000000000002e-06 409 122
+INFO:root:Epoch[122] Batch [450]	Speed: 1090.58 samples/sec	mae=6.171254
+INFO:root:Epoch[122] Batch [500]	Speed: 1118.58 samples/sec	mae=6.179523
+INFO:root:Epoch[122] Batch [550]	Speed: 1107.31 samples/sec	mae=5.955084
+INFO:root:Epoch[122] Train-mae=6.074154
+INFO:root:Epoch[122] Time cost=26.828
+call reset
+INFO:root:Epoch[122] Validation-mae=6.787905
+call reset
+INFO:root:Epoch[123] Batch [50]	Speed: 1104.41 samples/sec	mae=5.961155
+INFO:root:Epoch[123] Batch [100]	Speed: 1105.51 samples/sec	mae=6.109885
+INFO:root:Epoch[123] Batch [150]	Speed: 1115.24 samples/sec	mae=5.989494
+INFO:root:Epoch[123] Batch [200]	Speed: 1122.14 samples/sec	mae=6.041347
+INFO:root:Epoch[123] Batch [250]	Speed: 1121.68 samples/sec	mae=6.089564
+INFO:root:Epoch[123] Batch [300]	Speed: 1100.48 samples/sec	mae=6.203081
+INFO:root:Epoch[123] Batch [350]	Speed: 1128.91 samples/sec	mae=5.978839
+INFO:root:Epoch[123] Batch [400]	Speed: 1085.02 samples/sec	mae=5.961568
+INFO:root:Epoch[123] Batch [450]	Speed: 1120.85 samples/sec	mae=6.024203
+INFO:root:Epoch[123] Batch [500]	Speed: 1093.61 samples/sec	mae=5.907381
+INFO:root:Epoch[123] Batch [550]	Speed: 1140.82 samples/sec	mae=6.121617
+INFO:root:Epoch[123] Train-mae=6.198926
+INFO:root:Epoch[123] Time cost=26.735
+call reset
+INFO:root:Epoch[123] Validation-mae=6.639892
+call reset
+INFO:root:Epoch[124] Batch [50]	Speed: 1104.49 samples/sec	mae=6.039575
+INFO:root:Epoch[124] Batch [100]	Speed: 1096.86 samples/sec	mae=6.026064
+INFO:root:Epoch[124] Batch [150]	Speed: 1119.35 samples/sec	mae=5.930068
+INFO:root:Epoch[124] Batch [200]	Speed: 1148.75 samples/sec	mae=6.003484
+lr-batch-epoch: 1.0000000000000002e-06 219 124
+INFO:root:Epoch[124] Batch [250]	Speed: 1095.40 samples/sec	mae=5.998252
+INFO:root:Epoch[124] Batch [300]	Speed: 1116.27 samples/sec	mae=6.234268
+INFO:root:Epoch[124] Batch [350]	Speed: 1102.99 samples/sec	mae=5.862399
+INFO:root:Epoch[124] Batch [400]	Speed: 1116.71 samples/sec	mae=5.973648
+INFO:root:Epoch[124] Batch [450]	Speed: 1121.62 samples/sec	mae=5.941872
+INFO:root:Epoch[124] Batch [500]	Speed: 1144.81 samples/sec	mae=5.806454
+INFO:root:Epoch[124] Batch [550]	Speed: 1093.56 samples/sec	mae=6.099507
+INFO:root:Epoch[124] Train-mae=6.052865
+INFO:root:Epoch[124] Time cost=26.687
+call reset
+INFO:root:Epoch[124] Validation-mae=6.679808
+call reset
+INFO:root:Epoch[125] Batch [50]	Speed: 1091.05 samples/sec	mae=6.127704
+INFO:root:Epoch[125] Batch [100]	Speed: 1122.46 samples/sec	mae=5.837975
+INFO:root:Epoch[125] Batch [150]	Speed: 1092.40 samples/sec	mae=5.909014
+INFO:root:Epoch[125] Batch [200]	Speed: 1101.40 samples/sec	mae=5.803033
+INFO:root:Epoch[125] Batch [250]	Speed: 1121.94 samples/sec	mae=6.094376
+INFO:root:Epoch[125] Batch [300]	Speed: 1098.95 samples/sec	mae=6.127773
+INFO:root:Epoch[125] Batch [350]	Speed: 1088.54 samples/sec	mae=5.854325
+INFO:root:Epoch[125] Batch [400]	Speed: 1093.63 samples/sec	mae=6.127671
+INFO:root:Epoch[125] Batch [450]	Speed: 1086.24 samples/sec	mae=6.131133
+INFO:root:Epoch[125] Batch [500]	Speed: 1130.01 samples/sec	mae=5.893745
+INFO:root:Epoch[125] Batch [550]	Speed: 1106.08 samples/sec	mae=6.021313
+INFO:root:Epoch[125] Train-mae=5.927414
+INFO:root:Epoch[125] Time cost=26.900
+call reset
+INFO:root:Epoch[125] Validation-mae=6.732953
+call reset
+lr-batch-epoch: 1.0000000000000002e-06 29 126
+INFO:root:Epoch[126] Batch [50]	Speed: 1141.79 samples/sec	mae=6.040526
+INFO:root:Epoch[126] Batch [100]	Speed: 1106.27 samples/sec	mae=5.926133
+INFO:root:Epoch[126] Batch [150]	Speed: 1082.81 samples/sec	mae=5.892560
+INFO:root:Epoch[126] Batch [200]	Speed: 1095.04 samples/sec	mae=6.019614
+INFO:root:Epoch[126] Batch [250]	Speed: 1126.45 samples/sec	mae=6.077980
+INFO:root:Epoch[126] Batch [300]	Speed: 1124.31 samples/sec	mae=5.894143
+INFO:root:Epoch[126] Batch [350]	Speed: 1132.73 samples/sec	mae=6.164299
+INFO:root:Epoch[126] Batch [400]	Speed: 1103.20 samples/sec	mae=5.840564
+INFO:root:Epoch[126] Batch [450]	Speed: 1107.15 samples/sec	mae=6.234618
+INFO:root:Epoch[126] Batch [500]	Speed: 1098.22 samples/sec	mae=6.155347
+INFO:root:Epoch[126] Batch [550]	Speed: 1136.36 samples/sec	mae=5.896848
+INFO:root:Epoch[126] Train-mae=6.205667
+INFO:root:Epoch[126] Time cost=26.725
+call reset
+INFO:root:Epoch[126] Validation-mae=6.771781
+call reset
+INFO:root:Epoch[127] Batch [50]	Speed: 1108.66 samples/sec	mae=5.899803
+INFO:root:Epoch[127] Batch [100]	Speed: 1088.42 samples/sec	mae=5.939092
+INFO:root:Epoch[127] Batch [150]	Speed: 1109.20 samples/sec	mae=6.026728
+INFO:root:Epoch[127] Batch [200]	Speed: 1099.07 samples/sec	mae=6.239103
+INFO:root:Epoch[127] Batch [250]	Speed: 1125.74 samples/sec	mae=6.056682
+INFO:root:Epoch[127] Batch [300]	Speed: 1106.17 samples/sec	mae=6.114856
+INFO:root:Epoch[127] Batch [350]	Speed: 1108.94 samples/sec	mae=6.065493
+INFO:root:Epoch[127] Batch [400]	Speed: 1100.37 samples/sec	mae=5.969824
+lr-batch-epoch: 1.0000000000000002e-06 434 127
+saving 19
+INFO:root:Saved checkpoint to "../models/ssr2_wiki_1_1/model-ssr-imdb-0019.params"
+INFO:root:Epoch[127] Batch [450]	Speed: 1110.92 samples/sec	mae=5.718177
+INFO:root:Epoch[127] Batch [500]	Speed: 1080.50 samples/sec	mae=6.163841
+INFO:root:Epoch[127] Batch [550]	Speed: 1119.49 samples/sec	mae=5.914287
+INFO:root:Epoch[127] Train-mae=6.023099
+INFO:root:Epoch[127] Time cost=26.960
+call reset
+INFO:root:Epoch[127] Validation-mae=6.701328
+call reset
+INFO:root:Epoch[128] Batch [50]	Speed: 1115.91 samples/sec	mae=5.859660
+INFO:root:Epoch[128] Batch [100]	Speed: 1087.75 samples/sec	mae=5.955967
+INFO:root:Epoch[128] Batch [150]	Speed: 1097.31 samples/sec	mae=5.815845
+INFO:root:Epoch[128] Batch [200]	Speed: 1085.84 samples/sec	mae=5.927850
+INFO:root:Epoch[128] Batch [250]	Speed: 1149.85 samples/sec	mae=5.898162
+INFO:root:Epoch[128] Batch [300]	Speed: 1101.95 samples/sec	mae=6.068421
+INFO:root:Epoch[128] Batch [350]	Speed: 1114.86 samples/sec	mae=6.315714
+INFO:root:Epoch[128] Batch [400]	Speed: 1093.99 samples/sec	mae=5.977716
+INFO:root:Epoch[128] Batch [450]	Speed: 1102.52 samples/sec	mae=6.047864
+INFO:root:Epoch[128] Batch [500]	Speed: 1120.17 samples/sec	mae=5.965927
+INFO:root:Epoch[128] Batch [550]	Speed: 1103.63 samples/sec	mae=5.892942
+INFO:root:Epoch[128] Train-mae=6.259021
+INFO:root:Epoch[128] Time cost=26.909
+call reset
+INFO:root:Epoch[128] Validation-mae=6.670858
+call reset
+INFO:root:Epoch[129] Batch [50]	Speed: 1114.83 samples/sec	mae=6.004637
+INFO:root:Epoch[129] Batch [100]	Speed: 1122.14 samples/sec	mae=6.003548
+INFO:root:Epoch[129] Batch [150]	Speed: 1088.06 samples/sec	mae=6.044692
+INFO:root:Epoch[129] Batch [200]	Speed: 1098.15 samples/sec	mae=5.987972
+lr-batch-epoch: 1.0000000000000002e-06 244 129
+INFO:root:Epoch[129] Batch [250]	Speed: 1088.64 samples/sec	mae=6.021244
+INFO:root:Epoch[129] Batch [300]	Speed: 1097.83 samples/sec	mae=6.239801
+INFO:root:Epoch[129] Batch [350]	Speed: 1102.41 samples/sec	mae=6.049620
+INFO:root:Epoch[129] Batch [400]	Speed: 1141.31 samples/sec	mae=5.963778
+INFO:root:Epoch[129] Batch [450]	Speed: 1101.87 samples/sec	mae=5.878033
+INFO:root:Epoch[129] Batch [500]	Speed: 1117.30 samples/sec	mae=5.950870
+INFO:root:Epoch[129] Batch [550]	Speed: 1088.68 samples/sec	mae=6.098248
+INFO:root:Epoch[129] Train-mae=6.060843
+INFO:root:Epoch[129] Time cost=26.942
+call reset
+INFO:root:Epoch[129] Validation-mae=6.694073
+call reset
+INFO:root:Epoch[130] Batch [50]	Speed: 1128.50 samples/sec	mae=6.265444
+INFO:root:Epoch[130] Batch [100]	Speed: 1077.72 samples/sec	mae=6.092496
+INFO:root:Epoch[130] Batch [150]	Speed: 1095.91 samples/sec	mae=6.115741
+INFO:root:Epoch[130] Batch [200]	Speed: 1142.68 samples/sec	mae=6.062514
+INFO:root:Epoch[130] Batch [250]	Speed: 1114.56 samples/sec	mae=5.974478
+INFO:root:Epoch[130] Batch [300]	Speed: 1103.81 samples/sec	mae=5.958358
+INFO:root:Epoch[130] Batch [350]	Speed: 1116.66 samples/sec	mae=6.048210
+INFO:root:Epoch[130] Batch [400]	Speed: 1100.04 samples/sec	mae=5.983419
+INFO:root:Epoch[130] Batch [450]	Speed: 1139.23 samples/sec	mae=5.799267
+INFO:root:Epoch[130] Batch [500]	Speed: 1097.24 samples/sec	mae=6.139616
+INFO:root:Epoch[130] Batch [550]	Speed: 1073.88 samples/sec	mae=5.844013
+INFO:root:Epoch[130] Train-mae=5.865725
+INFO:root:Epoch[130] Time cost=26.849
+call reset
+INFO:root:Epoch[130] Validation-mae=6.730928
+call reset
+INFO:root:Epoch[131] Batch [50]	Speed: 1109.62 samples/sec	mae=5.988721
+lr-batch-epoch: 1.0000000000000002e-06 54 131
+INFO:root:Epoch[131] Batch [100]	Speed: 1086.98 samples/sec	mae=6.142852
+INFO:root:Epoch[131] Batch [150]	Speed: 1077.67 samples/sec	mae=5.882119
+INFO:root:Epoch[131] Batch [200]	Speed: 1097.10 samples/sec	mae=6.019941
+INFO:root:Epoch[131] Batch [250]	Speed: 1108.83 samples/sec	mae=6.223756
+INFO:root:Epoch[131] Batch [300]	Speed: 1126.86 samples/sec	mae=5.775119
+INFO:root:Epoch[131] Batch [350]	Speed: 1097.13 samples/sec	mae=5.891935
+INFO:root:Epoch[131] Batch [400]	Speed: 1122.13 samples/sec	mae=5.874627
+INFO:root:Epoch[131] Batch [450]	Speed: 1092.59 samples/sec	mae=6.056749
+INFO:root:Epoch[131] Batch [500]	Speed: 1130.00 samples/sec	mae=6.038107
+INFO:root:Epoch[131] Batch [550]	Speed: 1123.47 samples/sec	mae=6.184006
+INFO:root:Epoch[131] Train-mae=5.911957
+INFO:root:Epoch[131] Time cost=26.877
+call reset
+INFO:root:Epoch[131] Validation-mae=6.746543
+call reset
+INFO:root:Epoch[132] Batch [50]	Speed: 1089.01 samples/sec	mae=6.124303
+INFO:root:Epoch[132] Batch [100]	Speed: 1106.04 samples/sec	mae=5.932679
+INFO:root:Epoch[132] Batch [150]	Speed: 1108.23 samples/sec	mae=6.040491
+INFO:root:Epoch[132] Batch [200]	Speed: 1111.39 samples/sec	mae=5.843670
+INFO:root:Epoch[132] Batch [250]	Speed: 1089.41 samples/sec	mae=6.169912
+INFO:root:Epoch[132] Batch [300]	Speed: 1113.45 samples/sec	mae=6.124134
+INFO:root:Epoch[132] Batch [350]	Speed: 1124.34 samples/sec	mae=5.972299
+INFO:root:Epoch[132] Batch [400]	Speed: 1141.44 samples/sec	mae=6.002725
+INFO:root:Epoch[132] Batch [450]	Speed: 1088.89 samples/sec	mae=6.010002
+lr-batch-epoch: 1.0000000000000002e-06 459 132
+INFO:root:Epoch[132] Batch [500]	Speed: 1120.72 samples/sec	mae=5.929662
+INFO:root:Epoch[132] Batch [550]	Speed: 1137.28 samples/sec	mae=5.773954
+INFO:root:Epoch[132] Train-mae=5.962783
+INFO:root:Epoch[132] Time cost=26.748
+call reset
+INFO:root:Epoch[132] Validation-mae=6.699256
+call reset
+INFO:root:Epoch[133] Batch [50]	Speed: 1122.69 samples/sec	mae=5.890533
+INFO:root:Epoch[133] Batch [100]	Speed: 1097.52 samples/sec	mae=5.987634
+INFO:root:Epoch[133] Batch [150]	Speed: 1142.06 samples/sec	mae=6.067130
+INFO:root:Epoch[133] Batch [200]	Speed: 1103.85 samples/sec	mae=5.882184
+INFO:root:Epoch[133] Batch [250]	Speed: 1104.07 samples/sec	mae=6.115981
+INFO:root:Epoch[133] Batch [300]	Speed: 1067.62 samples/sec	mae=6.149819
+INFO:root:Epoch[133] Batch [350]	Speed: 1083.77 samples/sec	mae=6.005768
+INFO:root:Epoch[133] Batch [400]	Speed: 1100.84 samples/sec	mae=5.999421
+INFO:root:Epoch[133] Batch [450]	Speed: 1096.84 samples/sec	mae=5.990647
+INFO:root:Epoch[133] Batch [500]	Speed: 1103.72 samples/sec	mae=5.984033
+INFO:root:Epoch[133] Batch [550]	Speed: 1121.78 samples/sec	mae=5.893751
+INFO:root:Epoch[133] Train-mae=6.045301
+INFO:root:Epoch[133] Time cost=26.948
+call reset
+INFO:root:Epoch[133] Validation-mae=6.741891
+call reset
+INFO:root:Epoch[134] Batch [50]	Speed: 1087.01 samples/sec	mae=5.928340
+INFO:root:Epoch[134] Batch [100]	Speed: 1126.82 samples/sec	mae=6.099788
+INFO:root:Epoch[134] Batch [150]	Speed: 1143.73 samples/sec	mae=5.885076
+INFO:root:Epoch[134] Batch [200]	Speed: 1076.45 samples/sec	mae=5.886168
+INFO:root:Epoch[134] Batch [250]	Speed: 1108.69 samples/sec	mae=5.922493
+lr-batch-epoch: 1.0000000000000002e-06 269 134
+saving 20
+INFO:root:Saved checkpoint to "../models/ssr2_wiki_1_1/model-ssr-imdb-0020.params"

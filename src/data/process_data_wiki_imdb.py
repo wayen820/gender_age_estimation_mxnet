@@ -3,6 +3,7 @@ import mxnet as mx
 import cv2
 from tqdm import tqdm
 import numpy as np
+import argparse
 from imdbwiki_utils import get_meta
 import sys
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'align'))
@@ -10,17 +11,38 @@ from align_tools import align_tools
 import random
 #这个文件用来打包imdb或者wiki数据到rec格式
 
-metafile='imdb'  #imdb or wiki
-rootpath='/media/kneron/Data/datasets/wiki_imdb/imdb_crop'  #imdb or wiki 的图片路径
-outputpath='../../datasets/imdb_raw/'
-# saveprefix_train = '../../datasets/train'  #数据保存路径前缀
-# saveprefix_val = '../../datasets/val'  #数据保存路径前缀
-ratio=0.8 #训练集占比
-min_score=1.0
-align=False  #是否执行检测人脸和对齐
+# metafile='imdb'  #imdb or wiki
+# rootpath='/media/kneron/Data/datasets/wiki_imdb/imdb_crop'  #imdb or wiki 的图片路径
+# outputpath='../../datasets/imdb_clear_x/'
+# # saveprefix_train = '../../datasets/train'  #数据保存路径前缀
+# # saveprefix_val = '../../datasets/val'  #数据保存路径前缀
+# ratio=0.8 #训练集占比
+# min_score=1
+# align=True  #是否执行检测人脸和对齐
 
-
+def get_args():
+    parser = argparse.ArgumentParser(description="This script package imdb or wiki db to mxnet .rec format.",
+                                     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    parser.add_argument("--rootpath", type=str, required=True,
+                        help="root path to imdb or wiki crop db")
+    parser.add_argument("--outputpath", type=str, required=True,
+                        help="path to output rec file")
+    parser.add_argument("--ratio", type=float, required=True,default=0.8,
+                        help="train an val split ratio")
+    parser.add_argument("--minscore", type=float, required=True,default=1.0,
+                        help="face min score for filter noise")
+    parser.add_argument("--align", type=bool, default=True,
+                        help="align face image or not")
+    args = parser.parse_args()
+    return args
 def main():
+    args=get_args()
+    rootpath=args.rootpath
+    outputpath=args.outputpath
+    ratio=args.ratio
+    min_score=args.minscore
+    align=args.align
+
     align_t=align_tools()
     id_x=0
     id_x1=0
@@ -39,9 +61,8 @@ def main():
                                            saveprefix_rec1, 'w')
 
     full_path, dob, gender, photo_taken, face_score, second_face_score, age=get_meta(os.path.join(rootpath,'%s.mat'%metafile),metafile)
+    for i in range(len(face_score)):
 
-    # train_count=len(face_score)*ratio
-    for i in tqdm(range(len(face_score))):
         if face_score[i] < min_score:
             continue
 
@@ -56,7 +77,7 @@ def main():
         fname=os.path.join(rootpath,str(full_path[i][0]))
         total+=1
         if  align:
-            nimg=align_t.get_input(fname)
+            nimg=align_t.get_input(fname,clear=False)
             if nimg is None:
                 nok+=1
                 continue

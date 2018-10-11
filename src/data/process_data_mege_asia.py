@@ -16,16 +16,37 @@ import os
 
 #这个文件用来打包megaage数据到rec格式
 
-metafile='wiki'  #imdb or wiki
-listfile='/media/kneron/Data/datasets/megaage/megaage_asian/list/train_age.txt'  #imdb or wiki 的图片路径
-imgnamefile='/media/kneron/Data/datasets/megaage/megaage_asian/list/train_name.txt'
-rootpath='/media/kneron/Data/datasets/megaage/megaage_asian/train'
-saveprefix = '../../datasets/megaage/train'  #数据保存路径前缀
-min_score=1.0
-align=False  #是否执行检测人脸和对齐
+#metafile='wiki'  #imdb or wiki
+#listfile='/media/kneron/Data/datasets/megaage/megaage_asian/list/train_age.txt'  #imdb or wiki 的图片路径
+#imgnamefile='/media/kneron/Data/datasets/megaage/megaage_asian/list/train_name.txt'
+#rootpath='/media/kneron/Data/datasets/megaage/megaage_asian/train'
+#saveprefix = '../../datasets/megaage/train'  #数据保存路径前缀
+#align=False  #是否执行检测人脸和对齐
 
+def get_args():
+    parser = argparse.ArgumentParser(description="This script package megaage db to mxnet .rec format.",
+                                     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    parser.add_argument("--rootpath", type=str, required=True,
+                        help="root path to megaage train or test images")
+    parser.add_argument("--agefile", type=str, required=True,
+                        help="megaage list file train_age.txt or test_age.txt")
+    parser.add_argument("--namefile", type=str, required=True,
+                        help="megaage list file train_name.txt or test_name.txt")
+    parser.add_argument("--saveprefix", type=str, required=True,
+                        help="rec save prefix")
+    parser.add_argument("--align", type=bool, default=True,
+                        help="align face image or not")
+    args = parser.parse_args()
+    return args
 
 def main():
+    args=get_args()
+    saveprefix=args.saveprefix
+    listfile=args.agefile
+    imgnamefile=args.namefile
+    align=args.align
+    rootpath=args.rootpath
+
     align_t=align_tools()
     id_x=0
     nok=0
