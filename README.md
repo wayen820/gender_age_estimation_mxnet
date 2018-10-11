@@ -1,14 +1,14 @@
 # gender_age_estimation_mxnet
 **[IJCAI18] SSR-Net: A Compact Soft Stagewise Regression Network for Age Estimation**
 + A real-time age estimation model with 170KB.
-+ Gender regression is also added!
-+ Megaage-Asian is provided in https://github.com/b02901145/SSR-Net_megaage-asian
-+ Coreml model (0.17MB) is provided in https://github.com/shamangary/Keras-to-coreml-multiple-inputs-example
++ Gender regression is included
++ Megaage-Asian age regression is included
 
-This is a mxnet version implementation of SSR-Net for age and gender Estimation,Keras version in here https://github.com/shamangary/SSR-Net,but we get better accuracy.
+This is a mxnet version implementation of SSR-Net for age and gender Estimation,Keras version in here https://github.com/shamangary/SSR-Net ,but we get better accuracy.
 
 ### Real-time webcam demo
 <img src="https://github.com/wayen820/gender_age_estimation_mxnet/raw/master/test.gif" height="240"/>
+
 ## Paper
 
 ### PDF
@@ -26,7 +26,6 @@ This paper presents a novel CNN model called Soft Stagewise Regression Network (
 + GTX-1080Ti
 + Ubuntu
 
-## Dependencies
 
 ## Codes
 
